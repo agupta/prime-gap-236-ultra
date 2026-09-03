@@ -1,0 +1,90 @@
+{
+  "status": "heuristic-piecewise-krylov-l1-monte-carlo",
+  "rigorous": false,
+  "never_implies": [
+    "rigorous integral",
+    "sieve certificate",
+    "H1<=236"
+  ],
+  "script_sha256": "f182eb5b66ce5f131ae549335d8c8fddbdf3976fa393c8557babd5b14940f97d",
+  "parameters": {
+    "k": 48,
+    "alpha": "0.2575",
+    "eta": "0.2425"
+  },
+  "samples_per_replicate": 1000000,
+  "replicates": [
+    {
+      "seed": 236,
+      "normalized_moments": [
+        1.0,
+        0.2272842656605996,
+        0.13435104793272876,
+        0.08940373308659062
+      ],
+      "mu1_exact_identity": 0.22730828993025806,
+      "mu1_sampling_error": -2.4024269658473596e-05,
+      "largest_generalized_root": 0.6709756918190123,
+      "plugin_standard_errors": {
+        "mu1": 0.0002875637503508583,
+        "mu2": 0.0003810504913041539,
+        "mu3": 0.00018108619309748904
+      },
+      "I_gram_determinant": 0.08269291051585075
+    },
+    {
+      "seed": 1245,
+      "normalized_moments": [
+        1.0,
+        0.22742867088549565,
+        0.134435368560245,
+        0.08989533174910813
+      ],
+      "mu1_exact_identity": 0.22730828993025806,
+      "mu1_sampling_error": 0.00012038095523758674,
+      "largest_generalized_root": 0.6746984516425296,
+      "plugin_standard_errors": {
+        "mu1": 0.000287596189507966,
+        "mu2": 0.0003808683207681795,
+        "mu3": 0.00017826698011584206
+      },
+      "I_gram_determinant": 0.08271156821950192
+    },
+    {
+      "seed": 2254,
+      "normalized_moments": [
+        1.0,
+        0.22760537860341445,
+        0.13486179394602887,
+        0.08909313936618027
+      ],
+      "mu1_exact_identity": 0.22730828993025806,
+      "mu1_sampling_error": 0.00029708867315639265,
+      "largest_generalized_root": 0.6652700711326198,
+      "plugin_standard_errors": {
+        "mu1": 0.00028819712971649326,
+        "mu2": 0.00038175827508852265,
+        "mu3": 0.00017534526661868666
+      },
+      "I_gram_determinant": 0.08305758557682523
+    },
+    {
+      "seed": 3263,
+      "normalized_moments": [
+        1.0,
+        0.22780688816751998,
+        0.13491842450626984,
+        0.08951956418623837
+      ],
+      "mu1_exact_identity": 0.22730828993025806,
+      "mu1_sampling_error": 0.0004985982372619213,
+      "largest_generalized_root": 0.6685951599253913,
+      "plugin_standard_errors": {
+        "mu1": 0.00028813615914997703,
+        "mu2": 0.0003827394866926605,
+        "mu3": 0.0001778417141732519
+      },
+      "I_gram_determinant": 0.08302244620970087
+    }
+  ]
+}

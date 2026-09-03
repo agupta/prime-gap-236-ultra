@@ -1,0 +1,7 @@
+{
+  "status": "constant-extension-beta-schedule",
+  "extension": "constant",
+  "beta_schedule": [
+    "367/2500"
+  ]
+}

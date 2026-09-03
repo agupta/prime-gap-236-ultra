@@ -1,0 +1,28 @@
+{
+  "status": "multiprecision-grouped-fixed-vector-discovery",
+  "rigorous": false,
+  "decimal_dps": 60,
+  "input_json": "results/hb_a2558_eps005_cut_noones_D4.json",
+  "k": 48,
+  "parameters": {
+    "alpha": "163/625",
+    "delta": "1/50",
+    "eta": "627/2500",
+    "beta1": "3/20",
+    "beta2": "3/20",
+    "beta3plus": "17/100"
+  },
+  "basis_dimension": 12,
+  "i_orbit_groups": 20,
+  "i_faces": 90,
+  "marginal_components": 19,
+  "j_branch_integrals": 810,
+  "i_seconds": 1.4288723969366401,
+  "total_seconds": 14.053564562927932,
+  "denominator_positive": true,
+  "margin_positive": false,
+  "quotient": "0.887273520064345754675253407883144755761078452297139624169825",
+  "quotient_decimal_display": 0.8872735200643458,
+  "margin": "-2.6194431543846878383900366284180637970826476175412130956761E-106",
+  "script_sha256": "7ff1ff0634b102a9399741a5b176bf121c17cdc11c96180946ec7de9b1c21649"
+}

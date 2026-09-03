@@ -1,0 +1,53 @@
+{
+  "status": "heuristic-two-band-fixed-vector-monte-carlo",
+  "rigorous": false,
+  "never_implies": [
+    "rigorous integral",
+    "sieve certificate",
+    "H1<=236"
+  ],
+  "input": "agents/small-delta-frontier/bv_aquarter_B16_vector_exact.json",
+  "input_sha256": "59715ddffa483c696c035634a81c3cc8ffe882e9d6eaceec74bea23996b72d62",
+  "script_sha256": "b1303e5bc1bd36433c4ae1d657c73405c9d7d8bfd236d1fab1fdef4fc825f4ff",
+  "labels": [
+    "one_band_C10",
+    "two_band_count_dependent"
+  ],
+  "parameters": {
+    "k": 48,
+    "delta": "0.00722",
+    "alpha1": "0.2575",
+    "alpha2": "0.26758333333333334",
+    "eta1": "0.2425",
+    "eta2": "0.2525833333333333",
+    "inner_bounds": "103/400",
+    "outer_bounds": "49/625,4281/50000,2321/25000,5003/50000,1341/12500,229/2000,3043/25000,6447/50000,851/6250,7169/50000,753/5000,7891/50000,1599/10000"
+  },
+  "samples_per_replicate": 1000,
+  "replicates": [
+    {
+      "quotients": [
+        1.1214914497465525,
+        0.8756893000609424
+      ],
+      "plugin_se_nonrigorous": [
+        0.13232195460700383,
+        0.11396817158104942
+      ],
+      "i_means": [
+        1.1356409777087948e-43,
+        1.387812169285173e-43
+      ],
+      "j_means": [
+        2.226224505036375e-46,
+        2.1242844577899555e-46
+      ],
+      "i_acceptance": [
+        0.345,
+        0.417
+      ],
+      "paired_i_difference_second_sum": 2.2005082387534183e-83,
+      "paired_j_difference_second_sum": 2.4510406988913082e-88
+    }
+  ]
+}

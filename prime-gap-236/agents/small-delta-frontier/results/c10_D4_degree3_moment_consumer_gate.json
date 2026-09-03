@@ -1,0 +1,70 @@
+{
+  "status": "frozen-c10-d4-degree3-moment-consumer-prelaunch",
+  "rigorous": false,
+  "production_launch_authorized": false,
+  "mode": "read-only-exact-row-reconstruction-and-discovery",
+  "consumer_self_binding": "caller-supplied-lowercase-sha256-verified-before-result-access-and-at-final-closure",
+  "producer_gate_sha256": "964ab9cdbe952b317f4c42d7b18a47269f886448fdf5f53d581f754405e32e3b",
+  "producer_driver_sha256": "e48d46f447893d21addef38d979670107086550495fd390a1adeebf1ad6ba7ef",
+  "authorization_sha256": "8bf587b2ee0c0ff27c99d18446802b7be3007c17651cf4aa6c573b1745445c89",
+  "degree2_reference_sha256": "fbc8c38d2cf4241fdba03beb4251e2692e96af01ad4918c9a3a1075af2ed6e86",
+  "future_result_binding": "caller-supplied-lowercase-sha256-of-completed-bytes",
+  "expected_counts": {
+    "matrix_dimension": 160,
+    "i_faces": 312,
+    "j_branch_domains": 1200,
+    "j_fused_traversals": 1200,
+    "i_scalar_moment_integrals": 8736,
+    "j_logical_moment_products": 14712,
+    "j_scalar_moment_integrals": 167380
+  },
+  "resource_gate": {
+    "maximum_fused_seconds": 1800,
+    "maximum_total_validation_seconds": 3600,
+    "maximum_peak_rss_kib": 262144
+  },
+  "reconstruction_gate": {
+    "degree": 3,
+    "strata": 16,
+    "k_factor": 48,
+    "channel_order": [[0, 0], [1, 0], [0, 1], [2, 0], [1, 1], [0, 2], [3, 0], [2, 1], [1, 2], [0, 3]],
+    "i_row_inventory_count": 448,
+    "j_matrix_query_tag_count": 10980,
+    "j_matrix_query_tag_sha256": "746de1d75e0deee16c7e15380e1b912dbe36c6de215e1e45844cec1ceea7fa92",
+    "j_row_semantics": "canonical-sparse-subset-of-matrix-query-tags; omission-denotes-zero-for-reconstruction",
+    "source_integral_trust": "caller-result-sha-plus-exact-fused-unfused-producer-equality; rows-alone-do-not-prove-omitted-integrals-zero",
+    "expected_counts_role": "matrix-dimension-plus-producer-traversal-and-integration-work-counters; not-serialized-row-cardinalities",
+    "serialized_matrix_hash_role": "secondary-equality-check-only",
+    "degree2_check": "all-96-by-96-principal-entries-against-byte-pinned-reference"
+  },
+  "rank_gate": {
+    "selection": "per-R-canonical-order-exact-incremental-LDL-Schur-complement",
+    "expected_exact_rank": 154,
+    "expected_discarded_coordinates": [[0, [1, 0]], [0, [2, 0]], [0, [1, 1]], [0, [3, 0]], [0, [2, 1]], [0, [1, 2]]],
+    "zero_schur_action": "discard-after-exact-A-column-and-B-column-dependence-check",
+    "negative_schur_action": "reject"
+  },
+  "solve_gate": {
+    "precisions": [120, 200],
+    "maximum_relative_quotient_disagreement": "1e-85",
+    "maximum_relative_residual_by_precision": {"120": "1e-105", "200": "1e-185"},
+    "normalization": "first-maximum-absolute-coordinate-positive-and-equal-to-one",
+    "numerical_claim_rigorous": false
+  },
+  "rationalization_gate": {
+    "condition": "both-stable-numerical-quotients-strictly-greater-than-one",
+    "decimal_grid_digits": 80,
+    "rounding": "ROUND_HALF_EVEN",
+    "discarded_coordinates": "exact-zero",
+    "exact_continuation_condition": "denominator-positive-and-numerator-strictly-greater-than-denominator"
+  },
+  "continuation_gate": [
+    "producer-status-count-resource-authorization-and-provenance-gates-pass-without-relaxation",
+    "canonical-dense-I-and-inventory-bounded-sparse-J-rows-reconstruct-symmetric-matrices-and-secondary-hashes",
+    "complete-degree2-principal-submatrix-and-embedded-contraction-pass-exactly",
+    "exact-rank-and-null-coordinate-gate-passes",
+    "two-precision-agreement-and-residual-gates-pass",
+    "rationalization-occurs-only-after-both-numerical-quotients-exceed-one",
+    "only-an-exact-rationalized-margin-above-zero-may-continue"
+  ]
+}

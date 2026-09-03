@@ -1,0 +1,1904 @@
+ACTA ARITHMETICA
+    162.2 (2014)
+
+
+
+
+           A ternary Diophantine inequality over primes
+                                        by
+
+                       Roger Baker (Provo, UT) and
+                   Andreas Weingartner (Cedar City, UT)
+
+
+    1. Introduction. Piatetski-Shapiro [14] initiated the problem of find-
+ing, for a given natural number s, a range of values of c > 1 (c ∈
+                                                                 / N) such
+that the Diophantine inequality
+                           |pc1 + · · · + pcs − R| < R−η
+has many solutions in primes p1 , . . . , ps , for all sufficiently large positive
+real numbers R. Here and below, η is a sufficiently small positive constant
+depending only on c. For s = 3 (the smallest s that can be attacked at
+present), we find papers by Tolev [16], Cai [4], Kumchev and Nedeva [12]
+and most recently Kumchev [11], where it is shown that the range
+                                 61
+                           1<c<     = 1.10909 . . .
+                                 55
+is permissible. In the present paper we sharpen Kumchev’s approach to
+obtain the following result.
+
+    Theorem 1. Let 1 < c < 10/9 = 1.11111 . . . . The number of prime
+triples satisfying
+(1.1)                      |pc1 + pc2 + pc3 − R| < R−η
+is  R3/c−1−η (log R)−3 for R > C1 (c).
+
+    We elaborate Kumchev’s     use of Harman’s ‘alternative sieve’ by using two
+decompositions of X<p≤2X e(xpc ) in a similar way to Baker and Weingart-
+                    P
+
+ner [3]. To get satisfactory numerical results, we use five Buchstab iterations
+in both decompositions: see Sections 4 and 5 for details.
+
+2010 Mathematics Subject Classification: Primary 11N36; Secondary 11L20, 11P55.
+Key words and phrases: exponential sums with monomials, the alternative sieve,
+Davenport–Heilbronn method.
+
+DOI: 10.4064/aa162-2-3                 [159]         c Instytut Matematyczny PAN, 2014
+160                         R. Baker and A. Weingartner
+
+    The quality of the result in Theorem 1 depends on being able to make a
+satisfactory power saving for exponential sums (Im denoting a subinterval
+of (N, 2N ])
+             X       X
+       SI =      am       e(xmc nc ) (M N  X, X −1+8η < x < X 3η )
+            m≤M      n∈Im
+
+with arbitrary am , |am | ≤ 1, for as long a range of M as possible (we obtain
+this for M < X 1/2 ); and a similar saving for sums
+               X          X
+       SII =                     am bn e(xmc nc ) (X −1+8η < x < X 3η )
+             M <m≤2M N <n≤2N
+                X<mn≤2X
+
+with arbitrary am , bn , |am | ≤ 1, |bn | ≤ 1, for sufficiently generous ranges
+  α                                                 2 127
+X ≤ N ≤ X ; our ranges for SII are [α, β] = 9 , 470 and [α, β] = 10
+               β                                                               19
+                                                                                 
+                                                                          27 , 45 .
+The latter range would vanish if the constant 10/9 in Theorem 1 were to
+be increased. To get our results for SI , we follow Kumchev [11, Lemma 7],
+but fill in a great many details and aim for maximum generality, with a
+view to further applications to be considered elsewhere. The first SII range
+above depends on work of Huxley [10]. The second (as in [11]) depends on
+work of Sargos and Wu [15]; we take the opportunity to fill in details not
+given in [15].
+    We abbreviate ‘M < m ≤ 2M ’ to ‘m ∼ M ’ and ‘U  u  U ’ to
+‘u  U ’. We write f (j) for the jth derivative of a real function f on an
+interval or a holomorphic function f on an open set V in C, and g (i,j) for
+the partial derivatives of a function g of two real variables. For 0 < ρ1 < ρ2 ,
+0 < α < π/4, we write
+               S(ρ1 , ρ2 , α) = {reit ∈ C : ρ1 < r < ρ2 , |t| < α}.
+We reserve the symbol X for a large positive number and write L = log X.
+   Constants implied by ‘O’ or written as C, C1 , C2 , . . . depend at most
+on c, λ, θ, α, β. The numbering of the Cj begins anew in each section. The
+constant C need not be the same in different occurrences in the same section.
+Constants implied by ‘’ are permitted also to depend on η.
+
+   2. Type I exponential sums. We shall prove the following result
+about ‘Type I monomial exponential sums’ SI .
+
+   Theorem 2. Let θ, λ be constants, θ(θ − 1)(θ − 2)λ(λ − 1)(θ + λ − 2)
+× (θ + λ − 3)(θ + 2λ − 3)(2θ + λ − 4) 6= 0. Let
+                             X X
+                       SI =            am e(Bmλ nθ )
+                               m∼M n∈Im
+                     A ternary Diophantine inequality over primes                 161
+
+where B > 0, M ≥ 1, N ≥ 1, |am | ≤ 1 and Im is a subinterval of (N, 2N ].
+Let F = BM λ N θ . Then
+
+(2.1)   S  (M N )η (F 3/14 M 41/56 N 29/56 + F 1/5 M 3/4 N 11/20
+                        + F 1/8 M 13/16 N 11/16 + M 3/4 N + M N 3/4 + M N F −1 ).
+   We require a number of preliminary lemmas.
+   Lemma 1. Let L(Q) = Jj=1 Aj Qaj + K              −bk , where A , a , B , b
+                          P               P
+                                           k=1 Bk Q              j j     k k
+are positive. For any H > 0, there exists Q ∈ (0, H] such that
+                         J X
+                           K                                   K
+                                           a
+                         X                                     X
+              L(Q)                (Abjk Bk j )1/(aj +bk ) +         Bk H −bk .
+                         j=1 k=1                               k=1
+
+The implied constant depends only on J, K.
+   Proof. This is a slight variation of Graham and Kolesnik [7, Lem-
+ma 2.4].
+   Lemma 2. Suppose that f has four continuous derivatives on I = [a, b]
+and that f 00 < 0 on I. Suppose further that I ⊆ [N, 2N ] and that α = f 0 (b),
+β = f 0 (a). Assume that, for some F > 0,
+              f (2) (x)  F N −2 ,      f (j) (x)  F N −j           (j = 3, 4)
+on I. Let xν be defined by f 0 (xν ) = ν and let φ(ν) = νxν − f (xν ). Then
+        X               X e(−φ(ν) − 1/8)
+(2.2)       e(f (n)) =              00 (x )|1/2
+                                                +O(log(F N −1 +2)+F −1/2 N ).
+        n∈I            α≤ν≤β
+                                 |f      ν
+
+   Proof. This version of van der Corput’s B-process is Lemma 3.6 of [7].
+   It is helpful to note that if f (j) (x) = (Kxλ )(j) (1 + O(ρ)) (0 ≤ j ≤ 1) for
+constants K > 0, λ > 0, λ 6= 1 with sufficiently small ρ, then
+                                            1     λ
+(2.3)                   φ(ν) = C1 K − λ−1 ν λ−1 (1 + O(ρ))
+                 1         λ
+where C1 = λ− λ−1 −λ− λ−1 . This formula needs a little modification if λ < 0,
+K < 0, or both; we disregard this for simplicity of exposition.
+   Lemma 3. Let F > 0. Let A be a subset of R = [C2 H, C3 H]×[C4 N, C5 N ]
+and                        X
+                    S=          f (h, n) e(g(h, n))
+                                (h,n)∈A
+
+where f and g are real functions on R with
+(2.4)     |f (i,j) (u, v)| < C6 KH −i N −j       ((u, v) ∈ R, 0 ≤ i, j ≤ 1).
+162                           R. Baker and A. Weingartner
+
+Then for some subrectangle R0 of R,
+                                 X
+(2.5)                 SK                             e(g(h, n)) .
+                                     (h,n)∈A∩R0
+
+The implied constant depends on C2 , C3 , C4 , C5 , C6 .
+      Proof. We apply the identity [9, p. 90]
+      H2 X
+      X  N2                                            H2 X
+                                                       X  N2
+                  f (h, n) G(h, n) = f (H1 , N1 )                     G(h, n)
+      h=H1 n=N1                                       h=H1 n=N1
+                                          H2                      H2 X
+                                                                   X  N2
+                                      +         f (1,0) (x, N1 )               G(h, n) dx
+                                          H1                       h=x n=N1
+                                          N2                      H2 X
+                                                                   X  N2
+                                      +         f (0,1) (H1 , y)               G(h, n) dy
+                                          N1                       h=H1 n=y
+                                          N2 H2                    H2 X
+                                                                     X  N2
+                                      +             f (1,1) (x, y)             G(h, n) dx dy.
+                                          N1 H1                      h=x n=y
+
+Our choices of H1 , H2 are the smallest and largest integers in [C2 H, C3 H]
+and similarly for N1 , N2 . Our choice of G(h, n) is χA (h, n) e(g(h, n)), where
+χA is the indicator function of A. Each of the four summands on the right
+side satisfies a bound of the form (2.5), and the lemma follows.
+   Lemma 4 (Rouché). Let γ be a piecewise smooth simple closed curve in
+a convex domain Ω in C. Suppose that f, g are holomorphic in Ω and
+                            |f (z) − g(z)| < |f (z)|          on γ.
+Then f and g have the same number of zeros (counted with multiplicity)
+enclosed by γ.
+      Proof. See [1, p. 153].
+    Lemma 5. Let θ, σ be constants, θ(θ − 1)σ(σ − 1)((θ − 1)σ − 1) 6= 0. Let
+B 6= 0, N ≤ X, 1 ≤ q ≤ N/L, and suppose that the function
+                                                (1)
+                      f (x) = ((x + q)θ − xθ )σ
+is positive on [N, 2N ]. Let St = S(tηN, N/(tη), η/t). Then f has a holomor-
+phic extension to S2 with a holomorphic inverse Φ on f (S2 ). Moreover, for
+w ∈ f (S3 ), j ≥ 0, we have
+(2.6)                    Φ(j) (w) = (Lw1/τ )(j) (1 + O(q/N ))
+where τ = (θ−1)σ−1 and L = (C7 |B|q σ )−1/τ with the constant C7 depending
+on θ, σ. The implied constant depends only on θ, σ, η, j.
+                    A ternary Diophantine inequality over primes               163
+
+    Proof. In the region Re z > 0, we write log z for the branch of the log-
+arithm that is real on (0, ∞), and z β = exp(β log z) (β ∈ C). We suppose
+for definiteness that B > 0, θ > 0, and approximate f (defined in this way
+on S1 ) by g, itself defined by
+                 g(z) = B((θqz θ−1 )σ )(1) = Kz τ       (Re z > 0)
+with K = C7 Bq σ .
+   Applying the binomial expansion to (1 + q/z)θ , we find that
+(2.7)                      f (z) = g(z)(1 + O(q/N ))
+for Re z ≥ ηN . Now g maps S1 bijectively onto
+                       T1 := S(K(ηN )τ , K(N/η)τ , η|τ |).
+    Let w ∈ f (S2 ). We claim that there is exactly one z in S2 such that
+f (z) = w. This would certainly hold with g in place of f . Now when z is on
+the boundary of S1 ,
+                    |(f (z) − w) − (g(z) − w)| < |g(z) − w|.
+(The left side is O(L−1 |g(z)|) and the right side is  |g(z)|.) Hence f (z)−w,
+like g(z) − w, has exactly one zero in S2 . It is easy to see that f 0 6= 0 in S2 ,
+so there is a holomorphic inverse Φ of f , Φ : f (S2 ) → S2 .
+    Let z = Φ(w), w ∈ f (S2 ). From (2.7),
+                          w = C7 Bq σ z τ (1 + O(q/N )).
+An easy calculation gives in turn
+                                                           1/τ
+                     w      q                       w                  q
+            zτ −            Nτ,         z−                             N.
+                   C7 Bq σ  N                     C7 Bq σ              N
+This gives the case j = 0 of the lemma for all w in f (S2 ). If w is in the
+smaller set f (S3 ), we apply the Cauchy formula
+                                     j!  Φ(ζ) dζ
+                         Φ(j) (w) =                ,
+                                    2πi (ζ − w)j+1
+                                          C
+where the circle C has center w and radius  Bq σ N τ , with C and its interior
+contained in f (S2 ). This immediately yields (2.6).
+   Proof of Theorem 2. Suppose first that
+                                    F ≥ M N.
+We begin the proof like [2, proof of Theorem 4]. With Q ∈ [1, L−1 N ] at our
+disposal, this yields
+           SI2     M 2N 2 M N X          X       X
+(2.8)                   +                           e(f (m, n))
+           L2         Q      Q
+                                    q≤Q N <n≤2N −q m∼M
+164                         R. Baker and A. Weingartner
+
+with
+                         f (m, n) = Bmλ ((n + q)θ − nθ ).
+After conjugating the sum over m, n in (2.8) if necessary (the same device
+occurs implicitly below), we apply Lemma 2 to the summation over m. This
+gives rise to functions xν = xν (n) and φ(ν) = φ(ν, n), say. Explicitly,
+                    φ(ν, n) = C8 Aσ ((n + q)θ − nθ )σ ν λ/(λ−1) ,
+                                   −1
+where C8 = C8 (λ, θ) 6= 0 and σ = λ−1 , so that
+                           σ(σ − 1)(σ(θ − 1) − 1) 6= 0.
+As pointed out in the last paragraph of [7, p. 35], we have
+                               1
+                                          = |φ(2,0) (ν, n)|1/2 .
+                    |f (2,0) (xν (n))|1/2
+Thus
+       SI2   M 2N 2
+(2.9)      
+       L2      Q
+    MN X     X             X                   1                            λ
++                                |φ(2,0) (ν, n)| 2 e(kAσ ((n+q)θ −nθ )σ ν λ−1 ) +E1 .
+      Q
+          q≤Q N <n≤2N −q ν∈I1 (n)
+
+Here the interval I1 (n) has endpoints f (1,0) (jM ) (j = 1, 2), and E1 denotes
+the total error arising from the error terms in (2.2). Clearly
+                                           F Q −1/2
+                                                      
+                                 2
+(2.10)               E1  LM N 1 +                    M .
+                                            N
+  Let h−1                                                 θ   θ
+        1 denote the inverse function of h1 (n) := (n + q) − n on [ηN, ∞).
+Applying Lemma 3, and rewriting the summation over n, ν,
+         SI2    M 2N 2
+(2.11)       
+         L2       Q
+      MN X                               X
+             (F qN −1 M −2 )−1/2                    e kAσ ((n + q)θ − nθ )σ ν λ/(λ−1) ,
+                                                                                     
+    +
+       Q
+            q≤Q                      (n,ν)∈I2 ×J2
+                                       n∈I3 (ν)
+
+where I2 × J2 is a rectangle of the form
+               [N, 2N − q] × [C9 F q(N M )−1 , C10 F q(M N )−1 ],
+and the interval I3 (ν) has endpoints h−1       ν
+                                                       
+                                       1   λA(jM )λ−1
+                                                         (j = 1, 2).
+    We now apply Lemma 2 for a second time, to the sum over n ∈ I2 ∩ I3 (ν)
+in (2.11). Let us denote the new variable introduced by µ (instead of ν).
+Rather than xµ and φ(µ), we write z(µ, ν) and f0 (µ, ν). Thus
+                       f0 (µ, ν) = µ z(µ, ν) − φ(ν, z(µ, ν)).
+                       A ternary Diophantine inequality over primes                         165
+
+Let G = F qN −1 . Using Lemma 5 and the remark after Lemma 2, we obtain
+the approximation
+             (a,b)
+(2.12)      f0       (µ, ν) = A(µ−α ν −β )(a,b) (1 + O(q/N ))             (0 ≤ a, b ≤ 4)
+for ν  G/M , µ  G/N , where the constant A satisfies
+                              A(G/M )−α (G/N )−β  G.
+Here
+                                θ−1                            λ
+                        α=               ,        β=                  .
+                             2 − (θ + λ)                  2 − (θ + λ)
+    Writing (α)0 = 1, (α)s = (α)s−1 (α + s − 1) for s = 1, 2, . . . , we may
+verify that
+(2.13)                        (α)3 (β)3 (α + β + 1)2 6= 0.
+    With a little thought, we see that the range I4 (ν) of the variable µ
+when we apply Lemma 2 the second time is a (possibly empty) interval
+whose endpoints, written as a function of the real variable ν, are continuous
+piecewise monotonic functions of ν. We obtain, after a second application
+of Lemma 3,
+         SI2    M 2 N 2 M N X M 2 N 1/2 N 3 1/2
+                                                   
+(2.14)                +                                  |S1 | + E1 + E2 ,
+         L2       Q        Q          Fq          Fq
+                                      q≤Q
+
+where E2 is the total error arising from the error terms in (2.2) for the
+second application of Lemma 2, and
+                                 X X
+(2.15)             S1 = S1 (q) =           e(f0 (µ, ν)).
+                                          ν∈I2 µ∈I4 (ν)
+
+It is easy to see that
+                                                 1/2            −1/2 
+                                          M 2N
+                                                          
+                   LM N X                               Fq       Fq
+(2.16)        E2                                            1+        N
+                    Q                      Fq           MN       N
+                                q≤Q
+
+                      L(M N 1/2 Q1/2 + M N 2 ).
+   Let us write X = max(G/M , G/N ), Y = min(G/M , G/N ), W = XY ,
+δ = q/N . Recalling the condition (2.13) on α, β, a variant of [2, Theorem 7]
+enables us to give the upper bound
+
+(2.17)   S1  L(G1/3 W 1/2 + W 5/6 + G−1/8 W 15/16 + G1/2 W 1/2 Y −1/2
+                                          + δ 2/5 W 1/2 G1/5 Y 2/5 + δ 1/4 W 3/4 Y 1/4 ).
+The variant is fairly straightforward if the following remarks are noted.
+166                          R. Baker and A. Weingartner
+
+   (a) There are two further terms on the right side of the bound in [2]
+corresponding to (2.17). These can be omitted since
+         δ 1/4 G1/4 W 1/2 Y 1/4  (δ 2/5 W 1/2 G1/5 Y 2/5 )5/8 (G1/3 W 1/2 )3/8 ,
+            G1/2 W 1/2 Y 5/12  (G1/2 W 1/2 Y −1/2 )1/6 (W 5/6 )5/6 .
+    (b) Let us write (m, n) instead of (µ, ν) (if X = G/N ) or instead of (ν, µ)
+(if X = G/M ), in order to make comparison with [2] easier. Let
+                      f1 (m, n) = f (m + s, n + r) − f (m, n)
+for a given (s, r) ∈ Z2 \ {(0, 0)}. Following the argument in [2], we must
+estimate averages of |S(s, r)| over a rectangle R,
+                                 (s, r) ∈ R \ {(0, 0)}.
+Here                                      X
+                      S(s, r) =                          e(f1 (m, n))
+                                  (m,n)∈D∩(D−(s,r))
+
+where D is the set of pairs (m, n) given in the summation (2.15). Let us
+focus on pairs (s, r) with
+                                          r   s
+                                   ρ :=     ≥   .
+                                          Y   X
+In [8], f0 is restricted to the form Ah1 (u)h2 (v) where h1 , h2 are ‘close to’
+monomials. This does not matter, since for the estimation of S(s, r) we still
+have the easily verified approximation
+                                                                           
+           (a,b)               a+b+1     −α−a −β−b r            sn
+(2.18) f1 (m, n) = (−1)              Am        n          Ta,b     + O(ρ + δ)
+                                                      n         rm
+with
+                      Ta,b (z) = (α)a+1 (β)b z + (α)a (β)b+1 .
+    (c) In [2, Theorem 7], only the case of a summation over a rectangle R,
+rather than the more complicated domain D, is considered. This causes
+no difficulty when, at certain points of the argument, we sum over subsets
+E of R ∩ (R − (s, r)) with the property that vertical and horizontal lines
+intersect E in O(1) intervals. (This property holds good if we replace E by
+E ∩ D ∩ (D − (s, r)).)
+    (d) Polynomial approximations arising from (2.18), together with Lem-
+ma 4, are used in [2] to prove that certain functions h(v) have a bounded
+number of zeros. The most complicated example is
+                                          (1,1)                           (2,0)
+(2.19)         h(v) := −H (1,0) (k, v)f1          (k, v) + H (0,1) (k, v)f1       (k, v)
+where k is fixed, v is restricted by
+                              (k, v) ∈ R ∩ (R − (s, r)),
+                    A ternary Diophantine inequality over primes                 167
+
+                                (1,1) (2,2)     (1,2)
+and H denotes the Hessian f1 f1          − (f1 )2 . Once the polynomial ap-
+proximation is given, and v is allowed to vary over a suitable open set in C,
+it suffices to show that a pair of polynomials with coefficients depending on
+α, β (two cubics in the case (2.19)) are not proportional. For full details, see
+the argument following (3.10) in Baker and Weingartner [3]. No change is
+needed in the present discussion because (2.18) remains valid.
+
+   We have thus established (2.17). We consider first the case M ≥ N . We
+rewrite (2.17) in the form
+       S1    F 7/4 q 7/4     F 5/3 q 5/3  F 8/5 q 2  F 4/3 q 4/3
+           15/16 43/16 + 5/6 5/2 + 9/10 5/2 + 1/2 11/6
+       L   M      N         M N          M    N     M N
+                7/4
+              F q     2    Fq
+           +       11/4
+                         + 3/2 .
+             MN           N
+We use this in conjunction with (2.14), (2.10), (2.16) to obtain
+S2   M 2N 2       2   M 2 N 5/2
+           + M N   +            + F 1/2 M N 1/2 Q1/2
+L3     Q              F 1/2 Q1/2
+        + F 3/4 M 17/16 N 5/16 Q3/4 + F 2/3 M 7/6 N 1/2 Q2/3 + F 3/5 M 11/10 N 1/2 Q
+       + F 1/3 M 3/2 N 7/6 Q1/3 + F 3/4 M N 1/4 Q + M 2 N 3/2
+     = T1 + · · · + T10 ,
+say. Since F ≥ M N , M ≥ N and Q ≥ 1, we have
+                            T2 , T3 ≤ T10 ,   T4 ≤ T6 .
+Thus (arguing trivially for Q < 1) we deduce
+S2   M 2N 2
+           + F 3/4 M 17/16 N 5/16 Q3/4 + F 2/3 M 7/6 N 1/2 Q2/3
+L4     Q
+      + F 3/5 M 11/10 N 1/2 Q + F 1/3 M 3/2 N 7/6 Q1/3 + F 3/4 M N 1/4 Q +M 2 N 3/2,
+for all Q, 0 < Q ≤ L−1 N . Applying Lemma 1, we find that
+     S2
+         F 3/7 M 41/28 N 29/28 + F 2/5 M 3/2 N 11/10 + F 3/8 M 3/2 N 9/8
+     L4
+          + F 3/10 M 31/20 N 5/4 + F 1/4 M 13/8 N 11/8 + M 2 N + M 2 N 3/2
+        = U1 + · · · + U7 ,
+say. Since F ≥ M N and M ≥ N , we have
+                            U3 , U4 ≤ U2 ,    U6 ≤ U 7 ,
+and Theorem 2 follows in the case F ≥ M N , M ≥ N .
+168                          R. Baker and A. Weingartner
+
+      Now suppose that N > M . Lemma 4 gives
+       S1        F 7/4 q 7/4  F 5/3 q 5/3   F 7/4 q 2  F 4/3 q 4/3
+           15/16 43/16 + 5/6 5/2 + 3/4 3 + 1/2 11/6
+       L      M       N       M N          M N        M N
+                    F 8/5 q 2    Fq
+              + 1/2 29/10 + 1/2 .
+                 M N          M N
+Proceeding as in the case M ≤ N , we see that
+ S2   M 2N 2       2   M 2 N 5/2
+            + M N   +            + F 1/2 M N 1/2 Q1/2
+ L3     Q              F 1/2 Q1/2
+          + F 3/4 M 17/16 N 5/16 Q3/4 + F 2/3 M 7/6 N 1/2 Q2/3 + F 3/5 M 3/2 N 1/10 Q
+         + F 3/4 M 5/4 Q + F 1/3 M 3/2 N 7/6 Q1/3 + M 3/2 N 2
+       = V1 + · · · + V10 ,
+say. Since F ≥ M N , N ≥ M and Q ≥ 1, we have
+                          V2 , V3 ≤ V10 ,   V4 ≤ V 6 ,
+and, for 0 < Q ≤ N ,
+ S2    M 2N 2
+             + F 3/4 M 17/16 N 5/16 Q3/4 + F 2/3 M 7/6 N 1/2 Q2/3
+ L3       Q
+         + F 3/5 M 3/2 N 1/10 Q + F 3/4 M 5/4 Q + F 1/3 M 3/2 N 7/6 Q1/3 5 + M 3/2 N 2.
+Applying Lemma 1, we find that
+    S2
+        F 3/7 M 41/28 N 29/28 + F 2/5 M 3/2 N 11/10 + F 3/8 M 13/8 N
+    L4
+           + F 3/10 M 7/4 N 21/20 + F 1/4 M 13/8 N 11/8 + M 2 N + M 3/2 N 2
+        = R1 + · · · + R7 ,
+say. Since F ≥ M N and M ≤ N , we have
+                           R3 , R4 ≤ R2 ,     R6 ≤ R7 ,
+and
+ S
+     F 3/14 M 41/56 N 29/56 + F 1/5 M 3/4 N 11/20 + F 1/8 M 13/16 N 11/16 + M 3/4 N.
+L2
+This completes the proof of Theorem 2 in the case F ≥ M N .
+    Consider finally the case of F < M N . By Theorem 1 of [13], which has
+no restrictions on F ,
+                                          1/4                 
+                              1+η       F              1       1
+(2.20)          S  (M N )                         + 1/2 +         .
+                                      MN2            N         F
+The third summand appears in (2.1), and the second summand is acceptable.
+Finally,
+                   (M N )η F 1/4 M 3/4 N 1/2 < (M N )η M N 3/4
+and the theorem follows in the case F < M N .
+                   A ternary Diophantine inequality over primes                169
+
+   Corollary 1. Let M ≥ 1, N ≥ 1, M N  X, X −c+6η < x < X 3η ,
+|am | ≤ 1, and let Im be a subinterval of (N, 2N ]. Then for 1 < c < 10/9,
+M  X 1/2 , we have
+              X X
+                        am e(xmc nc )  min(X 1−4η , x−1 X 8/9 ).
+             m∼M n∈Im
+
+    Proof. For X 4/9+20η < M  X 1/2 , we apply Theorem 2. The term
+M N F −1 has a satisfactory bound since x > X −c+6η . All other terms have
+satisfactory bounds since x < X 3η , the restriction M  X 1/2 coming from
+F 1/8 M 13/16 N 11/16 and the restriction M > X 4/9+20η coming from M 3/4 N .
+    Now suppose that M < X 4/9+20η . We apply (2.20). We have already
+discussed the term (M N )1+η F −1 , and the term (M N )1+η N −1/2 gives no
+difficulty. For the remaining term,
+           x1/4 X c/4+η M 3/4 N 1/2 < X 1/2+c/4+2η M 1/4 < X 8/9−3η ,
+since c < 10/9, M < X 4/9+20η , and η is sufficiently small.
+
+   3. Type II exponential sums. We begin with a bound for SII (x) that
+holds over a wide range of N .
+   Lemma 6. Let
+                                  X X
+                      SII (x) =             am bn e(xmc nc )
+                                  m∼M n∼N
+                                  X<mn≤2X
+
+where 1 < c ≤ 6/5, M ≥ 1, M N  X, |am | ≤ 1, |bn | ≤ 1, X −c+8η < x < X 3η .
+Then
+             SII (x)  X 1−3η whenever X 8η  N  X 1/2 .
+   Proof. Let Q = ηN . Arguing as in [2, proof of Theorem 5],
+                                  Q
+                      X2 X X X               X
+         SII (x)2                                  e xmc ((n + q)c − nc ) .
+                                                                          
+(3.1)                   +
+                      Q   Q
+                              q=1 n∼N      m∼M
+                                         X<mn≤2X
+
+We apply the exponent pair (1/6, 2/3) (see [7]) to the sum over m in (3.1):
+        X                                                           M
+               e xmc ((n + q)c − nc )  (xqN −1 X c )1/6 M 1/2 +
+                                     
+(3.2)                                                                       .
+                                                                 xqN −1 X c
+          m∼M
+        X<mn≤2X
+
+Inserting this into (3.1) shows that the first term on the right in (3.2) pro-
+duces  X 2−8η since X c/6  X 2/5 and M  X 1/2 . The second term on
+the right in (3.2) produces  X 2−6η since xX c > X 8η .
+170                          R. Baker and A. Weingartner
+
+    We need another four lemmas, the first two due to Bombieri and Iwaniec
+(see e.g. [7, Lemmas 7.3, 7.5]) and the others respectively to Fouvry and
+Iwaniec [6, Lemma 2] and Sargos and Wu [15, Theorem 3].
+      Lemma 7. Let 1 ≤ M ≤ N < N1 ≤ M1 . Let
+                 K(t) = min{M1 − M + 1, (π|t|)−1 , (π|t|)−2 }.
+Then
+                    X             
+                                  ∞             X
+                           an ≤        K(t)                 am e(mt) dt.
+                 N <n≤N1          −∞          M <m≤M1
+
+Moreover,
+                        
+                        ∞
+                             K(t) dt  log(M1 − M + 2).
+                        −∞
+
+     Lemma 8. Let {xr }r∼R , {ys }s∼S be two sequences in [−1, 1], and let
+ϕr , ψs ∈ C. Let T > 0,
+                                 XX
+                        Bϕ,ψ =          ϕr ψs e(T xr ys ),
+                                    r∼R s∼S
+                                        XX
+                      Bϕ (1/T ) =                      |ϕr0 ϕr00 |,
+                                    |xr0 −xr00 |≤1/T
+                                        XX
+                      Bψ (1/T ) =                      |ψs0 ψs00 |.
+                                    |ys0 −ys00 |≤1/T
+
+Then
+                    |Bϕ,ψ |2 ≤ 20(1 + T ) Bϕ (1/T )Bψ (1/T ).
+      Lemma 9. Let N, Q ≥ 1 and zn ∈ C. Then
+        X       2             X                                   X
+             zn ≤ (2 + N/Q)       (1 − |q|/Q)                              zn+q z n−q .
+       N <n≤2N                     |q|<Q                  N <n−q,n+q≤2N
+
+      Lemma 10. Let 1 ≤ Q ≤ M 1−η ≤ X, ∆ > 0, δ > 0, α ∈ R, α 6= 0, 1, 2,
+                        t(m, q) = (m + q)α − (m − q)α .
+Let E(M, Q, ∆, δ) denote the number of quadruples (m, m̃, q, q̃) with m, m̃
+∼ M and Q ≤ q, q̃ ≤ (1 + δ)Q satisfying
+                        |t(m, q) − t(m̃, q̃)| ≤ ∆M α−1 Q.
+Then there is a δ ∈ [1/Q, 1] such that
+            X
+      δ −1       E(M, Qk , ∆, δ)  L4 (M Q + ∆(M Q)2 + (M Q9 )1/4 )
+            0≤k≤K
+
+where Qk = (1 + δ)k Q, K = [(log 2)/δ].
+                    A ternary Diophantine inequality over primes                         171
+
+   We are now ready to prove the following result, which is essentially [15,
+Theorem 9].
+
+   Theorem 3. Let
+                               X X
+                         S=              am bn e(Bmβ nα )
+                              m∼M n∼N
+                              X<mn≤2X
+
+where M ≥ 1, N ≥ 1, α(α − 1)(α − 2)β(β − 1)(β − 2) 6= 0, |am | ≤ 1, |bn | ≤ 1.
+Suppose that
+                            F := BM β N α  M N.
+Then
+SX −η  F 1/20 N 19/20 M 29/40 + F 3/46 N 43/46 M 16/23 + F 1/10 N 9/10 M 3/5
+          + F 3/28 N 23/28 M 41/56 + F 1/11 N 53/66 M 17/22 + F 2/21 N 31/42 M 17/21
+          + F 1/5 N 7/10 M 3/5 + N 1/2 M + F 1/8 N 3/4 M 3/4 .
+
+   Proof. Obviously we may suppose that F ≤ (M N )2 .
+   Let 1 ≤ Q ≤ N 1−η . It follows from Lemma 9 together with Cauchy’s
+inequality that
+                 M 2N 2 M N X X                 X
+          S2          +                                   e(Bmβ t(n, q)) .
+                   Q     Q
+                                  q≤Q n∼N      m∼M
+                                             X<mn≤2X
+
+We apply Lemma 2 to the sum over m. After a simple splitting-up argument
+and a partial summation, we obtain
+
+S2   M 2N 2
+   
+L      Q
+    MN X X                                                                1
+                                                       e C1 (B t(n, q)) 1−β nβ1 1
+                                            X
+            (F qN −1 M −2 )−1/2
+                                                                                    
+  +                                                                                     + E1
+     Q
+           q∼Q1 n∼N                       n1 ∈I(n,q)
+
+                β
+where β1 = β−1    and I(n, q) is a subinterval of [N1 , 2N1 ], with N1 
+F Q1 /(M N ), and
+                      E1 = N 2 M ((F QN −1 M −2 )−1/2 + 1).
+
+   Using Lemma 7, we replace the condition n1 ∈ I(n, q) by n1 ∼ N1 at the
+cost of a factor L. Then we apply Lemma 9 again. Write
+                      t1 (n1 , r) = (n1 + r)β1 − (n1 − r)β1 .
+We find that for any R, 1 ≤ R ≤ N11−η , there is an R1 , 1 ≤ R1 ≤ R, such
+172                              R. Baker and A. Weingartner
+
+that
+          S4   M 4N 4 N 5M 4
+(3.3)                +      + N 4M 2
+          L4    Q2        FQ
+                  M 4 N 4 X X N12 N1 X
+                                               
+                                             |r|
+               +                     +    1−
+                  F Q2            R    R     R
+                                  n∼N q∼Q1                       r∼R1
+                                                                                                          
+                                                      X                                 1               
+                                                 ×              e C1 (B t(n, q))       1−β   t1 (n1 , r) .
+                                                     n1 ∈I(r)
+
+Here I(r) is a subinterval of (N1 , 2N1 ] depending on r. Let U denote the
+quadruple exponential sum over n, q, n1 , r on the right side of (3.3). We split
+up the range of q, r into (K1 + 1)(K2 + 1) parts as in Lemma 10, so that
+δ1 = δ(M, Q1 ), K1 = [(log 2)/δ1 ], δ2 = δ(N1 , R1 ), K2 = [(log 2)/δ2 ] and
+              K1 X
+              X  K2                                                  K1 X
+                                                                     X  K2
+                                             2                  −1
+        U=                 U (k1 , k2 ),   U  (δ1 δ2 )                            |U (k1 , k2 )|2 .
+             k1 =0 k2 =0                                             k1 =0 k2 =0
+
+Applying Lemma 8 to each subsum U (k1 , k2 ) we deduce
+                   K1 XK2                                     
+    2         −1
+                  X                      1                 1
+  U  (δ1 δ2 ) F1          E M, Q(k1 ), , δ1 E N1 , R(k2 ), , δ2
+                                         F1                F1
+                           k1 =0 k2 =0
+
+where F1  F Q1 R1 N −1 N1−1  M R1 , Q(k1 ) = (1 + δ1 )k1 Q1 and R(k2 ) =
+(1 + δ2 )k2 R1 . The bounds arising from Lemma 10 show that
+                U2                   (N Q1 )2
+                                                        
+                                                 1/4 9/4
+                    M R1 N Q1 +              + N Q1
+                L8                    M R1
+                                                      1/4 9/4 
+                          F Q1 R1 F 2 Q21 R1 F 1/4 Q1 R1
+                        
+                      ×           +            +                .
+                           MN         M 3N 2      M 1/4 N 1/4
+We insert this bound into (3.3) and multiply out. Noting that all powers of
+Q1 and R1 obtained are positive, we may replace Q1 , R1 by Q, R in all but
+three terms:
+ S8      N 8M 8     8   4   N 10 M 8 N 6 M 4 Q61 F 2
+               + N   M   +         +
+ L16      Q4                 F 2 Q2      Q4 R2
+           + N 27/4 M 27/4 Q−3/4 R5/4 F 1/4 + N 31/4 M 23/4 Q1/4 R1/4 F 1/4
+                                                      N 7 M 5 F Q51
+           + N 21/4 M 6 Q5/4 F + N 17/4 M 4 Q9/4 F 2 +
+                                                          Q4 R
+                                                     N 6 M 3 F 2 Q61
+          + N 6 M 27/4 Q1/2 R5/4 F 1/4 + N 6 M 6 F +                 + N 5 M 4 QF 2
+                                                         Q4 R
+        = T1 + · · · + T13 ,
+                         A ternary Diophantine inequality over primes                                    173
+
+say. From the condition R ≤ Q 1F               Q1 F
+                            M N we have N ≤ M R . Thus
+                                2
+                         6 Q1 F
+                8  4
+         T2 = N M ≤ N               M 4 ≤ N 6 M 3 Q21 R−1 F 2 = T12
+                                                                 0
+                                                                    ,
+                            MR
+say;
+                                                          4
+                                                                                   N 6 M 4 Q41 F 2
+                                               
+                        −2       −2                Q1 F
+  T3 = N M Q 10     8
+                             F        ≤N   6
+                                                               M 8 Q−2 F −2 ≤                      = T40 ,
+                                                   MR                                  Q2 R 2
+say. Finally,
+                  N 7 M 5 F Q51
+                                           5 5
+                                                    N 6 M 4 Q61 F 2
+                                     
+                                    6 Q1 F M Q1 F
+         T9 =                   ≤ N               =                 ≤ T40 .
+                      Q4 R             MR   Q4 R        Q4 R2
+Hence
+       S8
+            N 6 M 6 F + N 8 M 8 Q−4 + N 21/4 M 6 Q5/4 F + N 17/4 M 4 Q9/4 F 2
+       L16
+                               N 6 M 4 Q41 F 2
+             + N 5 M 4 QF 2 +                  + N 6 M 3 Q21 R−1 F 2
+                                   Q2 R 2
+                  + N 31/4 M 23/4 Q1/4 R1/4 F 1/4 + N 27/4 M 27/4 Q−3/4 R5/4 F 1/4
+
+                  + N 6 M 27/4 Q1/2 R5/4 F 1/4 .
+If we recall the first appearance of R in (3.3), this estimate holds trivially
+                                                                  1 F 1−η
+for 0 < R < 1. Optimizing via Lemma 1 over 0 < R ≤ Q
+                                                                     
+                                                                MN        , we
+obtain
+            S8
+(3.4)               N 6 M 6 F + N 8 M 8 Q−4 + N 21/4 M 6 Q5/4 F
+          (M N )4η
+                             + N 17/4 M 4 Q9/4 F 2 + N 5 M 4 QF 2 + N 68/9 M 50/9 Q4/9 F 4/9
+                             + N 37/5 M 26/5 Q3/5 F 3/5 + N 84/13 M 74/13 Q4/13 F 12/13
+                             + N 19/3 M 14/3 Q7/9 F 11/9 + N 6 M 14/3 Q4/3 F 11/9
+                             + N 6 M 74/13 Q14/13 F 12/13 + N 8 M 6 + N 7 M 4 QF
+                        = V1 + · · · + V13 ,
+say. We can discard V9 and V10 , because
+                                                                         4/9       5/9
+                        V9 = N 19/3 M 14/3 Q7/9 F 11/9 = V5                       V7     ,
+                                                                       4/9    5/9
+                        V10 = N 6 M 14/3 Q4/3 F 11/9 = V4                    V7     .
+174                         R. Baker and A. Weingartner
+
+   Since (3.4) is trivial for Q < 1, we can optimize the remaining expression
+on the right side of (3.4) over 0 < Q < N 1−η to obtain
+              S8
+(3.5)                 N 38/5 M 29/5 F 2/5 + N 172/23 M 128/23 F 12/23
+            (M N )8η
+                          + N 36/5 M 24/5 F 4/5 + N 46/7 M 41/7 F 6/7
+                          + N 212/33 M 68/11 F 8/11 + N 124/21 M 136/21 F 16/21
+                          + N 28/5 M 24/5 F 8/5 + N 28/5 M 136/25 F 32/25
+                          + N 4M 8 + N 8M 6 + N 6M 6F
+                      = U1 + · · · + U11 ,
+say. Since F ≥ M N ,
+                                             2/5
+                  8   6      8   6        F
+         U10 = N M ≤ N M                             ≤ N 38/5 M 29/5 F 2/5 = U1 .
+                                         MN
+Also
+                                                       21/75    50/75    4/75
+               U8 = N 28/5 M 136/25 F 32/25 = U6               U7       U9      .
+Removing these two terms from (3.5), we obtain the theorem.
+   Corollary 2. Let SII (x) be as in Lemma 6. Suppose now that 1 < c
+< 10/9,
+                          X 1−c < x < X η .
+Then
+(3.6)                         SII (x)  x−1 X 1−c−4η
+whenever
+(3.7)                        X 10/27  N  X 19/45 .
+      Proof. We apply Theorem 3 with
+                                 F  xX c  M N.
+The term F 3/28 N 23/28 M 41/56 gives rise to the condition N  X 19/45 ; the
+term F 2/21 N 31/42 M 17/21 gives rise to the condition N  X 10/27 ; and the
+term F 1/8 N 3/4 M 3/4 gives rise to the condition c < 10/9. The other terms
+are easily dealt with, and the corollary follows.
+    By using two results of Huxley [9], we can alter the endgame in the proof
+of Theorem 3 to obtain (3.6) for a different range of N .
+   Lemma 11. Let G(w) be four times continuously differentiable on [1, 2].
+Suppose that
+(3.8)                                G(r) (w)  1
+                       A ternary Diophantine inequality over primes                     175
+
+for r = 2, 3, 4 and
+(3.9)                     |G(2) (w) G(4) (w) − 3 G(3) (w)|  1.
+Let
+                                        M1
+                                        X
+                                  S=          e(T G(m/M )),
+                                        m=M
+where 1 ≤ M ≤ M1 ≤ 2M and
+(3.10)                         T 141/328+η ≤ M ≤ T 187/328−η .
+Then
+                                   S  M 1/2 T 32/205+η .
+      Proof. This is a consequence of [9, Theorem 1].
+      Note that (3.8), (3.9) are satisfied if
+                  (G(w))(j+2) = (wβ )(j) (1 + O(η))            (1 ≤ j ≤ 2),
+for a real β with β(β + 1/2) 6= 0.
+   Lemma 12. Let G(w, y) be a function on R = [1, 2]×[0, 1] having partial
+derivatives G(i,j) (i, j ≤ 5). Suppose that on R,
+(3.11)                                 G(r,0) (w, y)  1
+for r = 2, 3, 4 and
+(3.12)       |G(r+1,0) (w, y) G(r+1,1) (w, y) − G(r,1) (w, y) G(r+2,0) (w, y)|  1
+for r = 2, 3. Let y1 , . . . , yJ satisfy
+(3.13)               0 ≤ y1 < · · · < yJ ≤ 1,         yj+1 − yj  J −1 .
+Let
+                                        M2 (y)
+                                         X
+                              S(y) =              e(T G(m/M , y)),
+                                       m=M1 (y)
+
+where 1 ≤ M ≤ M1 (y) ≤ M2 (y) ≤ 2M and
+(3.14)                             T 1/3+η ≤ M ≤ T 1/2 .
+Then
+            J
+            X
+(3.15)            |S(yj )|5
+            j=1
+
+             M η (J 43/69 M 449/138 T 63/138 + JM 59/34 T 37/54 + JM 5/2 T 141/190 ).
+      Proof. This is a consequence of [9, Theorem 2].
+      Let G(w, y) = g1 (w)g2 (y) where
+  (g1 (w))(j+2) = (wβ )(j) (1 + O(η)),             (g2 (y))(j) = ((y + 1)γ )(j) (1 + O(η))
+176                        R. Baker and A. Weingartner
+
+for j ≤ 5. It may be verified that (3.11), (3.12) hold provided that we have
+γβ(β − 1)(β − 2) 6= 0.
+    Lemma 13. The conclusion of Corollary 2 remains valid if (3.7) is re-
+placed by
+                       X 2/9  N  X 127/470 .
+    Proof. We begin with (3.3), where now α = β = c, B = x, F  xX c .
+We choose Q = X 2c−2+9η and R = Q31 X c−2 N x5 . It is easy to check that
+Q ≤ N 1−η since N  X 2/9 . With N1  F Q1 /(M N ), we may verify that
+R ≤ N11−η . Because of the choice of Q and R, the terms M 4 N 4 /Q2 and
+M 4 N 5 N12 Q1 /(F Q2 R) on the right side of (3.3) are acceptable. The terms
+N 5 M 4 /(F Q) and N 4 M 2 are also acceptable:
+       N 5M 4      N 5M 4   N 4M 4
+                                   since QN  N 2  X c−3η ,
+         FQ        xX c Q   Q2 x 2
+                            N 4M 4
+                   N 4M 2  2 2      since Q  N  M X −1/3 .
+                            Q x
+We now choose q ∼ Q1 and r ∼ R1 so that the remaining term in (3.3) is
+bounded by
+           M 4 N 4 N1 qr X X                          1           
+                                  e C 1 (B t(n, q)) 1−β t (n , r)
+                                                          1  1
+              F Q2 R
+                           n∼N   n1 ∈I(r)
+
+             M 4 N 4 N1 qr X
+           =                   |Vn |,
+               F Q2 R
+                           n∼N
+say. Thus we need to show that
+                           X                  FR
+(3.16)                         |Vn |               .
+                                            qrN1 x4
+                              n∼N
+                                                                 P
+We shall show that one of Lemmas 11, 12 is applicable to             n∼N |Vn | (with
+n1 , N1 in the roles of m, M ). Let us write
+                                    Fq r       Xr
+                            T = C2      ·        .
+                                    N N1       N
+     We show to begin with that
+                              N1  T 187/328 X −η ,
+that is,
+                   X 328c−328 (qx)328  X 187−Cη r187 N −187 .
+It suffices to show that
+                 N 187 < X 187−984(c−1)−Cη = X 1171−984c−Cη .
+For this, N < X 3/10 suffices.
+                      A ternary Diophantine inequality over primes                   177
+
+     We show next that
+                                   N1  T 1/3 X η ,
+that is,
+(3.17)                        (X c−1 qx)3  X 1+η r/N.
+The right side of (3.17) cannot exceed q 3 X c−1+2η x5 , and (3.17) follows at
+once.
+   We now divide the argument into two cases.
+   Case 1: N1 > T 141/328 X η . We shall obtain (3.16) by showing for each
+n ∼ N that
+                                      FR
+                            Vn              .
+                                   qrN1 x4 N
+It is clear that Lemma 11 is applicable, since the exponent in the approxi-
+mating monomial for f (n1 ) := C1 (B t(n, q))1/(1−β) t1 (n1 , r) is
+                                c       1
+                                   −1=     > 9,
+                               c−1     c−1
+and
+                                    f (j)  T N1−j .
+Thus it remains to verify that
+                             32/205
+                                                      xX c−1 q
+                       
+             c−1    1/2 Xr                  FR
+           (X qx)                    Xη                      .
+                          N               qrN1 x4 N     r
+We require
+                 r237/205  q 1/2 x1/2 X (c−1)/2−32/205−η N 32/205 .
+     We recall that
+             X 328(c−1) (qx)328  N1328 > T 141 X η > X 141 r141 N −141
+or
+                           r141  X 328c−469 N 141 (qx)328 .
+Hence it suffices to show that
+ (X 328c−469 N 141 q 328 x328 )237/(205·141)  q 1/2 x1/2 X (c−1)/2−32/205−η N 32/205 .
+In verifying this, the worst case is qx = X 2c−2+12η . After a short calculation,
+the condition on N reduces to
+                           N 57810  X 437511−379701c−Cη ,
+which is a consequence of c < 10/9 and N  X 127/470 .
+178                             R. Baker and A. Weingartner
+
+      Case 2: N1 ≤ T 141/328 X η . We apply Lemma 12 with
+                             c                                   −1
+                                                 q c
+                                              
+          N N1           r c−1      c
+                                                               c
+                                                                  c−1
+G(w, y) =             w+        −w c−1     y+1+      − (y + 1)
+           qr            N1                      N
+                                               (1 ≤ w ≤ 2, 0 ≤ y ≤ 1),
+taking (N, N1 ) in the role of (J, M ) and yn−N = (n − N )/N (N < n ≤ 2N ).
+If C2 is suitably chosen, then
+                                                           −1
+                   T G(n1 /N1 , yn−N ) = C1 (B t(n, q)) c−1 t1 (n1 , r).
+Lemma 12 gives the estimate
+                          449/138 63/138      59/34 37/34      5/2
+X
+   |Vn |5  X η (N 43/69 N1      T       + N N1    T      + N N1 T 141/190 ).
+n∼N
+
+By Hölder’s inequality
+            X                     X             1/5
+(3.18)            |Vn | ≤ N 4/5         |Vn |5
+           n∼N                     n∼N
+             η     319/345    449/690 63/690      59/170 37/170      1/2
+          X (N              N1      T       + N N1     T       + N N1 T 141/950 ).
+There is in fact something to spare in bounding the right side of (3.18) by the
+expression on the right of (3.16). The worst case is x = X 3η , q  X 2c−2+9η ,
+r  X 7c−8+Cη N , so that N1  X 3c−3+Cη , T  X 7c−7+Cη . We require
+                 N 319/345 (X 3c−3 )449/690 (X 7c−7 )63/690  X 5−4c−Cη ,
+                         N (X 3c−3 )59/170 (X 7c−7 )37/170  X 5−4c−Cη ,
+                             N (X 3c−3 )1/2 (X 7c−7 )141/950  X 5−4c−Cη .
+
+Each of these bounds follows from N  X 127/470 , c < 10/9. This concludes
+the proof in Case 2, and the proof of Lemma 13 is complete.
+
+   4. The alternative sieve. We require a variant of Theorem 3.1 of
+Harman [8]. The details are intricate and deserve a full discussion.
+
+   Lemma 14. Let w(n) be a complex function with support   in (X, 2X] ∩ Z,
+|w(n)| ≤ X 1/η (n ∼ X). For r ∈ N, z ≥ 2, let P (z) = p<z p and
+                                                     Q
+
+                                    X
+                        S(r, z) =          w(rn).
+                                           (n,P (z))=1
+
+Suppose that, for some α > 0, β ≤ 1/2, M ≥ 1, Y > 0, we have (for
+any coefficients am , |am | ≤ 1, and bn , |bn | ≤ τ (n), the number of positive
+                          A ternary Diophantine inequality over primes                                      179
+
+divisors of n)
+                                                 X             X
+(4.1)                                                     am        w(mn)  Y,
+                                               m≤M              n
+                                        X                  X
+(4.2)                                                 am        bn w(mn)  Y.
+                               X α ≤m≤X α+β                 n
+
+Let ur (r ≤ R), vs (s ≤ S) be complex numbers with |ur | ≤ 1, |vs | ≤ 1,
+ur = 0 for (r, P (X η )) > 1, vs = 0 for (s, P (X η )) > 1,
+(4.3)                                   R < X α,            S < M X −α .
+Then                            XX
+                                                ur vs S(rs, X β )  Y L3 .
+                                r≤R s≤S
+
+   Proof. We write z = X β and define
+                                  X
+                          ψ(m) =      w(mn).
+                                                            n
+We have
+                                X X                      
+                S(rs, z) =                            µ(d) w(rsn)
+                                    n       d|P (z)
+                                              d|n
+                                    X                               X                   X
+                           =                 µ(d)ψ(rsd) =                    (r, s) +          (r, s),
+                                                                         1                 2
+                                d|P (z)
+
+where
+     X                    X                                     X                   X
+              (r, s) =              µ(d) ψ(rsd),                        (r, s) =             µ(d) ψ(rsd).
+          1                                                         2
+                         d|P (z)                                                   d|P (z)
+                         rsd≤M                                                     rsd>M
+
+Now
+              X          X          X                     XX                   X
+                    ur         vs           (r, s) =                ur vs               µ(d) ψ(rsd)
+                                        1
+              r≤R        s≤S                              r≤R s≤S             d|P (z)
+                                                                              rsd≤M
+                                                          X          X
+                                                      =         am           w(mn),
+                                                          m≤M           n
+
+where                                           X           X
+                                    am =                            ur vs µ(d).
+                                              d|P (z) r≤R,s≤S
+                                                       rsd=m
+
+Because m has at most η −1 prime factors ≥ X η , we get |am | ≤ (21/η )2 . Thus
+                       XX            X
+                               ur vs    (r, s)  Y,
+                                                                1
+                                    r≤R s≤S
+180                             R. Baker and A. Weingartner
+
+and it remains to show that
+                      XX          X
+(4.4)                       ur vs   (r, s)  Y L3 .
+                                                       2
+                             r≤R s≤S
+
+    We make repeated use of the identity
+                X                       X X
+(4.5)               µ(d)g(d) = g(1) −       µ(d)g(dp)
+                   d|P (z)                                 p<z d|P (p)
+
+(see [8, (3.1.2)]). Fix r ≤ R, s ≤ S and take
+                                
+                                  ψ(drs) if drs > M ,
+                         g(d) =
+                                  0       otherwise.
+Then g(1) = 0 from (4.3). Hence
+  X               X X                       X          X       
+       (r, s) = −            µ(d)ψ(pdrs) = −   (r, s) +   (r, s) ,
+       2                                                                   3           4
+                       p<z d|P (p)
+                     pdrs>M
+
+where pr < X α in 3 (r, s) and pr ≥ X α in 4 (r, s).
+                   P                          P
+                                            P
+   We repeat this splitting procedure for 3 (r, s). Let us give the general
+form of the recursive step. For t ≥ 1, let πt = p1 · · · pt and
+                X                 X         X
+                    (r, s, t) =                 µ(d)ψ(drsπt )
+                      3
+                                           pt <···<p1 <z d|P (pt )
+                                            πt drs>M
+                                              πt r<X α
+           P               P
+so that    3 (r, s, 1) =       3 (r, s). We apply (4.5) for given r, s, p1 , . . . , pt , with
+                                       
+                                           ψ(drsπt ) if drsπt > M ,
+                           g(d) =
+                                           0         otherwise.
+For r ≤ R, s ≤ S, πt r < X α , we have
+                               (rπt )s < X α (M X −α ) = M.
+Hence g(1) = 0,
+       X                               X            X          X
+           (r, s, t) = −                                                 µ(d)ψ(drsπt pt+1 )
+               3
+                               pt <···<p1 <z pt+1 <pt d|P (pt+1 )
+                                πt drs>M       drsπt pt+1 >M
+                                  π r<X α
+                                   t
+                         X                 X              
+                       =−   (r, s, t + 1) +   (r, s, t + 1) ,
+                                       3                             4
+
+               r < X α in
+                             P
+where   πt+1                    3 (r, s, t + 1) (in accordance      with our notation for
+                                  α, π            α in
+P                                                      P
+  3 (r, s, . . .)) and π t r < X       t+1 r ≥ X         4 (r, s, t + 1).
+                       A ternary Diophantine inequality over primes                             181
+
+    We shall show that
+                    XX       X
+(4.6)                  ur vs   (r, s)  Y L2 ,
+                                                  4
+                          r≤R s≤S
+                   XX                X
+(4.7)                        ur vs           (r, s, t + 1)  Y L2         (t ≥ 1).
+                                         4
+                   r≤R s≤S
+        P
+Since 3 (r, s, t) is clearly empty for t > C1 L/log L, (4.4) follows from (4.6)
+and (4.7).
+   The key to proving (4.7) is that
+                    rπt pt+1 ≥ X α ,           rπt pt+1 < X α pt+1 < X α+β
+in the sum. But we need a little more work before we use (4.2), because the
+groups of variables rπt pt+1 , ds are ‘linked’ by the condition d | P (pt+1 ).
+    Let σ(u) be the indicator function of (M, ∞). By (4.5),
+         XX           X
+(4.8)           ur vs     (r, s, t + 1)
+                               4
+            r≤R s≤S
+                   XX                          X             
+               =             ur vs                            σ(rsπt+1 )ψ(rsπt+1 )
+                   r≤R s≤S              pt+1 <···<p1 <z
+                                     πt r<X α , πt+1 r≥X α
+                                                X            X                             
+                                         −                             µ(d)ψ(drsπt+1 pt+2 ) .
+                                              d|P (pt+2 ) pt+2 <pt+1
+                                                drsπt+1 pt+2 >M
+We rewrite the subtracted part as
+   X X                 X                              X                  X
+ −          ur vs                                                µ(d)         w(rsdπt+1 pt+2 k).
+    r≤R s≤S           pt+2 <pt+1 <···<p1 <z    d|P (pt+2 )                k
+                      πt r<X α , πt+1 r≥X α drsπt+1 pt+2 >M
+
+Grouping the variables as m = p1 · · · pt+1 r, n = pt+2 sdk, there are just two
+joint conditions of summation pt+2 < pt+1 , drsπt+1 pt+2 > M . These can be
+removed at a cost of a factor L2 ; see [8, Section 3.2] for the discussion of
+this standard ‘cosmetic surgery’, which we shall use again later in Section 4.
+Moreover, for given m, the coefficient of m is  1 because p1 , . . . , pt are
+determined by r. The coefficient of n is  τ (n) because in the equation
+                                             n = pt+2 sdk,
+once k is specified, there are O(1) possibilities for s, and pt+2 is the largest
+prime factor of the remaining factor pt+2 d. We conclude that the subtracted
+portion in (4.8) is
+                                    Y L2 .
+The residual part of the right side of (4.8) can be bounded similarly. The
+treatment of the sum in (4.6) is similar but simpler. This establishes (4.6),
+(4.7), and the proof of Lemma 14 is complete.
+182                               R. Baker and A. Weingartner
+
+    In the remainder of the paper, let 1 < c < 10/9. Let R be a large
+positive number, X = (R/4)1/c . As in [3], we employ a continuous function
+ϕ : R → [0, 1] such that
+(4.9)          ϕ(y) = 0        (|y| ≥ R−η ),          ϕ(y) = 1      (|y| ≤ 4R−η /5)
+                                             ∞
+with Fourier transform Φ(x) = −∞ e(−xy)ϕ(y) dy satisfying
+                           
+(4.10)                        |Φ(x)| dx  X −3 .
+                                  |x|>X 3η
+
+We write briefly dµ = e(−Rx)Φ(x)dx and define
+                                         τ = X 8η−c .
+We also write
+                  X                               
+                                                 2X                             
+                                                                               2X
+                                                                                    e(tc x)
+                           c                             c
+        T (x) =         e(p x),     I0 (x) =          e(t x) dt,     I(x) =                 dt.
+                                                                                     log t
+                  p∼X                            X                             X
+
+   We let U (x) denote an arbitrary sum of the form U (x) = n∼X un e(nc x)
+                                                           P
+with real un  1 (n ∼ X), and U + (x) denote a sum with the further
+property un ≥ 0 (n ∼ X). It is convenient to write
+                          2              127                 10           19
+                        a= ,        b=       ,         d=       ,    f=
+                          9              470                 27           45
+and
+                           7          1        7
+               g =f −d=       ,   h= −d= ,           l = 0.291954.
+                          135         2       54
+      In writing our exponential sums containing variables p1 , . . . , pj , we set
+       αj = (α1 , . . . , αj ) = ((log p1 )/L, . . . , (log pj )/L), si = α1 + · · · + αi
+                                                                                (1 ≤ i ≤ j),
+                                               c
+                                        
+                                           e(m x) (m ∼ X),
+                              F (m) =
+                                           0             otherwise.
+Let Pj be the region of Rj given by
+
+      Pj = {(y1 , . . . , yj ) : g ≤ yj < yj−1 < · · · < y1 ,
+                                             y1 + · · · + yj−1 + 2yj ≤ 1 + (log 3)/L}.
+Let G = [a, b] ∪ [d, f ] ∪ [1 − f, 1 − d] and
+       n                              X                                         o
+  Gj = yj = (y1 , . . . , yj ) ∈ Pj :     yi ∈ G for some set σ ⊆ {1, . . . , j} ,
+                                             i∈σ
+  Bj = Pj \ G j .
+                         A ternary Diophantine inequality over primes                                183
+
+                                                       ∗ = (y , . . . , y ). For E ⊆ P , let
+       For yj+1 = (y1 , . . . , yj+1 ) ∈ Pj+1 , write yj+1   1           j            j
+
+                                E 0 = {yj+1 ∈ Pj+1 : yj+1
+                                                      ∗
+                                                          ∈ E}.
+   Let {1, . . . , j} have a partition into two (disjoint) sets σ1 , σ2 . We say that
+a point yj ∈ Pj splits using σ1 , σ2 if
+                             X               X
+                                 yj < d,         yj ≤ h.
+                                     j∈σ1                  j∈σ2
+
+       Lemma 15. Let K(x) be either of the following:
+       (i) for Qj a polytope (i.e. a finite intersection of half-spaces) with
+           Qj ⊆ Gj ,
+                                          X
+                             K(x) =               F (πj n);
+                                                       (α1 ,...,αj )∈Qj
+                                                        (n,P (pj ))=1
+
+       (ii) for some partition σ1 , σ2 of {1, . . . , j},
+                                                X
+                                K(x) =                    F (πj n)
+                                                       (α1 ,...,αj )∈Lj
+                                                       (n,P (X g ))=1
+
+           where Lj is a polytope, Lj ⊆ Pj and every point of Lj splits using
+           σ1 , σ2 .
+Then for any U (x),
+                                
+                                ∞
+(4.11)                              T (x)U (x)K(x) dµ  X 3−c−2η .
+                                τ
+
+       Proof. Recalling (4.10), it suffices to show that
+                          y0
+                                T (x)U (x)K(x) dµ  X 3−c−2η L−1
+                          y
+
+whenever τ ≤ y < X 3η , y < y 0 ≤ 2y. Now
+y0                  y0 n X
+            2
+                                                    X                                           o
+      |U (x)| dx =                  u2n + 2                       un un+j e (nc − (n + j)c )x        dx
+y                    y    n∼X                   X<n<n+j≤2X
+                                X X                   1
+                   Xy +
+                                                (n + j)c − nc
+                                n∼X j≤X
+                                X           1    X
+                   Xy +                               j −1  Xy + X 2−c L.
+                                       nc−1
+                                n∼X              j≤X
+184                                 R. Baker and A. Weingartner
+
+                                                y0                    1 y
+                                                                          0
+                                                                               2      2
+The same bound applies to                       y |T U | dx      ≤    2 y (|T | + |U | ) dx.     Since
+kΦk∞ ≤ R−η from (4.9),
+                     y0                          y0
+                                          −cη
+(4.12)                     T U K dµ  X                 |T U K| dx
+                     y                            y
+
+                                     sup |K(x)|(X 1−cη y + X 2−c−cη L),
+                                       [y,2y]
+and it suffices to show that
+(4.13)                         K(x)  min(X 1−η , X 2−c−η x−1 ).
+      In case (i), we rewrite the sum as
+                        X         X
+                                                          F (πj pj+1 · · · pk ).
+                               k<20 (α1 ,...,αj )∈Qj
+                                   pj ≤pj+1 ≤···≤pk
+
+    We use cosmetic surgery to remove the conditions ps < pt , ps ≤ pt , and
+further conditions arising from (α1 , . . . , αj ) ∈ Qj , at the cost of a log power.
+Now we group the variables into products m1 , m2 with (log m1 )/L ∈ G. The
+desired bound (4.13) follows from Lemma 6, Corollary 2 and Lemma 13.
+    In case (ii), we apply Lemma 14 with
+                         y0
+                                               c
+                 w(n) =     y T (x)U (x)e(n x) dµ if n ∼ X,
+                           0                             otherwise.
+Take Y = X    3−c−2η          1/2
+                     , M = X , α = d, β = g. Then
+                      X                     y0                      X
+(4.14)                       am w(mn) =           T (x)U (x)                 am e((mn)c x) dµ,
+                    m≤M                     y                    m≤X 1/2
+                                                                 mn∼X
+and
+(4.15)
+            X                               y0                        X
+                           am bn w(mn) =          T (x)U (x)                       am bn e((mn)c x) dµ.
+       X α ≤m≤X α+β                          y                   X α ≤m≤X α+β
+                                                                     mn∼X
+The right-hand side in (4.14), (4.15) is seen to be  Y , by arguing as in
+(4.12), (4.13), using Corollary 1, Lemma 6 and Corollary 2. We conclude
+that
+     X X
+               ur vs S(rs, X g )
+      r<X d s≤X h
+               y0                 X X                         X
+            =        T (x)U (x)                    ur vs                    e((rsn)c x) dµ  Y L3 .
+                y                  r<X d s≤X h                rsn∼X
+                                                           (n,P (X g ))=1
+                      A ternary Diophantine inequality over primes                               185
+
+                 y0
+We can bring y T U K dµ into the form of the latter integral by writing
+     Q            Q
+r = i∈σ1 pi , s = i∈σ2 pi , and summing over (α1 , . . . , αj ) ∈ Lj . We have
+to vary the proof of Lemma 14 to accomodate a bounded number of joint
+conditions of summation coming from αj ∈ Lj , but the loss of a power of L
+via cosmetic surgery is harmless. This completes the proof of Lemma 15.
+   Our proof of Theorem 1 requires two decompositions:
+(4.16)       T (x) = K (1) (x) − D(1) (x) = K (2) (x) − D(2) (x) + D(3) (x)
+where K (j) is of the form U (x), D(j) is of the form U + (x), and (for any U )
+                          
+                          ∞
+(4.17)                      T U K (j) dµ  X 3−c−2η .
+                                τ
+(K is for ‘keep’, D for ‘discard’ !) We obtain the decompositions by using
+Buchstab’s identity. We have
+                            X
+(4.18)        T (x) =                 F (n)
+                                  n∼X
+                           (n,P ((3X)1/2 ))=1
+                               X                            X
+                       =                    F (n) −                      F (p1 n).
+                               n∼X                    X g ≤p1 <(3X)1/2
+                           (n,P (X g ))=1               (n,P (p1 ))=1
+
+When we iterate the procedure, our general step has the following shape. Let
+Ej be a polytope, Ej ⊆ Pj , and let Hj+1 , Ej+1 be a partition into polytopes
+of Bj+1 ∩ Ej0 (j = 1, . . . , 5), with E5 empty. We shall choose Ej so that every
+point of Ej splits using suitable sets of indices. Let
+                         X                            X
+(4.19)        Sj =                 F (πj n), Kj =             F (πj n),
+                         αj ∈Ej                                αj ∈Ej
+                      (n,P (pj ))=1                         (n,P (X g ))=1
+                            X
+           ∗
+(4.20)    Kj+1 =                         F (πj n),
+                      αj+1 ∈Ej0 ∩Gj+1
+                           X                                          X
+(4.21)    Dj+1 =                      F (πj+1 n),      Sj+1 =                      F (πj+1 n).
+                      αj+1 ∈Hj+1                                  αj+1 ∈Ej+1
+                                                                 (n,P (pj+1 ))=1
+
+Since Ej0 partitions into Ej0 ∩ Gj+1 , Hj+1 , Ej+1 , we have
+                                      ∗
+(4.22)                     Sj = Kj − Kj+1 − Dj+1 − Sj+1 .
+    Similarly, we partition the domain of α1 in the subtracted part in (4.18)
+into G1 , H1 , E1 , where H1 ∪ E1 = B1 , giving
+(4.23)                          T = K0 − K1∗ − D1 − S1
+in a notation analogous to (4.19)–(4.21).
+186                             R. Baker and A. Weingartner
+
+      For a small part of H5 , we iterate twice more. Let
+                    b 5 = {α5 ∈ H5 : s4 > b},
+                    H                                     L = H5 \ H
+                                                                   b5
+
+so that
+(4.24)                          D5 (x) = D
+                                         b 5 (x) + K6 (x)
+
+where Db 5 is a sum over H
+                         b 5 . The point is that each of the sums in
+                  X                    X                    X
+   K6 (x) =             F (π5 n) −             F (π6 n) +          F (π7 n)
+                   α5 ∈L                    α6 ∈L0                 α7 ∈(L0 )0
+               (n,P (X g ))=1            (n,P (X g ))=1          (n,P (p7 ))=1
+
+can be handled via Lemma 15. We have s5 < a in the first sum; s6 < 3a/2 <
+d in the second sum. In the third sum, α7 could not be in B7 , since this
+would lead to
+              s7 < 7a/4 < f,        hence    s7 < d,       s5 < d − 2g < b,
+and finally
+                                      5g ≤ s5 < a,
+which is absurd. So K(x) = K6 (x) has the property (4.11).
+   We assemble (4.22)–(4.24) to get
+                           T (x) = K(x) − D− (x) + D+ (x)
+where K is a sum of terms ±Kj , ±Kj∗ ,
+
+                     D+ = D2 + D4 ,          D− = D1 + D3 + D
+                                                            b 5.
+
+      For the splitting property of Ej , it clearly suffices to have
+(4.25)                   α1 < d (α1 ∈ E1 ),
+(4.26)              α1 + α2 < d (α2 ∈ E2 ),
+(4.27)                   α3 ≤ h (α3 ∈ E3 ),
+(4.28)         α1 + α2 + α4 ≤ h or α3 + α4 ≤ h                 (α4 ∈ E4 ).
+
+   We are now ready to write down the decompositions (4.16). We first
+consider K (2) − D(2) + D(3) . Here we let
+           E1 = [g, a) ∪ (b, l),
+           E2 = {α2 ∈ E10 ∩ B2 : α1 + α2 < d},
+           E3 = {α3 ∈ E20 ∩ B3 : α3 ≤ h},
+           E4 = {α4 ∈ E30 ∩ B4 : α1 + α2 + α4 < d or α3 + α4 ≤ h},
+                    A ternary Diophantine inequality over primes                   187
+
+which fulfils (4.25)–(4.28). Hence
+                                    
+                             1 log 3
+          H1 = [l, d) ∪ f, +           ,
+                             2    2d
+          H2 = {α2 ∈ E10 ∩ B2 : α1 + α2 > f },
+          H3 = {α3 ∈ E20 ∩ B3 : α3 > h},
+          H4 = {α4 ∈ E30 ∩ B4 : α1 + α2 + α4 > f, α3 + α4 > h},
+          Hb 5 = {α5 ∈ E 0 ∩ B5 : α1 + α2 + α3 + α4 > b}.
+                           4
+
+   We shall prove several properties of H3 , H4 , H
+                                                  b5.
+                                                   P
+   Lemma 16. Let αj ∈ Bj , σ ⊆ {1, . . . , j}, s = t∈σ αt .
+     (i) Let σ 0 = (σ \ {i})P∪ {k} where i ∈ σ, k ∈        / σ. If |αi − αk | < 0.0479,
+         then s and s0 = t∈σ0 αt are either both to the left, or both to the
+         right, of [a, b]. If |αi − αk | < g, then s and s0 are either both to the
+         left, or both to the right, of [d, f ].
+    (ii) Let i ∈/ σ, k ∈/ σ ∪ {i}. If s + αi + αk < d, then s < a. If s > b, then
+         s + αi + αk > f .
+   (iii) Let σ = {i, i0 , i00 }, i < i0 < i00 . If s < d, then αi0 + αi00 < a.
+   (iv) If j = 5, s4 < d, then α4 − α5 < 0.041.
+    (v) If j = 5, s3 < d, then s5 < 1 − f .
+   (vi) If α3 ∈ H3 , then α1 < a.
+   Proof. The first assertion in (i) follows from |s − s0 | = |αi − αk | < b − a.
+The second assertion is proved similarly.
+   For the first assertion in (ii), we need only note that s < d − 2g < b. The
+second assertion now follows.
+   For (iii), we observe that αi0 + αi00 < 2d/3 < b.
+   For (iv), we use α4 − α5 < d/4 − g < 0.041.
+   For (v), we have s5 < 5s3 /3 < 5d/3 < 1 − d, hence s5 < 1 − f .
+   For (vi), we use α1 < d − α2 < d − α3 < d − h < b.
+  We can ‘concatenate’ in (i): for instance, if we have α1 + α2 + α3 > b and
+max(α3 − α4 , α4 − α5 ) < 0.0479, then α1 + α2 + α5 > b.
+   Lemma 17. Let α4 ∈ H4 . Then g ≤ α4 < α3 < α2 < α1 ; either α1 < a
+or b < α1 ≤ l; α1 + α2 < d; α3 ≤ h; α1 + α2 + α4 > f ; α3 + α4 > h;
+max(a − (α2 + α3 ), α2 + α3 − b) > 0; max(a − (α2 + α4 ), α2 + α4 − b) > 0;
+max(d − (α1 + α3 + α4 ), α1 + α3 + α4 − f ) > 0; max(a − (α2 + α3 + α4 ),
+α2 + α3 + α4 − b) > 0. Moreover,
+     (i) α3 + α4 < a,
+    (ii) s4 < 1 − f ,
+   (iii) α1 + α4 > b,
+   (iv) α2 + α3 + α4 < d.
+188                         R. Baker and A. Weingartner
+
+   Proof. Everything except (i)–(iv) follows from the definition.
+   For (i), α3 + α4 < 2α3 ≤ 2h < b. For (ii), (α1 + α2 ) + (α3 + α4 ) < d + a <
+1 − d. For (iii), α1 + α4 > f − α2 > f − d/2 > a. Finally, α2 + (α3 + α4 ) <
+d/2 + a < f , yielding (iv).
+
+   Lemma 18. Let α5 ∈ H    b 5 . Then g ≤ α5 < α4 < α3 < α2 < α1 ; α3 ≤ h;
+s2 < d; either α1 + α2 + α4 < d or α3 + α4 ≤ h; s4 > b; α1 < a. Moreover,
+one of the following alternatives holds:
+
+          (i) s4 < d, s2 < a, α3 + α4 + α5 > b, s5 > f ;
+         (ii) s4 < d, s2 < a, α2 + α3 + α4 < a, α1 + α4 + α5 > b, s5 > f ;
+        (iii) s4 < d, α1 + α3 + α4 + α5 > b, s3 < a;
+        (iv) s4 > f , s2 < a, α1 + α2 + α3 + α5 < d;
+         (v) α1 + α2 + α4 + α5 > f , s3 < d, α2 + α3 + α4 + α5 < d, α2 + α3 < a,
+              α1 + α4 + α5 > b, α1 + α2 > b, α3 + α4 + α5 < a, s5 < 1 − f ;
+        (vi) α1 + α3 + α4 + α5 > f , s3 < d, α2 + α3 + α4 + α5 < d, α2 + α3 < a,
+              α3 + α4 + α5 > b, α1 + α5 > b, s5 < 1 − f ;
+       (vii) α2 + α3 + α4 + α5 > f , s2 < a, s5 < 1 − f ;
+      (viii) α2 +α4 < a, α1 +α3 > b, α1 +α2 +α4 < d, s3 > f , α2 +α3 +α5 > b,
+              α1 + α3 + α4 + α5 > f , s5 < 1 − f .
+
+    Proof. The first assertion we need to prove is α1 < a. This follows from
+Lemma 16 if α1 + α2 + α4 < d. If α1 + α2 + α4 > f , then α3 + α4 ≤ h. This
+leads to a contradiction if α1 > b: we would have α1 + α3 + α4 > f from
+Lemma 16, hence α1 > f − h > l, which is absurd. So α1 < a.
+    To show that one of (i)–(viii) holds, we observe that one of the following
+alternatives is clearly valid:
+
+      (A) s4 < d, α2 + α3 + α4 > b;
+      (B) s4 < d, α2 + α3 + α4 < a, α1 + α3 + α4 > b;
+      (C) s4 < d, α1 + α3 + α4 < a, s3 > b;
+      (D) s4 < d, s3 < a;
+      (E) α1 + α2 + α3 + α5 > f , s3 < d, α2 + α3 + α4 + α5 < d;
+      (F) α2 + α3 + α4 + α5 > f , s3 < d;
+      (G) s3 > f , α1 + α2 + α4 < d;
+      (H) α1 + α2 + α4 > f , α3 + α4 ≤ h.
+
+   Suppose (A) holds. Then α1 < d−b < 0.1002. We cannot have α4 < α2 −
+0.04, since then α2 + α3 + α4 < 0.3006 − 0.04 < b. Moreover, α4 − α5 < 0.041
+by Lemma 16(iv), so we obtain α3 + α4 + α5 > b by concatenation. Further,
+s2 < a and s5 > f from Lemma 16. So (i) holds.
+                   A ternary Diophantine inequality over primes              189
+
+    Suppose (B) holds. Then s2 < a, s5 > f from Lemma 16. Now α3 + α4 <
+2a/3, α3 < 2a/3 − g, α3 − α5 < 2a/3 − 2g < 0.045. Hence α1 + α4 + α5 > b
+from Lemma 16, and (ii) holds.
+    Suppose (C) holds. Then s2 < a, s5 > f from Lemma 16. Hence α2 <
+a/2, α2 + α5 > f − (α1 + α3 + α4 ) > f − a = 1/5, α5 > 1/5 − a/2 > 0.08,
+α1 + α3 + α4 > 0.24, which is absurd.
+    Suppose (D) holds. We have 2α2 < a − g, α2 < 0.09, α2 − α5 < 0.04.
+Hence α1 + α3 + α4 + α5 > b from Lemma 16. So (iii) holds.
+    Suppose (E) holds. Since s2 < a from Lemma 16, (iv) holds.
+    Suppose (F) holds. Then α2 +α3 < a, α2 < a−g, s5 < 1−f by Lemma 16.
+Now α1 + α3 > α2 + α5 , so α1 + α3 > f /2, α1 + α3 + α5 > f /2 + g > a and
+α1 + α3 + α5 > b. Also α3 + α5 < d/2, α1 + α2 > f − d/2 > a, so α1 + α2 > b,
+giving α1 + α2 + α4 + α5 > f from Lemma 16. So α1 + α4 + α5 > f − α2 >
+f − a + g > a and α1 + α4 + α5 > b. If α3 + α4 + α5 < a, we get (v).
+If α3 + α4 + α5 > b, we have α1 + (α3 + α4 + α5 ) > b/2 + b > d, hence
+α1 + α3 + α4 + α5 > f . Also, α3 + α4 + α5 > b implies α2 < d − b < 0.1002.
+Suppose α1 + α5 < a. Then, by Lemma 16, α2 − α5 > 0.0479, α5 < 0.0523,
+so α3 + α4 + α5 < 0.2004 + 0.0523 < b, which is absurd. Hence α1 + α5 > b
+and (vi) holds.
+    Suppose (G) holds. Lemma 16 yields s5 < 1 − f , α2 + α3 < a. We claim
+that s2 < a. For suppose s2 > b. Now α4 + α5 > f − a = 1/5, α3 + α4 + α5 >
+3/10, and α1 + α2 < 0.278, α2 < 0.139. Also α3 < d − b < 0.1002, hence
+α5 > 0.3 − 0.2004 = 0.0996, and α2 − α5 < 0.04. We thus get α1 + α5 > b
+from α1 + α2 > b. Now s5 > b + α2 + α3 + α4 > b + 3f /4 > 1 − f , which is
+absurd. So s2 < a and (vii) holds.
+    Suppose (H) holds. Then α2 + α4 < a from Lemma 16. Next, s5 =
+(α1 + α3 + α5 ) + (α2 + α4 ) < d + a < 1 − d, so s5 < 1 − f . Now α2 < d/2,
+α1 + α3 > f − d/2 > a, so α1 + α3 > b. Hence α1 + α3 + α4 + α5 > f from
+Lemma 16. Finally, α2 + α3 > f − a = 1/5, therefore α2 + α3 + α5 > a and
+α2 + α3 + α5 > b. So (viii) holds.
+    Suppose (I) holds. Now α2 < d/2, so α1 + α4 > f − d/2 > a, and
+α1 + α4 > b. We obtain α1 + α4 + α3 + α5 > f from Lemma 16. Hence
+α3 + α4 + α5 > f − α1 > 1/5, contrary to the bound α3 + α4 + α5 ≤ 3h/2.
+This completes the proof of Lemma 18.
+
+   We now turn to the decomposition
+                          T (x) = K (1) (x) − D(1) (x).
+We use (4.19)–(4.24) with H2 , H4 empty, and so D2 = D4 = 0. We write
+our choice of Ei as Ei and H1 , . . . , H4 , H
+                                             b5 rather than H1 , . . . , H4 , H
+                                                                              b5.
+190                         R. Baker and A. Weingartner
+
+Let
+                   E1 = [g, 19/90];
+                   E2 = E10 ∩ B2 (so that H2 = ∅);
+                   H3 = {α3 ∈ E20 ∩ B3 : s3 > f }, so that
+                   E3 = {α3 ∈ E20 ∩ B3 : s3 < d};
+                   E4 = E30 ∩ B4 (so that H4 = ∅).
+Thus
+                         b5 = {α5 ∈ E 0 ∩ B5 : s4 > b}.
+                         H           4
+Note that in E2 , s2 < f , hence s2 < d; so any αi in Ei obviously splits for
+i = 1, 2, 3. Any α4 in E4 splits using {1, 2, 3}, {4}, since α4 < α3 < d/3 < h.
+   It is easy to write down the conditions satisfied by points of H3 , so we
+simply note the following lemma for H   b5 .
+   Lemma 19. Let α5 ∈ H     b5 . Then
+               g ≤ α5 < α4 < α3 < α2 < α1 ≤ 19/90,            s3 < d.
+Moreover, one of the alternatives (i)–(vii) of Lemma 18 holds.
+   Proof. The first two assertions follow from the definition. Since H
+                                                                     b5 ⊆ H5 ,
+one of (i)–(viii) of Lemma 18 holds, and (viii) is ruled out since s3 < d.
+   In Section 5 we shall need bounds for several integrals. Let f1 (α1 ) =
+α1 , f2 (α2 ) = α1−1 α2−2 , and generally fj (αj ) = (α1 · · · αj−1 )−1 αj−2 (j ≥ 2).
+ −2
+
+Let ω(. . .) denote Buchstab’s function (see e.g. [8] for more information).
+Now let
+                                   
+                                      1 − sj
+                                             
+                    Jj = fj (αj ) ω            dα1 · · · dαj ,
+                                        αj
+                        Hj
+                                   
+                                      1 − s5
+                                             
+                    J5 = f5 (α5 ) ω            dα1 · · · dα5 .
+                                        α5
+                          H
+                          b5
+
+Define J1† , J3† , J5† in the same way with H1 , H3 , H
+                                                      b5 in place of H1 , H3 , H
+                                                                               b5.
+Computer calculations yield
+                       J1† < 0.992255,      J1 < 0.704010,
+                       J2 < 0.126406,
+                       J3† < 0.094570,      J3 < 0.050281,
+                       J4 < 0.003991,
+                       J5† < 0.006422,      J5 < 0.007383.
+The integrals in j dimensions are bounded for j ≤ 3 using a precise evalu-
+ation. For each of the other integrals, we allow a possibly larger region of
+                     A ternary Diophantine inequality over primes               191
+
+integration defined via Lemma 17, 18 or 19, and multiply its measure by an
+upper bound for the integrand to give the upper bound quoted.
+
+    5. Proof of Theorem 1. We need just two more lemmas. Write dαj
+for dα1 · · · dαj .
+   Lemma 20. Let E be a polytope, E ⊆ Pj . Let
+                 X     X            X                             1
+      f (E; X) =                                                            .
+                                                          πk−1 log(X/πk−1 )
+                      αj ∈E j+1≤k≤19 pj ≤pj+1 ≤···≤pk−1
+                                       πk−1 pk−1 ≤2X
+
+As X → ∞,
+                                    1 
+                                                           
+                                                     1 − sj
+              f (E; X) = (1 + o(1))     fj (αj ) ω            dαj .
+                                    L                  αj
+                                          E
+
+   Proof. Fix p1 , . . . , pj with αj ∈ E. Let N (αj ) be the number of integers
+n with πj n ∼ X, (n, P (pj )) = 1. The solution of
+                                  (X/πj )1/u = pj
+is u = (1 − sj )/αj . Using a well-known asymptotic formula (see e.g. [8]), we
+deduce that
+                                                                        
+                              u ω(u) X                  X         1 − sj
+      N (αj ) = (1 + o(1))                = (1 + o(1))        ω
+                            log(X/πj ) πj              Lπj αj       αj
+as X → ∞, uniformly for αj ∈ E. Hence
+                                                              
+              X                           X X 1         1 − sj
+                     N (αj ) = (1 + o(1))           ω           .
+                                          L  π j αj       αj
+             αj ∈E                            αj ∈E
+
+Using the prime number theorem to approximate the sum by an integral in
+standard fashion,
+                                     X 
+                                                            
+            X                                         1 − sj
+(5.1)           N (αj ) = (1 + o(1))     fj (αj ) ω            dαj .
+                                     L                  αj
+            αj ∈E                             E
+
+On the other hand,
+         X              X            X                X             X
+              N (αj ) =                                                   1.
+          αj ∈E             αj ∈E j+1≤k≤19 pj ≤pj+1 ≤···≤pk−1 X<pk ≤2X
+                                             πk−1 pk−1 ≤2X     pk ≥pk−1
+
+   The error incurred in removing the condition pk ≥ pk−1 from the last
+summation is 0 unless
+                          pk−1 ∼ Y := X/πk−1 ,
+192                             R. Baker and A. Weingartner
+
+in which case the error is O(Y L−1 ). Thus the prime number theorem yields
+          X
+(5.2)            N (αj )
+         αj ∈E
+                                X            X                 X                     X
+            = (1 + o(1))
+                                                                             πk−1 log(X/πk−1 )
+                               αj ∈E j+1≤k≤19 pj ≤pj+1 ≤···≤pk−1
+                                                πk−1 pk−1 ≤2X
+                                                                             
+                          X         X                  1      X          1
+                 +O                                                               .
+                          L                       πk−2                 pk−1
+                              X g ≤p1 ≤···≤pk−2              pk−1 ∼Y
+                                   πk−2 ≤X
+
+The error term on the right side of (5.2) is readily seen to be O(XL−2 ),
+while the main term is clearly  XL−1 for nonempty E. Hence the lemma
+follows on comparing (5.1), (5.2).
+
+    Lemma 21. Let E be a polytope, E ⊆ Pj . Let k be fixed, j + 1 ≤ k ≤ 19.
+Then for 0 < x ≤ τ ,
+         X        X
+(5.3)                    F (πj pj+1 · · · pk )
+         αj ∈E pj ≤pj+1 ≤···≤pk
+
+                      X              X                 1             
+                                                                    2X
+                                                                                         e(tc x)
+                  =                                                                                dt
+                                                  πk−1                                log(t/πk−1 )
+                      αj ∈E pj ≤pj+1 ≤···≤pk                 max(πk−1 pk−1 ,X)
+                                                 1/4
+                      + O(X exp(−C1 L                  )).
+
+   Proof. By a slight variant of [3, Lemma 24], we have, for 1 < A < A0 ≤ 2A,
+0 < y ≤ A−c+1−2η ,
+                                       A0
+                 X                           e(uc y)
+(5.4)                     e(pck y) =                 du + O(A exp(−3(log A)1/4 )).
+                                              log u
+             A≤pk <A0                  A
+
+Fix αj ∈ E and pj+1 , . . . , pk−1 with pj ≤ pj+1 ≤ · · · ≤ pk−1 , πk−1 pk−1 ≤ 2X
+(other tuples give an empty sum on both sides of (5.3)). Set
+          A = max(pk−1 , X/πk−1 ),                A0 = 2X/πk−1 ,                   c
+                                                                              y = πk−1 x
+so that log A ≥ gL. We verify that
+                                       y ≤ A−c+1 X −2η .
+Indeed, we have
+        yAc−1 X 2η ≤ πk−1
+                      c
+                          X −c+10η (X/πk−1 )c−1 = πk−1 X −1+10η ≤ 1,
+                     A ternary Diophantine inequality over primes                            193
+
+since πk−1 X g ≤ 2X. Now (5.4) yields
+        X
+                 e((p1 · · · pk )c x)
+      pk ≥pk−1
+    X<πk−1 pk ≤2X
+
+                         k−1
+                     2X/π
+                                         e(uc πk−1
+                                               c x)        
+                                                              X
+                                                                                 
+            =                                       du + O        exp(−C1 L1/4 )
+                                            log u            πk−1
+                max(pk−1 ,X/πk−1 )
+
+with C1 = 3g 1/4 . A change of variables gives the integral in the form
+
+                             1             
+                                          2X
+                                                           e(tc x)
+                                                                     dt,
+                          πk−1                          log(t/πk−1 )
+                                  max(πk−1 pk−1 ,X)
+
+and the lemma follows on summing over p1 , . . . , pk−1 .
+   Proof of Theorem 1. Let N be the number of solutions of (1.1) with
+pi ∼ X (1 ≤ i ≤ 3). Using an initial step that goes back to Davenport and
+Heilbronn [5], we observe that
+                         X                                         
+                                                                   ∞
+(5.5)       N ≥                  ϕ(pc1 + pc2 + pc3 − R) =              T 3 dµ
+                     pi ∼X                                        −∞
+                    (1≤i≤3)
+                     ∞
+                =         2
+                           T (K (2) − D(2) + D(3) ) dµ
+                    −∞
+                    ∞                                       
+                                                             ∞
+                             2     (2)        (3)
+                =          T (K          +D         ) dµ −        T (K (1) − D(1) )D(2) dµ
+                    −∞                                       −∞
+                    ∞
+                ≥         (T 2 K (2) − T K (1) D(2) ) dµ.
+                    −∞
+
+(Compare the argument below [3, (5.4)] for the last step.) In view of (4.17),
+then,
+               τ
+(5.6)    N ≥ (T 2 K (2) − T K (1) D(2) ) dµ + O(X 3−c−2η )
+                    −τ
+                    τ
+                =        (T 3 − T 2 D(3) − T D(1) D(2) ) dµ + O(X 3−c−2η ).
+                    −τ
+
+   We now use approximations to T, D(i) that arise from (5.4) with (A, A0 )
+= (X, 2X) and from (5.3). In [−τ, τ ],
+            D(l) (x) = Il (x) + O(X exp(−C1 L1/4 ))                      (1 ≤ l ≤ 3).
+194                            R. Baker and A. Weingartner
+
+Here
+                            I1 (x) = Q1 (x) + Q3 (x) + Q5 (x),
+                            I2 (x) = Q2 (x) + Q4 (x),
+                            I3 (x) = Q6 (x) + Q7 (x) + Q8 (x),
+with
+             X          X            X            1             
+                                                               2X
+                                                                               e(tc x)
+Qj (x) =                                                                                 dt
+                                                 πk−1                       log(t/πk−1 )
+            αj ∈Hj j+1≤k≤19 pj ≤pj+1 ≤···≤pk−1          max(πk−1 pk−1 ,X)
+                              πk−1 pk−1 ≤2X
+
+for 1 ≤ j ≤ 4; Q5 , Q6 , Q7 , Q8 are defined similarly with Hj replaced respec-
+tively by H b 5 , H1 , H3 , H b5 .
+    We make the simple observation that for any functions f1 , f2 chosen from
+{D1 , D2 , D3 , I1 , I2 , I3 } and for f = D(l) , f0 = Il ,
+            τ                    τ
+               f f1 f2 dµ = f0 f1 f2 dµ + O(X 3−c−cη exp(−C1 L1/4 )).
+            −τ                −τ
+
+A similar approximation is discussed below [3, (5.13)]. Replacing T, D(1) ,
+D(2) , D(3) by I, I1 , I2 , I3 one step at a time, we deduce from (5.6) that
+                  τ
+(5.7)       N ≥ (I 3 − I 2 I2 − II1 I3 ) dµ + O(X 3−c−cη exp(−C1 L1/4 )).
+                   −τ
+
+   To extend this integral to infinity, we use the same bound as in [3],
+namely
+           I(x), Il (x)  |x|−1 L−1 X 1−c (x 6= 0, 1 ≤ l ≤ 3).
+Since
+                   
+                   ∞
+                        x−3 X 3(1−c) dx < τ −2 X 3(1−c) = X 3−c−16η ,
+                    τ
+we infer from (5.7) that
+           ∞
+    N ≥       (I 3 − I 2 I2 − II1 I3 ) dµ + O(X 3−c−cη exp(−C1 L1/4 ))
+            −∞
+             
+             ∞
+        =        {I 3 − I 2 (Q2 + Q4 ) − I(Q1 + Q3 + Q5 )(Q6 + Q7 + Q8 )} dµ
+            −∞
+
+            + O(X 3−c−cη exp(−C1 L1/4 )).
+                                                      ∞                ∞
+   We now rewrite the various integrals −∞ I 2 Qj dµ, −∞ IQj Qk dµ in
+         ∞                                                     ∞
+terms of −∞ I03 dµ. Consider, for example, the contribution to −∞ IQ2 Q7 dµ
+from α2 ∈ H2 , p2 ≤ p3 ≤ · · · ≤ pk−1 , πk pk−1 ≤ 2X and α03 ∈ H3 ,
+                              A ternary Diophantine inequality over primes                     195
+
+p03 ≤ p04 ≤ · · · ≤ p0l−1 , πl−1
+                             0 p0
+                                 l−1 ≤ 2X (in an obvious notation). We write
+
+                             s(t) = tc1 + tc2 + tc3 − R,        dt = dt1 dt2 dt3 .
+This contribution may be brought, using Fubini’s theorem, to the form
+
+    X             X             1      2X
+                                     2X   2X
+                                             ∞             e(xs(t))Φ(x) dx dt
+                                 0
+                             πk πl−1             (log t   )(log(t                     0
+p1 ,...,pk−1 p01 ,...,p0                      −∞        1         2 /πk−1 ))(log(t3 /πl−1 ))
+                       l−1
+                                          X3 X2 X
+
+               X              X              1      2X
+                                                  2X   2X
+                                                                         ϕ(s(t)) dt
+      =                                       0                                               0 ))
+           p1 ,...,pk−1 p01 ,...,p0
+                                          πk πl−1          (log t1 )(log(t2 /πk−1 ))(log(t3 /πl−1
+                                  l−1
+                                                  X3 X2 X
+                   X             X             1                    1
+      ≤H                                        0                                0 )) ,
+               p1 ,...,pk−1 p01 ,...,p0
+                                            πk πl−1 (log X)(log(X/πk−1 ))(log(X/πl−1
+                                      l−1
+
+where
+                                                     
+                                                     ∞
+                                              H=         I0 (x)3 dµ.
+                                                    −∞
+
+    For the last step we replace the positive integrand by a larger one using
+log tj ≥ log X, and then reverse the order of integration. In this way we see
+that
+                                     
+                  1      W1 W2 W3
+     N ≥               −     −          H + O(X 3−c−cη exp(−C1 L1/4 )),
+             (log 2X)3    L2      L
+where
+                              W1 = f (H2 ; X) + f (H4 ; X),
+                              W2 = f (H1 ; X) + f (H3 ; X) + f (H5 ; X),
+                              W2 = f (H1 ; X) + f (H3 ; X) + f (H5 ; X).
+Now we use Lemma 20 to obtain, as X → ∞,
+                           H
+        N ≥ (1 + o(1))       (1 − (J2 + J4 ) − (J1 + J3 + J5 )(J1† + J3† + J5† ))
+                          L3
+                  + O(X 3−c−cη exp(−C1 L1/4 )).
+
+For large X, the upper bounds given in Section 4 for Ji , Ji† yield
+                                                      0.0369H
+                                                N ≥           .
+                                                         L3
+Since
+                                                 H  X 3−c−cη
+(Tolev [16]), this completes the proof of Theorem 1.
+196                           R. Baker and A. Weingartner
+
+  Acknowledgments. This work was partially supported by a grant from
+NSA.
+
+
+                                       References
+
+ [1]   L. V. Ahlfors, Complex Analysis, 3rd ed., McGraw-Hill, New York, 1979.
+ [2]   R. C. Baker, Sums of two relatively prime cubes, Acta Arith. 129 (2007), 103–146.
+ [3]   R. C. Baker and A. Weingartner, Some applications of the double large sieve,
+       Monatsh. Math. 170 (2013), 261–304.
+ [4]   Y. C. Cai, On a Diophantine inequality involving prime numbers, Acta Math. Sinica
+       39 (1996), 733–742 (in Chinese).
+ [5]   H. Davenport and H. Heilbronn, On indefinite quadratic forms in five variables,
+       J. London Math. Soc. 21 (1946), 185–193.
+ [6]   E. Fouvry and H. Iwaniec, Exponential sums with monomials, J. Number Theory
+       33 (1989), 311–333.
+ [7]   S. W. Graham and G. Kolesnik, Van der Corput’s Method of Exponential Sums,
+       Cambridge Univ. Press, Cambridge, 1991.
+ [8]   G. Harman, Prime-Detecting Sieves, Princeton Univ. Press, Princeton, 2007.
+ [9]   M. N. Huxley, Area, Lattice Points and Exponential Sums, Clarendon Press, Oxford,
+       1996.
+[10]   M. N. Huxley, Exponential sums and the Riemann zeta function. V, Proc. London
+       Math. Soc. 90 (2005), 1–41.
+[11]   A. Kumchev, A diophantine inequality involving prime powers, Acta Arith. 89
+       (1999), 311–330.
+[12]   A. Kumchev and T. Nedeva, On an equation with prime numbers, Acta Arith. 83
+       (1998), 117–126.
+[13]   O. Robert and P. Sargos, Three-dimensional exponential sums with monomials,
+       J. Reine Angew. Math. 591 (2006), 1–20.
+[14]   I. I. Šapiro-Pyateckiı̆, On a variant of the Waring–Goldbach problem, Mat. Sbornik
+       30 (72) (1952), 105–120 (in Russian).
+[15]   P. Sargos and J. Wu, Multiple exponential sums with monomials and their applica-
+       tions in number theory, Acta Math. Hungar. 87 (2000), 333–354.
+[16]   D. I. Tolev, On a diophantine inequality involving prime numbers, Acta Arith. 61
+       (1992), 289–306.
+
+Roger Baker                                                         Andreas Weingartner
+Department of Mathematics                                    Department of Mathematics
+Brigham Young University                                       Southern Utah University
+Provo, UT 84602, U.S.A.                                    Cedar City, UT 84720, U.S.A.
+E-mail: baker@math.byu.edu                                  E-mail: weingartner@suu.edu
+
+                                 Received on 23.5.2013
+                            and in revised form on 10.6.2013                       (7457)
+

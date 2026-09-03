@@ -1,0 +1,98 @@
+{
+  "status": "c10-D12-sparse-core6-pair-sum-direction",
+  "rigorous": false,
+  "theorem_ready": false,
+  "finite_form_value_claimed": false,
+  "fresh_scalar_reevaluation_required": true,
+  "k": 48,
+  "degree": 12,
+  "basis_dimension": 2,
+  "coordinates": [
+    8,
+    5
+  ],
+  "coordinate_names": [
+    "core_8:(2, (2,))",
+    "core_5:(1, (2,))"
+  ],
+  "orientations": [
+    1,
+    1
+  ],
+  "combination": "unscaled signed sum d_i+d_j",
+  "basis": [
+    [
+      2,
+      [
+        2
+      ]
+    ],
+    [
+      1,
+      [
+        2
+      ]
+    ]
+  ],
+  "rational_vector": [
+    "1",
+    "1"
+  ],
+  "compressed_direction": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "1",
+    "0",
+    "0",
+    "1",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "expected_grouped_counts": {
+    "direction_labels": 2,
+    "precomputed_orbit_keys": 4,
+    "precomputed_orbit_terms": 5,
+    "i_orbit_groups": 2,
+    "i_grouped_residual_terms": 10,
+    "i_faces": 312,
+    "marginal_components": 4,
+    "distinct_marginal_orbits": 2,
+    "j_branch_integrals": 1200
+  },
+  "polarization": {
+    "Aij": "(A_sum-Aii-Ajj)/2",
+    "Bij": "(B48_sum-B48ii-B48jj)/2",
+    "B_convention": "B48=48*J; factor 48 is applied exactly once by evaluator",
+    "diagonal_i_result_sha256": "59d931c959da607ac30e4d0d13fce2455ae34e583b2c20daaace8c40167118ad",
+    "diagonal_j_result_sha256": "f0ece659e5f7287c0bc746eb1f4ed27c0cf00fcf39ef1d5ca6f9f4b96a047815"
+  },
+  "parameters": {
+    "alpha": "79247/300000",
+    "delta": "1/100",
+    "eta": "76247/300000",
+    "beta1": "3/20",
+    "beta2": "3/20",
+    "beta3plus": "97/625"
+  },
+  "provenance": {
+    "coordinate_manifest_sha256": "967a004ed5f02dc08d07bd9ab8f5af1050b345427327935b96d0979ae531787f",
+    "independent_preflight_sha256": "38a5963fa24827fbe83593fc1dd663666cf9cc43363e74704969c138be588c25",
+    "independent_preflight_code_sha256": "511d2c0ec21a26cba30f08bcecc8f2ac6856609db0cf44457f7b58e814d265db",
+    "core_diagonal_audit_sha256": "88bdbf0de9c4cac7ce0a81cda7978f21e15d36d52c7df12bd80a294943114077",
+    "grouped_evaluator_sha256": "47167e92a0f346e969706dc282ccb2dfd4ac31a0a75b654938ffbe8423cf4a4a",
+    "exact_integrator_sha256": "941ee82bc72fd8488a95eb5e536fe47f8c95d39a1b618dae7d6ef7eb27122e52",
+    "builder_sha256": "ac8186bd7d6e3b569e0b02b4385f8b55f9e5abb4b96cd89f68cef217fe9d2667"
+  }
+}

@@ -1,0 +1,56 @@
+\begin{thebibliography}{10}
+
+\bibitem{bakerw}
+R.~Baker and A.~Weingartner.
+\newblock A ternary {D}iophantine inequality over primes.
+\newblock {\em Acta Arith.}, 162(2):159--196, 2014.
+
+\bibitem{bakerz}
+R.C. Baker and L.~Zhao.
+\newblock Gaps between primes in {B}eatty sequences.
+\newblock arXiv:1411.2989.
+
+\bibitem{har83}
+G.~Harman.
+\newblock On the distribution of {$\alpha p$} modulo one.
+\newblock {\em J. London Math. Soc. (2)}, 27(1):9--18, 1983.
+
+\bibitem{har96}
+G.~Harman.
+\newblock On the distribution of {$\alpha p$} modulo one. {II}.
+\newblock {\em Proc. London Math. Soc. (3)}, 72(2):241--260, 1996.
+
+\bibitem{harmanbook}
+G.~Harman.
+\newblock {\em Prime-detecting sieves}, volume~33 of {\em London Mathematical
+  Society Monographs Series}.
+\newblock Princeton University Press, Princeton, NJ, 2007.
+
+\bibitem{rhbidentity}
+D.~R. Heath-Brown.
+\newblock Prime numbers in short intervals and a generalized {V}aughan
+  identity.
+\newblock {\em Canad. J. Math.}, 34(6):1365--1377, 1982.
+
+\bibitem{maynardsmall}
+J.~Maynard.
+\newblock Small gaps between primes.
+\newblock {\em Ann. of Math. (2)}, 181(1):383--413, 2015.
+
+\bibitem{polymath8a}
+D.~H.~J. Polymath.
+\newblock New equidistribution estimates of {Z}hang type.
+\newblock {\em Algebra Number Theory}, 8(9):2067--2199, 2014.
+
+\bibitem{polymath8b}
+D.~H.~J. Polymath.
+\newblock Variants of the {S}elberg sieve, and bounded intervals containing
+  many primes.
+\newblock {\em Res. Math. Sci.}, 1(12), 2014.
+
+\bibitem{zhang}
+Y.~Zhang.
+\newblock Bounded gaps between primes.
+\newblock {\em Ann. of Math. (2)}, 179(3):1121--1174, 2014.
+
+\end{thebibliography}

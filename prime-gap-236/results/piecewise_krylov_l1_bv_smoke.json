@@ -1,0 +1,54 @@
+{
+  "status": "heuristic-piecewise-krylov-l1-monte-carlo",
+  "rigorous": false,
+  "never_implies": [
+    "rigorous integral",
+    "sieve certificate",
+    "H1<=236"
+  ],
+  "script_sha256": "c0043fa4ecacf29d63fb121e4fe365eef929deb0b33bf1939a6809f9f3a6cb71",
+  "parameters": {
+    "k": 48,
+    "alpha": "0.2575",
+    "eta": "0.2425"
+  },
+  "samples_per_replicate": 10000,
+  "replicates": [
+    {
+      "seed": 236,
+      "normalized_moments": [
+        1.0,
+        0.22425945729095179,
+        0.12853674016729846,
+        0.09026302911486452
+      ],
+      "mu1_exact_identity": 0.00483634659426081,
+      "mu1_sampling_error": 0.219423110696691,
+      "largest_generalized_root": 0.7190696895639421,
+      "plugin_standard_errors": {
+        "mu1": 0.002797220691737894,
+        "mu2": 0.0035998990480338128,
+        "mu3": 0.0018081104464043876
+      },
+      "I_gram_determinant": 0.07824443598286625
+    },
+    {
+      "seed": 1245,
+      "normalized_moments": [
+        1.0,
+        0.22301224239927106,
+        0.1285650637760248,
+        0.09068278565745697
+      ],
+      "mu1_exact_identity": 0.00483634659426081,
+      "mu1_sampling_error": 0.21817589580501026,
+      "largest_generalized_root": 0.7217019138165717,
+      "plugin_standard_errors": {
+        "mu1": 0.0028076788191684883,
+        "mu2": 0.003699781207136347,
+        "mu3": 0.001724606053972233
+      },
+      "I_gram_determinant": 0.07883060351607356
+    }
+  ]
+}

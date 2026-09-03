@@ -1,0 +1,115 @@
+{
+  "status": "c10-D12-19-coordinate-sparse-self-form-manifest",
+  "rigorous": false,
+  "theorem_ready": false,
+  "no_self_form_values_claimed": true,
+  "k": 48,
+  "degree": 12,
+  "coordinates_included": [
+    14,
+    12
+  ],
+  "gauge": "H12 coordinate 19 is held fixed; directions cover coordinates 0..18",
+  "ranking_semantics": "descending exact derivative for an oriented relative coordinate step abs(theta_i)",
+  "full_ranking": [
+    {
+      "coordinate": 14,
+      "name": "H7",
+      "orientation": -1,
+      "relative_first_order_score": "8643072790560268455047052679374215668573617560970640481037592193716681733819209022826397895002101865567236813060875016097363847076934985440708376918579738148921924739425057924241890958310298716269531250000000000/632350013417329426626899335948190060724103374353778217902925490892604838905228255352753655476856575752391042203323998851471227871780636671318230236794152074449018181975987063137115817846485872363",
+      "path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/small-delta-frontier/results/sparse_coordinate_tranche_h7_h5/c10_D12_sparse_c14_H7_direction.json",
+      "sha256": "22f643231c8c44a22674622371ff84ba164e923ad57090afd1ac89157c2cde84",
+      "basis_dimension": 15,
+      "expected_grouped_counts": {
+        "direction_labels": 15,
+        "precomputed_orbit_keys": 225,
+        "precomputed_orbit_terms": 689,
+        "i_orbit_groups": 129,
+        "i_grouped_residual_terms": 502,
+        "i_faces": 312,
+        "marginal_components": 34,
+        "distinct_marginal_orbits": 15,
+        "j_branch_integrals": 1200
+      }
+    },
+    {
+      "coordinate": 12,
+      "name": "H5",
+      "orientation": -1,
+      "relative_first_order_score": "8169034253718026175380089892461048830020734712421105246073926518096312853607222267873975041643800776465177702345388859362400453642426516719681316206046565012148633461444416005492806533460120220470703125000000000/632350013417329426626899335948190060724103374353778217902925490892604838905228255352753655476856575752391042203323998851471227871780636671318230236794152074449018181975987063137115817846485872363",
+      "path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/small-delta-frontier/results/sparse_coordinate_tranche_h7_h5/c10_D12_sparse_c12_H5_direction.json",
+      "sha256": "f6aec9b2fae2a3edce726c95582019a6b1481dfe0146b39f1cbc83e69d3674d1",
+      "basis_dimension": 7,
+      "expected_grouped_counts": {
+        "direction_labels": 7,
+        "precomputed_orbit_keys": 49,
+        "precomputed_orbit_terms": 102,
+        "i_orbit_groups": 38,
+        "i_grouped_residual_terms": 134,
+        "i_faces": 312,
+        "marginal_components": 14,
+        "distinct_marginal_orbits": 7,
+        "j_branch_integrals": 1200
+      }
+    }
+  ],
+  "post_H6_launch_queue": [
+    {
+      "coordinate": 14,
+      "name": "H7",
+      "orientation": -1,
+      "relative_first_order_score": "8643072790560268455047052679374215668573617560970640481037592193716681733819209022826397895002101865567236813060875016097363847076934985440708376918579738148921924739425057924241890958310298716269531250000000000/632350013417329426626899335948190060724103374353778217902925490892604838905228255352753655476856575752391042203323998851471227871780636671318230236794152074449018181975987063137115817846485872363",
+      "path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/small-delta-frontier/results/sparse_coordinate_tranche_h7_h5/c10_D12_sparse_c14_H7_direction.json",
+      "sha256": "22f643231c8c44a22674622371ff84ba164e923ad57090afd1ac89157c2cde84",
+      "basis_dimension": 15,
+      "expected_grouped_counts": {
+        "direction_labels": 15,
+        "precomputed_orbit_keys": 225,
+        "precomputed_orbit_terms": 689,
+        "i_orbit_groups": 129,
+        "i_grouped_residual_terms": 502,
+        "i_faces": 312,
+        "marginal_components": 34,
+        "distinct_marginal_orbits": 15,
+        "j_branch_integrals": 1200
+      }
+    },
+    {
+      "coordinate": 12,
+      "name": "H5",
+      "orientation": -1,
+      "relative_first_order_score": "8169034253718026175380089892461048830020734712421105246073926518096312853607222267873975041643800776465177702345388859362400453642426516719681316206046565012148633461444416005492806533460120220470703125000000000/632350013417329426626899335948190060724103374353778217902925490892604838905228255352753655476856575752391042203323998851471227871780636671318230236794152074449018181975987063137115817846485872363",
+      "path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/small-delta-frontier/results/sparse_coordinate_tranche_h7_h5/c10_D12_sparse_c12_H5_direction.json",
+      "sha256": "f6aec9b2fae2a3edce726c95582019a6b1481dfe0146b39f1cbc83e69d3674d1",
+      "basis_dimension": 7,
+      "expected_grouped_counts": {
+        "direction_labels": 7,
+        "precomputed_orbit_keys": 49,
+        "precomputed_orbit_terms": 102,
+        "i_orbit_groups": 38,
+        "i_grouped_residual_terms": 134,
+        "i_faces": 312,
+        "marginal_components": 14,
+        "distinct_marginal_orbits": 7,
+        "j_branch_integrals": 1200
+      }
+    }
+  ],
+  "parameters": {
+    "alpha": "79247/300000",
+    "delta": "1/100",
+    "eta": "76247/300000",
+    "beta1": "3/20",
+    "beta2": "3/20",
+    "beta3plus": "97/625"
+  },
+  "provenance": {
+    "source_sha256": "719c656e6e45388273b4c27f51f7a18b33e9ed1abb5f883e6fcc5de5d6d64a87",
+    "bands_sha256": "29d38a9e7ca7a352560c0a01813f2dfd2f477ec8cb829c433cce18d8229d31e9",
+    "recovery_sha256": "6411f11d218e66aa8c60d22daf0513e3e4840ebd74bd54c037761e3d7af56a43",
+    "grouped_evaluator_sha256": "47167e92a0f346e969706dc282ccb2dfd4ac31a0a75b654938ffbe8423cf4a4a",
+    "exact_integrator_sha256": "941ee82bc72fd8488a95eb5e536fe47f8c95d39a1b618dae7d6ef7eb27122e52",
+    "generator_sha256": "82ee455d319b770c114428fe98dfc5b76d0dd7ca1d3c095729c60ac2c23fb344"
+  },
+  "launch_template": "python3 agents/exact-integrator/grouped_fixed_vector.py INPUT --alpha 79247/300000 --delta 1/100 --eta 76247/300000 --beta1 3/20 --beta2 3/20 --beta3plus 97/625 --decimal-dps 100 --workers 2 --i-stage STAGE --output OUTPUT"
+}

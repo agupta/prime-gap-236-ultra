@@ -1,0 +1,96 @@
+{
+  "assembler": {
+    "conditional_sparse_dimension": 39,
+    "contains_quotient": false,
+    "contains_vector": false,
+    "cross_factor_applied_exactly_once": 48,
+    "independent_arithmetic_reconstruction": false,
+    "restricted_48J_upper_nonzero": 125,
+    "restricted_I_upper_nonzero": 56,
+    "theorem_ready": false
+  },
+  "basis": {
+    "all_degree_zero_counts": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+    "coordinates": 38,
+    "positive_degree_counts": [9, 10, 11, 12, 13, 14],
+    "positive_degrees": [1, 2]
+  },
+  "contains_cross_values": false,
+  "contains_quotient": false,
+  "format": "active25-cap-slack-D16-staged-prelaunch-v3",
+  "frozen_reviewed_input_sha256": {
+    "agents/audit/ACTIVE25-CAP-SLACK-CROSS-PILOT-V2-PRELAUNCH-AUDIT.md": "bf8e3bbfec2c6fe3bec3a9a30a7c6caa26ad6912b93b4082253feb4438e5b17a",
+    "agents/audit/results/active25_cap_slack_cross_pilot_v2_prelaunch_audit.json": "bbda024a64b32bca96c76cc7b77917b4779daa3c1c108f3a2ff163200249112d",
+    "agents/audit/verify_active25_cap_slack_cross_pilot_v2.py": "881622f7bb8e189f240e76c8a31750ef0fb2db42b1561d9e03e06dc1124348fe",
+    "agents/structural-basis/ACTIVE25-CAP-SLACK-CROSS-PILOT-V2.md": "ce965d905274af92a3c64496369ffdb5cd97bf5c75a088432428f5707d032851",
+    "agents/structural-basis/code/active25_cap_slack_cross_pilot_v2.py": "cd20a85e51d623476b5433626ec4ce35d242e8a00a5f706db1af05509b59d913",
+    "agents/structural-basis/results/active25_cap_slack_d16_cross_pilot_disabled_v2.json": "3a07078ca5b480b0d8d554019b42e05b7fb732a1225d97ff761d5b5231abd31c",
+    "agents/structural-basis/tests/test_active25_cap_slack_cross_pilot_v2.py": "8f16fdc5a72f8e26ffc5c7b2a0ee5f0e8fc734a4383edeb3a2d414a97df94a1f"
+  },
+  "independent_reconstruction_required": true,
+  "launch_authorized": false,
+  "no_claim": "no complete cap cross, combined vector, quotient, or theorem claim",
+  "one_face_gate": {
+    "common_r": 10,
+    "custom_marginal_literal_d1_d2_cases": 8,
+    "degree_zero_exact_countwise_match": true,
+    "degree_zero_reference_wall_seconds": 4.434376405,
+    "external_elapsed_seconds": 9.71,
+    "peak_rss_kib": 39640,
+    "pilot_face_wall_seconds": 5.156675941,
+    "process_wall_seconds": 9.635075082,
+    "rss_limit_kib": 262144,
+    "selected_h": 10,
+    "status": "PASS",
+    "wall_limit_seconds": 20,
+    "workers": 1
+  },
+  "package_sha256": {
+    "agents/audit/ACTIVE25-CAP-SLACK-D16-INDEPENDENT-RECONSTRUCTION-DESIGN-V3.md": "b0fc8a48ead25f5b9c1eb4c632c4a9a69205bb39e5b538affd66f4ab688069cd",
+    "agents/structural-basis/ACTIVE25-CAP-SLACK-D16-STAGED-V3-PRELAUNCH.md": "1359e14f32a27750f6287987570cf4bfec2d7e124ad87a74734b2bfd9c7307d1",
+    "agents/structural-basis/code/active25_cap_slack_cross_face_gate_v3.py": "71d1c028e09cbf3484c8b2a7c37e650f747c479ff71fcebb512dbce05ef974a5",
+    "agents/structural-basis/code/active25_cap_slack_cross_staged_v3.py": "2657f9e008dbfb461c8010216dfe243e0b64d5450382dc4021b22978d0af020c",
+    "agents/structural-basis/code/assemble_active25_cap_slack_cross_v3.py": "1f0414e307927261df3108c38e78d0fa2ceac35a1edb7b9164c1239cfa3aaa6c",
+    "agents/structural-basis/results/active25_cap_slack_d16_cross_face_r10_h10_gate_v3.json": "54d9bf648679c373ad6de8178e194d05f395f8150990060da187720f92f4adc8",
+    "agents/structural-basis/tests/test_active25_cap_slack_cross_face_gate_v3.py": "0e7b863a096045d20aedba7d16b62edb3110e8b12eb55469cd5d1118cba86cf0",
+    "agents/structural-basis/tests/test_active25_cap_slack_cross_staged_v3.py": "f75d0fd9ce38d26f0f2ece4ad6022cf827259afa57bbb74894816030b39e771d",
+    "agents/structural-basis/tests/test_assemble_active25_cap_slack_cross_v3.py": "8a75dca9d721e10c8e2e1f1c1a6ee300878493bae91d38eb47fe76fbc8bf225f"
+  },
+  "plausibility_screen": {
+    "degree_zero_combined_gain": 3.4282763183846043e-07,
+    "degree_zero_combined_value": 0.9812862324371874,
+    "fixed_inner_value": 0.9812858896095555,
+    "full_D2_shell_particular_value": 0.07134554581738625,
+    "gain_multiple_needed": 54586.52052769919,
+    "heuristic_gain_after_largest_measured_normalized_coupling_scale": 2.300098942360522e-05,
+    "heuristic_gap_multiple_remaining": 813.6070678597525,
+    "I_sqrt_ratio_ranges_selected_counts": {
+      "degree_1": [0.16368847779024323, 0.25361020365213677],
+      "degree_2": [0.04302689623179785, 0.08519887482323801]
+    },
+    "interpretation": "closing the remaining gap is implausible but not excluded; this is not an upper bound",
+    "measured_face_normalized_coupling_multiples": {
+      "degree_1": [3.304136540719437, 3.3373901864673914],
+      "degree_2": [8.112543556733534, 8.190970273133559]
+    },
+    "perturbative_coupling_multiple_needed": 233.63758372252352,
+    "remaining_gap": 0.018713767562812622
+  },
+  "staging": {
+    "child_address_space_limit_kib": 262144,
+    "child_wall_limit_seconds": 600,
+    "common_r_order": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+    "exclusive_outputs": true,
+    "external_authorization_sha_inode_binding": true,
+    "external_ledger_sha_device_inode_binding": true,
+    "external_manifest_sha_binding": true,
+    "external_source_sha_inode_binding": true,
+    "faces": 585,
+    "global_wall_limit_seconds": 7200,
+    "one_shot_no_resume": true,
+    "workers": 1
+  },
+  "status": "PRELAUNCH_CANDIDATE",
+  "target_run_started": false,
+  "theorem_ready": false
+}

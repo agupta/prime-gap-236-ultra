@@ -1,0 +1,602 @@
+{
+  "status": "c10-D12-sparse-core6-polarization-tier",
+  "rigorous": false,
+  "theorem_ready": false,
+  "no_pair_form_values_claimed": true,
+  "k": 48,
+  "degree": 12,
+  "basis_order": [
+    "base",
+    "d10",
+    "d9",
+    "d6",
+    "d8",
+    "d5",
+    "d11"
+  ],
+  "selected_coordinates": [
+    10,
+    9,
+    6,
+    8,
+    5,
+    11
+  ],
+  "selection_rule": "six highest audited core-only individual line gains",
+  "selected_diagonal_gain_sum_not_a_ritz_bound": "0.000001279451111217837050713294122",
+  "pairs": [
+    {
+      "batch": 1,
+      "coordinates": [
+        10,
+        9
+      ],
+      "path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6/c10_D12_pair_c10_c09_sum_direction.json",
+      "sha256": "d964a351c81f6a2a2cf9eaa8c117a3edcbc4624fcba836ba67b3e46ab8bce418",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 9,
+        "precomputed_orbit_terms": 13,
+        "i_orbit_groups": 6,
+        "i_grouped_residual_terms": 12,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 3,
+        "j_branch_integrals": 1200
+      },
+      "estimated_worker1_seconds": {
+        "lower": "28.5244686728464837391304347826086956521739130434782608695652",
+        "central": "29.4034651148774217540983606557377049180327868852459016393443",
+        "upper_conservative": "61.0956379467410594716981132075471698113207547169811320754717",
+        "model": "monotone static units; calibrated only on the two audited singleton runs",
+        "units": 141
+      },
+      "diagonal_result_sha256": [
+        "9d5fad604c662ac58deebff6947b4a8419fb9a8afe7da68c6fe41471c5df968f",
+        "81ec55051ebc71ca4e6fcf7eda598e786a0e5718a6d209fa8e91c9b2a9c07783"
+      ]
+    },
+    {
+      "batch": 1,
+      "coordinates": [
+        10,
+        6
+      ],
+      "path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6/c10_D12_pair_c10_c06_sum_direction.json",
+      "sha256": "b5e3c0267973006215bb6e4da95e42355120fb8887847d114f52de9054a34c16",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 9,
+        "precomputed_orbit_terms": 13,
+        "i_orbit_groups": 6,
+        "i_grouped_residual_terms": 6,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 3,
+        "j_branch_integrals": 1200
+      },
+      "estimated_worker1_seconds": {
+        "lower": "16.3900577923906788679245283018867924528301886792452830188679",
+        "central": "20.8691240021682187924528301886792452830188679245283018867925",
+        "upper_conservative": "50.6963804238915174339622641509433962264150943396226415094340",
+        "model": "monotone static units; calibrated only on the two audited singleton runs",
+        "units": 117
+      },
+      "diagonal_result_sha256": [
+        "9d5fad604c662ac58deebff6947b4a8419fb9a8afe7da68c6fe41471c5df968f",
+        "b7dce144e9fc3d82058deaaa3f1621798b6e63eb715ff7629c10c71f3c74a821"
+      ]
+    },
+    {
+      "batch": 1,
+      "coordinates": [
+        9,
+        6
+      ],
+      "path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6/c10_D12_pair_c09_c06_sum_direction.json",
+      "sha256": "1d6331f86304d0e339b05ade80e016eb37054c89d55ce9ee9b8c6450e7065a1e",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 4,
+        "precomputed_orbit_terms": 5,
+        "i_orbit_groups": 2,
+        "i_grouped_residual_terms": 6,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 2,
+        "j_branch_integrals": 1200
+      },
+      "estimated_worker1_seconds": {
+        "lower": "15.2693700800904615094339622641509433962264150943396226415094",
+        "central": "19.1047861584114883770491803278688524590163934426229508196721",
+        "upper_conservative": "44.1016607849683223768115942028985507246376811594202898550725",
+        "model": "monotone static units; calibrated only on the two audited singleton runs",
+        "units": 109
+      },
+      "diagonal_result_sha256": [
+        "81ec55051ebc71ca4e6fcf7eda598e786a0e5718a6d209fa8e91c9b2a9c07783",
+        "b7dce144e9fc3d82058deaaa3f1621798b6e63eb715ff7629c10c71f3c74a821"
+      ]
+    },
+    {
+      "batch": 2,
+      "coordinates": [
+        10,
+        8
+      ],
+      "path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6/c10_D12_pair_c10_c08_sum_direction.json",
+      "sha256": "611656de5539592f3e4404cd01465e65ee7f602bfeae63baa0f7a6ee458ee9d3",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 9,
+        "precomputed_orbit_terms": 13,
+        "i_orbit_groups": 6,
+        "i_grouped_residual_terms": 18,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 3,
+        "j_branch_integrals": 1200
+      },
+      "estimated_worker1_seconds": {
+        "lower": "30.1373572580598520588235294117647058823529411764705882352940",
+        "central": "32.2919572237625968478260869565217391304347826086956521739130",
+        "upper_conservative": "71.4948954695906015094339622641509433962264150943396226415095",
+        "model": "monotone static units; calibrated only on the two audited singleton runs",
+        "units": 165
+      },
+      "diagonal_result_sha256": [
+        "9d5fad604c662ac58deebff6947b4a8419fb9a8afe7da68c6fe41471c5df968f",
+        "59d931c959da607ac30e4d0d13fce2455ae34e583b2c20daaace8c40167118ad"
+      ]
+    },
+    {
+      "batch": 2,
+      "coordinates": [
+        9,
+        8
+      ],
+      "path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6/c10_D12_pair_c09_c08_sum_direction.json",
+      "sha256": "eca61ddec2c3936ddca67963c5f7b44cfd0b0002d39a557b00aacb7cabd72701",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 9,
+        "precomputed_orbit_terms": 13,
+        "i_orbit_groups": 6,
+        "i_grouped_residual_terms": 24,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 3,
+        "j_branch_integrals": 1200
+      },
+      "estimated_worker1_seconds": {
+        "lower": "34.5209728592321941764705882352941176470588235294117647058823",
+        "central": "36.1850168407704173181818181818181818181818181818181818181818",
+        "upper_conservative": "76.4698521867799351304347826086956521739130434782608695652175",
+        "model": "monotone static units; calibrated only on the two audited singleton runs",
+        "units": 189
+      },
+      "diagonal_result_sha256": [
+        "81ec55051ebc71ca4e6fcf7eda598e786a0e5718a6d209fa8e91c9b2a9c07783",
+        "59d931c959da607ac30e4d0d13fce2455ae34e583b2c20daaace8c40167118ad"
+      ]
+    },
+    {
+      "batch": 2,
+      "coordinates": [
+        6,
+        8
+      ],
+      "path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6/c10_D12_pair_c06_c08_sum_direction.json",
+      "sha256": "f5323ed2a38d3d52c626ea195c972eb80113fca2f892be783c2fcde3c41a3519",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 9,
+        "precomputed_orbit_terms": 13,
+        "i_orbit_groups": 6,
+        "i_grouped_residual_terms": 18,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 3,
+        "j_branch_integrals": 1200
+      },
+      "estimated_worker1_seconds": {
+        "lower": "23.1141840661919830188679245283018867924528301886792452830188",
+        "central": "27.4400516119076994565217391304347826086956521739130434782609",
+        "upper_conservative": "60.2747145161197041176470588235294117647058823529411764705881",
+        "model": "monotone static units; calibrated only on the two audited singleton runs",
+        "units": 165
+      },
+      "diagonal_result_sha256": [
+        "b7dce144e9fc3d82058deaaa3f1621798b6e63eb715ff7629c10c71f3c74a821",
+        "59d931c959da607ac30e4d0d13fce2455ae34e583b2c20daaace8c40167118ad"
+      ]
+    },
+    {
+      "batch": 3,
+      "coordinates": [
+        10,
+        5
+      ],
+      "path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6/c10_D12_pair_c10_c05_sum_direction.json",
+      "sha256": "ab6ba99471c91a730d0075a081afda90597479cd0d9d24c5f788bfa317dd4c6e",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 9,
+        "precomputed_orbit_terms": 13,
+        "i_orbit_groups": 6,
+        "i_grouped_residual_terms": 12,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 3,
+        "j_branch_integrals": 1200
+      },
+      "estimated_worker1_seconds": {
+        "lower": "19.7109328869669508695652173913043478260869565217391304347827",
+        "central": "24.4187604490930957868852459016393442622950819672131147540984",
+        "upper_conservative": "61.0956379467410594716981132075471698113207547169811320754717",
+        "model": "monotone static units; calibrated only on the two audited singleton runs",
+        "units": 141
+      },
+      "diagonal_result_sha256": [
+        "9d5fad604c662ac58deebff6947b4a8419fb9a8afe7da68c6fe41471c5df968f",
+        "f0ece659e5f7287c0bc746eb1f4ed27c0cf00fcf39ef1d5ca6f9f4b96a047815"
+      ]
+    },
+    {
+      "batch": 3,
+      "coordinates": [
+        9,
+        5
+      ],
+      "path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6/c10_D12_pair_c09_c05_sum_direction.json",
+      "sha256": "a621bf5189cb2d6d34be74e85b0d8b9f8a669f58271cd9b6ee82428f113dd334",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 9,
+        "precomputed_orbit_terms": 13,
+        "i_orbit_groups": 6,
+        "i_grouped_residual_terms": 18,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 3,
+        "j_branch_integrals": 1200
+      },
+      "estimated_worker1_seconds": {
+        "lower": "23.0659852932591978260869565217391304347826086956521739130436",
+        "central": "28.2228413381887117391304347826086956521739130434782608695652",
+        "upper_conservative": "66.7593947662364513043478260869565217391304347826086956521740",
+        "model": "monotone static units; calibrated only on the two audited singleton runs",
+        "units": 165
+      },
+      "diagonal_result_sha256": [
+        "81ec55051ebc71ca4e6fcf7eda598e786a0e5718a6d209fa8e91c9b2a9c07783",
+        "f0ece659e5f7287c0bc746eb1f4ed27c0cf00fcf39ef1d5ca6f9f4b96a047815"
+      ]
+    },
+    {
+      "batch": 3,
+      "coordinates": [
+        6,
+        5
+      ],
+      "path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6/c10_D12_pair_c06_c05_sum_direction.json",
+      "sha256": "fc3c63d324449b445c76919df00c7e230682348f7b19111b637e78eff0bdb503",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 9,
+        "precomputed_orbit_terms": 13,
+        "i_orbit_groups": 6,
+        "i_grouped_residual_terms": 12,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 3,
+        "j_branch_integrals": 1200
+      },
+      "estimated_worker1_seconds": {
+        "lower": "19.7109328869669508695652173913043478260869565217391304347827",
+        "central": "19.7288260528947553278688524590163934426229508196721311475410",
+        "upper_conservative": "39.5042418585826618867924528301886792452830188679245283018867",
+        "model": "monotone static units; calibrated only on the two audited singleton runs",
+        "units": 141
+      },
+      "diagonal_result_sha256": [
+        "b7dce144e9fc3d82058deaaa3f1621798b6e63eb715ff7629c10c71f3c74a821",
+        "f0ece659e5f7287c0bc746eb1f4ed27c0cf00fcf39ef1d5ca6f9f4b96a047815"
+      ]
+    },
+    {
+      "batch": 4,
+      "coordinates": [
+        8,
+        5
+      ],
+      "path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6/c10_D12_pair_c08_c05_sum_direction.json",
+      "sha256": "ed4a6798a7f5cb3c5582d8eb7d99f9220c24c7b066ccbfb5993b9e81027624a1",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 4,
+        "precomputed_orbit_terms": 5,
+        "i_orbit_groups": 2,
+        "i_grouped_residual_terms": 10,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 2,
+        "j_branch_integrals": 1200
+      },
+      "estimated_worker1_seconds": {
+        "lower": "17.4742312827721195652173913043478260869565217391304347826088",
+        "central": "20.4310721771446875",
+        "upper_conservative": "45.6626625122118970588235294117647058823529411764705882352940",
+        "model": "monotone static units; calibrated only on the two audited singleton runs",
+        "units": 125
+      },
+      "diagonal_result_sha256": [
+        "59d931c959da607ac30e4d0d13fce2455ae34e583b2c20daaace8c40167118ad",
+        "f0ece659e5f7287c0bc746eb1f4ed27c0cf00fcf39ef1d5ca6f9f4b96a047815"
+      ]
+    },
+    {
+      "batch": 4,
+      "coordinates": [
+        10,
+        11
+      ],
+      "path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6/c10_D12_pair_c10_c11_sum_direction.json",
+      "sha256": "79d2121bd29c6f69159dc226fb0181086572686efd885770afd0e2e009548418",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 16,
+        "precomputed_orbit_terms": 26,
+        "i_orbit_groups": 5,
+        "i_grouped_residual_terms": 5,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 4,
+        "j_branch_integrals": 1200
+      },
+      "estimated_worker1_seconds": {
+        "lower": "27.2980509974800478490566037735849056603773584905660377358491",
+        "central": "28.1206811315649637894736842105263157894736842105263157894737",
+        "upper_conservative": "57.6708506928512569180327868852459016393442622950819672131147",
+        "model": "monotone static units; calibrated only on the two audited singleton runs",
+        "units": 126
+      },
+      "diagonal_result_sha256": [
+        "9d5fad604c662ac58deebff6947b4a8419fb9a8afe7da68c6fe41471c5df968f",
+        "2064e81b2cd50403f3d7c7251905893f38c2239ad3c4e7a662affb0b9f12202a"
+      ]
+    },
+    {
+      "batch": 4,
+      "coordinates": [
+        9,
+        11
+      ],
+      "path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6/c10_D12_pair_c09_c11_sum_direction.json",
+      "sha256": "8854dc30da718be07d76ad88bdde6eb217246bf025d2748ec2793265362032a7",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 16,
+        "precomputed_orbit_terms": 26,
+        "i_orbit_groups": 7,
+        "i_grouped_residual_terms": 13,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 4,
+        "j_branch_integrals": 1200
+      },
+      "estimated_worker1_seconds": {
+        "lower": "31.9635890092889675942028985507246376811594202898550724637681",
+        "central": "33.9320679081568065538461538461538461538461538461538461538462",
+        "upper_conservative": "72.3174159481785602622950819672131147540983606557377049180327",
+        "model": "monotone static units; calibrated only on the two audited singleton runs",
+        "units": 158
+      },
+      "diagonal_result_sha256": [
+        "81ec55051ebc71ca4e6fcf7eda598e786a0e5718a6d209fa8e91c9b2a9c07783",
+        "2064e81b2cd50403f3d7c7251905893f38c2239ad3c4e7a662affb0b9f12202a"
+      ]
+    },
+    {
+      "batch": 5,
+      "coordinates": [
+        6,
+        11
+      ],
+      "path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6/c10_D12_pair_c06_c11_sum_direction.json",
+      "sha256": "d2c4fca5f3f45152ec7d92d4946fd1c252f9ceb1bf3bc9d617b17b4480708668",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 16,
+        "precomputed_orbit_terms": 26,
+        "i_orbit_groups": 7,
+        "i_grouped_residual_terms": 7,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 4,
+        "j_branch_integrals": 1200
+      },
+      "estimated_worker1_seconds": {
+        "lower": "18.7715191810286407547169811320754716981132075471698113207547",
+        "central": "25.1362414280557191578947368421052631578947368421052631578947",
+        "upper_conservative": "61.3324920066830827540983606557377049180327868852459016393442",
+        "model": "monotone static units; calibrated only on the two audited singleton runs",
+        "units": 134
+      },
+      "diagonal_result_sha256": [
+        "b7dce144e9fc3d82058deaaa3f1621798b6e63eb715ff7629c10c71f3c74a821",
+        "2064e81b2cd50403f3d7c7251905893f38c2239ad3c4e7a662affb0b9f12202a"
+      ]
+    },
+    {
+      "batch": 5,
+      "coordinates": [
+        8,
+        11
+      ],
+      "path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6/c10_D12_pair_c08_c11_sum_direction.json",
+      "sha256": "a5049f33729254a3635103503fe14ff6d5a8219dcdc0e0b54c090b320b159188",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 9,
+        "precomputed_orbit_terms": 14,
+        "i_orbit_groups": 7,
+        "i_grouped_residual_terms": 19,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 3,
+        "j_branch_integrals": 1200
+      },
+      "estimated_worker1_seconds": {
+        "lower": "31.0506105083040899999999999999999999999999999999999999999999",
+        "central": "34.3322134913226011643835616438356164383561643835616438356164",
+        "upper_conservative": "77.8098779189262990163934426229508196721311475409836065573770",
+        "model": "monotone static units; calibrated only on the two audited singleton runs",
+        "units": 170
+      },
+      "diagonal_result_sha256": [
+        "59d931c959da607ac30e4d0d13fce2455ae34e583b2c20daaace8c40167118ad",
+        "2064e81b2cd50403f3d7c7251905893f38c2239ad3c4e7a662affb0b9f12202a"
+      ]
+    },
+    {
+      "batch": 5,
+      "coordinates": [
+        5,
+        11
+      ],
+      "path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6/c10_D12_pair_c05_c11_sum_direction.json",
+      "sha256": "91dcbc61dee412114d27e8831f4bb34bca8f3048cbfb99c379dd16df014977fd",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 9,
+        "precomputed_orbit_terms": 14,
+        "i_orbit_groups": 7,
+        "i_grouped_residual_terms": 13,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 3,
+        "j_branch_integrals": 1200
+      },
+      "estimated_worker1_seconds": {
+        "lower": "20.4099021382778356521739130434782608695652173913043478260870",
+        "central": "26.5111103373293132",
+        "upper_conservative": "66.8249539774308215081967213114754098360655737704918032786884",
+        "model": "monotone static units; calibrated only on the two audited singleton runs",
+        "units": 146
+      },
+      "diagonal_result_sha256": [
+        "f0ece659e5f7287c0bc746eb1f4ed27c0cf00fcf39ef1d5ca6f9f4b96a047815",
+        "2064e81b2cd50403f3d7c7251905893f38c2239ad3c4e7a662affb0b9f12202a"
+      ]
+    }
+  ],
+  "batches": [
+    [
+      [
+        10,
+        9
+      ],
+      [
+        10,
+        6
+      ],
+      [
+        9,
+        6
+      ]
+    ],
+    [
+      [
+        10,
+        8
+      ],
+      [
+        9,
+        8
+      ],
+      [
+        6,
+        8
+      ]
+    ],
+    [
+      [
+        10,
+        5
+      ],
+      [
+        9,
+        5
+      ],
+      [
+        6,
+        5
+      ]
+    ],
+    [
+      [
+        8,
+        5
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        9,
+        11
+      ]
+    ],
+    [
+      [
+        6,
+        11
+      ],
+      [
+        8,
+        11
+      ],
+      [
+        5,
+        11
+      ]
+    ]
+  ],
+  "concurrency": {
+    "jobs": 3,
+    "workers_per_job": 1,
+    "reason": "reserve one CPU core and cap memory"
+  },
+  "estimated_serial_worker1_seconds_central": "406.1282152656484967656126850",
+  "polarization": {
+    "input": "unscaled signed sum d_i+d_j",
+    "Aij": "(A_sum-Aii-Ajj)/2",
+    "Bij": "(B48_sum-B48ii-B48jj)/2"
+  },
+  "ritz": {
+    "space": "span{base,d10,d9,d6,d8,d5,d11}",
+    "matrix_dimension": 7,
+    "acceptance": "particular-vector quotient only; never assume A positive definite",
+    "continuation_gate": "add H8/H7 rows only if discovery Ritz gain >= 1e-4",
+    "continuation_gate_value": "1/10000"
+  },
+  "parameters": {
+    "alpha": "79247/300000",
+    "delta": "1/100",
+    "eta": "76247/300000",
+    "beta1": "3/20",
+    "beta2": "3/20",
+    "beta3plus": "97/625"
+  },
+  "launch_template": "python3 agents/exact-integrator/grouped_fixed_vector.py INPUT --alpha 79247/300000 --delta 1/100 --eta 76247/300000 --beta1 3/20 --beta2 3/20 --beta3plus 97/625 --decimal-dps 100 --workers 1 --progress --i-stage STAGE --output OUTPUT",
+  "provenance": {
+    "coordinate_manifest_sha256": "967a004ed5f02dc08d07bd9ab8f5af1050b345427327935b96d0979ae531787f",
+    "independent_preflight_sha256": "38a5963fa24827fbe83593fc1dd663666cf9cc43363e74704969c138be588c25",
+    "independent_preflight_code_sha256": "511d2c0ec21a26cba30f08bcecc8f2ac6856609db0cf44457f7b58e814d265db",
+    "core_diagonal_audit_sha256": "88bdbf0de9c4cac7ce0a81cda7978f21e15d36d52c7df12bd80a294943114077",
+    "grouped_evaluator_sha256": "47167e92a0f346e969706dc282ccb2dfd4ac31a0a75b654938ffbe8423cf4a4a",
+    "exact_integrator_sha256": "941ee82bc72fd8488a95eb5e536fe47f8c95d39a1b618dae7d6ef7eb27122e52",
+    "builder_sha256": "a786d6ec89bc8c2c8a3603552052a427cca56311b3a5febd950015681cd50dcf"
+  }
+}

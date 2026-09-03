@@ -1,0 +1,90 @@
+\begin{thebibliography}{10}
+
+\bibitem{Baker:2014:TDI}
+{\sc Baker, R., and Weingartner, A.}
+\newblock A ternary diophantine inequality over primes.
+\newblock {\em Acta Arithmetica 162}, 2 (2014), 159--196.
+
+\bibitem{Baker:2017:BIP}
+{\sc Baker, R.~C., and Irving, A.~J.}
+\newblock {Bounded intervals containing many primes}.
+\newblock {\em Mathematische Zeitschrift 286\/} (2017), 821--841.
+
+\bibitem{Bombieri:1965:OLS}
+{\sc Bombieri, E.}
+\newblock On the large sieve.
+\newblock {\em Mathematika 12}, 2 (1965), 201--225.
+
+\bibitem{Bombieri:2986:PAP}
+{\sc Bombieri, E., Friedlander, J., and Iwaniec, H.}
+\newblock Primes in arithmetic progressions to large moduli.
+\newblock {\em Acta Mathematica 156\/} (1986), 203--251.
+
+\bibitem{Fouvry:1983:PAP}
+{\sc Fouvry, E., and Iwaniec, H.}
+\newblock Primes in arithmetic progressions.
+\newblock {\em Acta Arithmetica 42}, 2 (1983), 197--218.
+
+\bibitem{Hildebrand:1993:IWL}
+{\sc Hildebrand, A., and Tenenbaum, G.}
+\newblock Integers without large prime factors.
+\newblock {\em Journal de th\'eorie des nombres de Bordeaux 5}, 2 (1993),
+  411--484.
+
+\bibitem{Lichtman:2023:TWF}
+{\sc Lichtman, J.~D.}
+\newblock {Primes in arithmetic progressions to large moduli, and Goldbach
+  beyond the square-root barrier}.
+\newblock arXiv:2309.08522.
+
+\bibitem{Maynard:2015:SGP}
+{\sc Maynard, J.}
+\newblock {Small gaps between primes}.
+\newblock {\em Annals of mathematics 181\/} (2015), 383--413.
+
+\bibitem{Maynard:2022:PA1}
+{\sc Maynard, J.}
+\newblock {Primes in arithmetic progressions to large moduli I: Fixed residue
+  classes}.
+\newblock {\em Memoirs of the American Mathematical Society\/} (to appear).
+
+\bibitem{Maynard:2022:PA2}
+{\sc Maynard, J.}
+\newblock {Primes in arithmetic progressions to large moduli II:
+  Well-factorable estimates}.
+\newblock {\em Memoirs of the American Mathematical Society\/} (to appear).
+
+\bibitem{Maynard:2022:PA3}
+{\sc Maynard, J.}
+\newblock {Primes in arithmetic progressions to large moduli III: Uniform
+  residue classes}.
+\newblock {\em Memoirs of the American Mathematical Society\/} (to appear).
+
+\bibitem{Pascadi:2024:TWF}
+{\sc Pascadi, A.}
+\newblock {Large sieve inequalities for exceptional Maass forms and
+  applications}.
+\newblock arXiv:2404.04239.
+
+\bibitem{Polymath:2014:EDZ}
+{\sc Polymath, D. H.~J.}
+\newblock {New equidistribution estimates of Zhang type}.
+\newblock {\em Algebra \& Number Theory 8}, 9 (2014), 2067--2199.
+
+\bibitem{Polymath:2014:VSS}
+{\sc Polymath, D. H.~J.}
+\newblock {Variants of the Selberg sieve, and bounded intervals containing many
+  primes}.
+\newblock {\em Research in the Mathematical sciences 1\/} (2014), 1--83.
+
+\bibitem{Vinogradov:1965:DHD}
+{\sc Vinogradov, A.~I.}
+\newblock {The density hypothesis for Dirichet L-series}.
+\newblock {\em Izv. Akad. Nauk SSSR Ser. Mat. 29\/} (1965), 903--934.
+
+\bibitem{Zhang:2015:BGP}
+{\sc Zhang, Y.}
+\newblock {Bounded gaps between primes}.
+\newblock {\em Annals of mathematics 179}, 3 (2014), 1121--1174.
+
+\end{thebibliography}

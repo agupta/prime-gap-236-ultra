@@ -1,0 +1,25 @@
+{
+  "status": "grouped-fixed-vector-I-stage",
+  "i_complete": true,
+  "rigorous": false,
+  "decimal_dps": 100,
+  "input_json": "agents/structural-basis/results/c10_D12_h12_near_20pct_v3.json",
+  "input_sha256": "88c1d26f6cf46bbdd12dc000eb802cac8efe91be0ad003d6827f2ccdc6c0ff47",
+  "script_sha256": "47167e92a0f346e969706dc282ccb2dfd4ac31a0a75b654938ffbe8423cf4a4a",
+  "integrator_sha256": "941ee82bc72fd8488a95eb5e536fe47f8c95d39a1b618dae7d6ef7eb27122e52",
+  "parameters": {
+    "alpha": "79247/300000",
+    "delta": "1/100",
+    "eta": "76247/300000",
+    "beta1": "3/20",
+    "beta2": "3/20",
+    "beta3plus": "97/625"
+  },
+  "i_orbit_groups": 1575,
+  "i_faces": 312,
+  "i_seconds": 1773.9130472650286,
+  "denominator_positive": true,
+  "denominator": "2.501361020595895591485184602791392461729407107149123620724382009944906312769905933310807164286724958E-132",
+  "peak_rss_kib": 34804,
+  "child_peak_rss_kib": 300288
+}

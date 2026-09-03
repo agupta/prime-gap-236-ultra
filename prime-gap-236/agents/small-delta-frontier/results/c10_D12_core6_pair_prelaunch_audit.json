@@ -1,0 +1,312 @@
+{
+  "status": "AUDIT PASS",
+  "scope": "six-core-pair-input-prelaunch",
+  "rigorous": false,
+  "theorem_ready": false,
+  "coordinate_manifest_sha256": "967a004ed5f02dc08d07bd9ab8f5af1050b345427327935b96d0979ae531787f",
+  "pair_manifest_sha256": "32d7e86840b0ba8a859cd41b30f3242bcde3cc8518e0a598f30a304e741ca4ad",
+  "pair_builder_sha256": "ac8186bd7d6e3b569e0b02b4385f8b55f9e5abb4b96cd89f68cef217fe9d2667",
+  "pair_count": 15,
+  "coordinates": [
+    10,
+    9,
+    6,
+    8,
+    5,
+    11
+  ],
+  "polarization": {
+    "Aij": "(A_sum-Aii-Ajj)/2",
+    "Bij": "(B48_sum-B48ii-B48jj)/2",
+    "B48_factor": 48
+  },
+  "pairs": [
+    {
+      "i": 10,
+      "j": 9,
+      "input_sha256": "d3bb14b581485a0957f997fd103101d40502b14a6163390fbadc81a9b7db38c0",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 9,
+        "precomputed_orbit_terms": 13,
+        "i_orbit_groups": 6,
+        "i_grouped_residual_terms": 12,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 3,
+        "j_branch_integrals": 1200
+      },
+      "i_stage_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c10_c09_sum_self_mp100.I-stage.json",
+      "result_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c10_c09_sum_self_mp100.json",
+      "outputs_present_at_audit": false
+    },
+    {
+      "i": 10,
+      "j": 6,
+      "input_sha256": "8e7d4dd595acf5afd62eb6ca152249c44169556e54688ea8ac386cd0394fbcf5",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 9,
+        "precomputed_orbit_terms": 13,
+        "i_orbit_groups": 6,
+        "i_grouped_residual_terms": 6,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 3,
+        "j_branch_integrals": 1200
+      },
+      "i_stage_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c10_c06_sum_self_mp100.I-stage.json",
+      "result_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c10_c06_sum_self_mp100.json",
+      "outputs_present_at_audit": false
+    },
+    {
+      "i": 9,
+      "j": 6,
+      "input_sha256": "a4a11bd4f0a5efba1805a3214c3358ba67c72afd3a18b469d4a83ec5c16a7b47",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 4,
+        "precomputed_orbit_terms": 5,
+        "i_orbit_groups": 2,
+        "i_grouped_residual_terms": 6,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 2,
+        "j_branch_integrals": 1200
+      },
+      "i_stage_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c09_c06_sum_self_mp100.I-stage.json",
+      "result_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c09_c06_sum_self_mp100.json",
+      "outputs_present_at_audit": false
+    },
+    {
+      "i": 10,
+      "j": 8,
+      "input_sha256": "e86806f76ff2a2716971ed8c959c55b26af2a170f6d9963b513106f7beebc2a2",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 9,
+        "precomputed_orbit_terms": 13,
+        "i_orbit_groups": 6,
+        "i_grouped_residual_terms": 18,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 3,
+        "j_branch_integrals": 1200
+      },
+      "i_stage_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c10_c08_sum_self_mp100.I-stage.json",
+      "result_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c10_c08_sum_self_mp100.json",
+      "outputs_present_at_audit": false
+    },
+    {
+      "i": 9,
+      "j": 8,
+      "input_sha256": "e3ababd7f87e5d54255637e9978df337706bf80bf7f66eac12bfafde6b3937e7",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 9,
+        "precomputed_orbit_terms": 13,
+        "i_orbit_groups": 6,
+        "i_grouped_residual_terms": 24,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 3,
+        "j_branch_integrals": 1200
+      },
+      "i_stage_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c09_c08_sum_self_mp100.I-stage.json",
+      "result_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c09_c08_sum_self_mp100.json",
+      "outputs_present_at_audit": false
+    },
+    {
+      "i": 6,
+      "j": 8,
+      "input_sha256": "ceed49267de3ad5e7488d953c821d286c81054da3fb723ac8a8b6f5cb6e41a77",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 9,
+        "precomputed_orbit_terms": 13,
+        "i_orbit_groups": 6,
+        "i_grouped_residual_terms": 18,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 3,
+        "j_branch_integrals": 1200
+      },
+      "i_stage_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c06_c08_sum_self_mp100.I-stage.json",
+      "result_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c06_c08_sum_self_mp100.json",
+      "outputs_present_at_audit": false
+    },
+    {
+      "i": 10,
+      "j": 5,
+      "input_sha256": "d7c597d172633cf555aa9d7b2a481cb38dafd88cf6b2e4170be92a99da8d1c53",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 9,
+        "precomputed_orbit_terms": 13,
+        "i_orbit_groups": 6,
+        "i_grouped_residual_terms": 12,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 3,
+        "j_branch_integrals": 1200
+      },
+      "i_stage_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c10_c05_sum_self_mp100.I-stage.json",
+      "result_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c10_c05_sum_self_mp100.json",
+      "outputs_present_at_audit": false
+    },
+    {
+      "i": 9,
+      "j": 5,
+      "input_sha256": "923c4bbbd3805a754577dd19c0c86398c1f853928d63e8fc974d8af4b4e72966",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 9,
+        "precomputed_orbit_terms": 13,
+        "i_orbit_groups": 6,
+        "i_grouped_residual_terms": 18,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 3,
+        "j_branch_integrals": 1200
+      },
+      "i_stage_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c09_c05_sum_self_mp100.I-stage.json",
+      "result_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c09_c05_sum_self_mp100.json",
+      "outputs_present_at_audit": false
+    },
+    {
+      "i": 6,
+      "j": 5,
+      "input_sha256": "08a8dbd0969e6f70a2dae6201022fd916fdff221ee5d3fc232cdf18324024cb8",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 9,
+        "precomputed_orbit_terms": 13,
+        "i_orbit_groups": 6,
+        "i_grouped_residual_terms": 12,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 3,
+        "j_branch_integrals": 1200
+      },
+      "i_stage_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c06_c05_sum_self_mp100.I-stage.json",
+      "result_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c06_c05_sum_self_mp100.json",
+      "outputs_present_at_audit": false
+    },
+    {
+      "i": 8,
+      "j": 5,
+      "input_sha256": "f2baca9ce76cb60287cefde787da1571ce67cb2df80e2d055d2e160b981d0835",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 4,
+        "precomputed_orbit_terms": 5,
+        "i_orbit_groups": 2,
+        "i_grouped_residual_terms": 10,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 2,
+        "j_branch_integrals": 1200
+      },
+      "i_stage_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c08_c05_sum_self_mp100.I-stage.json",
+      "result_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c08_c05_sum_self_mp100.json",
+      "outputs_present_at_audit": false
+    },
+    {
+      "i": 10,
+      "j": 11,
+      "input_sha256": "782bb072772950e5faee844caf09848111f900654ab55569009ed0265a50204e",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 16,
+        "precomputed_orbit_terms": 26,
+        "i_orbit_groups": 5,
+        "i_grouped_residual_terms": 5,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 4,
+        "j_branch_integrals": 1200
+      },
+      "i_stage_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c10_c11_sum_self_mp100.I-stage.json",
+      "result_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c10_c11_sum_self_mp100.json",
+      "outputs_present_at_audit": false
+    },
+    {
+      "i": 9,
+      "j": 11,
+      "input_sha256": "69baaa85c7496ca45eba42c707a4b803164cd45b9fac78afd442b88a42eca727",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 16,
+        "precomputed_orbit_terms": 26,
+        "i_orbit_groups": 7,
+        "i_grouped_residual_terms": 13,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 4,
+        "j_branch_integrals": 1200
+      },
+      "i_stage_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c09_c11_sum_self_mp100.I-stage.json",
+      "result_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c09_c11_sum_self_mp100.json",
+      "outputs_present_at_audit": false
+    },
+    {
+      "i": 6,
+      "j": 11,
+      "input_sha256": "4a6b3919cb579ab70a7a97e63e7fd6499cd620491a19ff8f8d73cad3ae18f2a0",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 16,
+        "precomputed_orbit_terms": 26,
+        "i_orbit_groups": 7,
+        "i_grouped_residual_terms": 7,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 4,
+        "j_branch_integrals": 1200
+      },
+      "i_stage_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c06_c11_sum_self_mp100.I-stage.json",
+      "result_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c06_c11_sum_self_mp100.json",
+      "outputs_present_at_audit": false
+    },
+    {
+      "i": 8,
+      "j": 11,
+      "input_sha256": "59c7fe12125d4c67aa55e59400403002a0dad93a39708c161eab61d0038b4a58",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 9,
+        "precomputed_orbit_terms": 14,
+        "i_orbit_groups": 7,
+        "i_grouped_residual_terms": 19,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 3,
+        "j_branch_integrals": 1200
+      },
+      "i_stage_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c08_c11_sum_self_mp100.I-stage.json",
+      "result_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c08_c11_sum_self_mp100.json",
+      "outputs_present_at_audit": false
+    },
+    {
+      "i": 5,
+      "j": 11,
+      "input_sha256": "a4a2c72f414c0421be89f85f3a79a15b029c57d21d6746aeb5881b972956ece4",
+      "expected_grouped_counts": {
+        "direction_labels": 2,
+        "precomputed_orbit_keys": 9,
+        "precomputed_orbit_terms": 14,
+        "i_orbit_groups": 7,
+        "i_grouped_residual_terms": 13,
+        "i_faces": 312,
+        "marginal_components": 4,
+        "distinct_marginal_orbits": 3,
+        "j_branch_integrals": 1200
+      },
+      "i_stage_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c05_c11_sum_self_mp100.I-stage.json",
+      "result_path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/sparse_pair_core6_v2/c10_D12_pair_c05_c11_sum_self_mp100.json",
+      "outputs_present_at_audit": false
+    }
+  ],
+  "no_integration_launched": true,
+  "no_ritz_value_claimed": true
+}

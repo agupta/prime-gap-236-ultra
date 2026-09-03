@@ -1,0 +1,110 @@
+{
+  "batch_quotient_standard_error": "1.645827058178360664e-05",
+  "batches": [
+    {
+      "a11_delta": "-1.4444421162473425808e-163",
+      "a11_direct": "3.6073055217407488658e-163",
+      "a11_full_mc": "5.0517476379880914464e-163",
+      "b00_mc": "8.707575622303982754e-164",
+      "b01_delta": "3.429077374674757061e-167",
+      "b01_full_mc": "4.784611281168995048e-165",
+      "b11_delta": "-4.8595316105974269325e-168",
+      "b11_full_mc": "4.053243032037937925e-165",
+      "batch": 0,
+      "i_weight_ess": "20.0",
+      "j_weight_ess": "20.0",
+      "q_from_batch_control_variate": "1.009469583486364769"
+    },
+    {
+      "a11_delta": "-2.3577612963936950955e-162",
+      "a11_direct": "2.97886426396358895e-163",
+      "a11_full_mc": "2.6556477227900539904e-162",
+      "b00_mc": "3.9603784660428059083e-163",
+      "b01_delta": "-1.1614078663367912721e-163",
+      "b01_full_mc": "1.12542606515946149665e-163",
+      "b11_delta": "-4.4904817783239109037e-164",
+      "b11_full_mc": "1.01024848420491559256e-163",
+      "batch": 1,
+      "i_weight_ess": "20.0",
+      "j_weight_ess": "20.0",
+      "q_from_batch_control_variate": "1.0095025000275283363"
+    }
+  ],
+  "calibration_means": {
+    "a11_direct": "3.2930848928521689077e-163",
+    "a11_full_mc": "1.5804112432944315675e-162",
+    "b00_mc": "2.4155680141366020918e-163",
+    "b01_full_mc": "5.8663608898557572355e-164",
+    "b11_full_mc": "5.253904572626474859e-164"
+  },
+  "control_variate_matrix": {
+    "A00_exact": "6.7802833664904442964e-159",
+    "A11_estimate": "1.191134597955886854e-159",
+    "B00_exact": "6.6809579163738297487e-159",
+    "B01_estimate": "4.298451028015137833e-160",
+    "B11_estimate": "7.335170743556465702e-161"
+  },
+  "estimated_largest_quotient": "1.0094860256651585371",
+  "exact_uncapped_calibration_targets": {
+    "A11": "1.1923857007098960686e-159",
+    "B00": "6.6809579163738297487e-159",
+    "B01": "4.299031560494437495e-160",
+    "B11": "7.337416227422208187e-161"
+  },
+  "never_implies": [
+    "an exact quotient",
+    "Proposition 1",
+    "H1<=236"
+  ],
+  "parameters": {
+    "arithmetic": "float128",
+    "batches": 2,
+    "degree": 18,
+    "inner_c": "1",
+    "k": 48,
+    "outer_c": "3090/3211",
+    "outer_schedule": [
+      "597/5000",
+      "633/5000",
+      "669/5000",
+      "141/1000",
+      "737/5000",
+      "773/5000",
+      "1553/10000",
+      "809/5000",
+      "81/500",
+      "3329/20000",
+      "169/1000",
+      "339/2000",
+      "859/5000",
+      "1737/10000",
+      "219/1250",
+      "881/5000",
+      "441/2500",
+      "887/5000",
+      "891/5000",
+      "179/1000",
+      "449/2500",
+      "1801/10000",
+      "903/5000",
+      "1811/10000",
+      "363/2000",
+      "363/2000"
+    ],
+    "physical_shape": 1.0,
+    "samples_per_batch": 20,
+    "seed": 1,
+    "slack_shape": 1.0
+  },
+  "rigorous": false,
+  "script_sha256_before_output": "da3838d98547507fbfa055073be2fe4de250cea3f5e090062328e1ea6c95b7d2",
+  "source_hashes": {
+    "agents/audit/results/wide_c722_nonuniform_active25_tail_analytic_audit.json": "111a48a23dbf8bf3fdb058f30e6bc412d2eb3cd605557772d6f34056974b2bda",
+    "agents/exact-integrator/results/aquarter_fullsimplex_k48_B18_refined_exact.json": "af6f1eb0d75bc59caf20cc82f79a3cb339be3ac7280af2afcad89eca0e31cf58",
+    "results/wide_c722_B18_piecewise_cinner1_couter_natural_exact.json": "49ecca1b962d06a8ee793e7ce0a3dcdf4ef1fd38595ccd86c784950636d903fd",
+    "scripts/heuristic_capped_piecewise_probe.py": "a40f7304e7a2b1413130fabb0ae7f9cb3dd78909159f4eeb24ebe6b7049fd220"
+  },
+  "status": "HEURISTIC ONLY",
+  "theorem_ready": false,
+  "wall_seconds": 0.15058681392110884
+}

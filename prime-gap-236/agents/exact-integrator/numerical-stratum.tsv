@@ -1,0 +1,6 @@
+status	support	basis	degree	order	dim	rank	quotient	note
+invalid	C16	stratum-LZ	3	16	40	34	0.856834524951461	bounds list accidentally stopped at r=3; retained as failed run, not evidence
+aborted	C10	stratum-LZ	3	16	NA	NA	NA	same truncated-bounds setup detected and terminated before output
+heuristic	C16	stratum-LZ	3	12	110	99	0.8691791269797079	full B schedule through first empty count; floating quadrature/eigensolve only
+unstable	C16	stratum-LZ	4	12	165	122	0.8681530988841293	nested quotient decreased because double-precision rank truncation changed
+heuristic	C10	stratum-LZ	3	12	160	147	0.8951925368025953	full B schedule through first empty count; floating quadrature/eigensolve only

@@ -1,0 +1,1168 @@
+                                          BOUNDED INTERVALS CONTAINING MANY PRIMES
+arXiv:1505.01815v1 [math.NT] 7 May 2015
+
+
+
+
+                                                             R.C. BAKER AND A.J. IRVING
+
+
+
+                                                 Abstract. By combining a sieve method of Harman with the
+                                                 work of Maynard and Tao we show that
+                                                               lim inf ppn`m ´ pn q ! expp3.815mq.
+                                                                nÑ8
+
+
+
+                                                                       1. Introduction
+                                            For any natural number m ě 1 let
+                                                                 Hm “ lim inf ppn`m ´ pn q,
+                                                                           nÑ8
+                                                                  th
+                                          where pn denotes the n prime. It was shown by Maynard [7] that Hm
+                                          is finite for all m and that it satisfies
+                                                                       Hm ! m3 expp4mq.
+                                          This bound was improved by Polymath [9, Theorem 1.4(vi)] to
+                                                                       ˆˆ         ˙ ˙
+                                                                              28
+                                          (1.1)            Hm ! m exp     4´        m .
+                                                                              157
+                                                                        28
+                                          The smaller exponent, 4 ´ 157    “ 3.821 . . ., was obtained by an applica-
+                                          tion of a result of Polymath [8] which extends the Bombieri-Vinogradov
+                                                                                                          1
+                                          theorem to smooth moduli which are slightly larger than x 2 . This lat-
+                                          ter result was an improvement of an earlier theorem of Zhang [10], who
+                                          used it to obtain the first proof that H1 is finite. In the present work we
+                                          combine the methods of Maynard and Polymath with a sieve procedure
+                                          developed by Harman [3–5] to obtain the following small improvement
+                                          on (1.1).
+                                          Theorem 1.1. We have
+                                                                       Hm ! expp3.815mq.
+                                            This theorem will be proved by constructing a minorant for the indi-
+                                          cator function of the primes for which we can prove a slightly stronger
+                                          equidistribution theorem in arithmetic progressions to smooth moduli.
+                                          Given such a minorant, the following Lemma shows how Theorem 1.1
+                                          may be deduced.
+                                                                                 1
+2           BOUNDED INTERVALS CONTAINING MANY PRIMES
+
+Lemma 1. Suppose that for all large x there exists a function ρpnq :
+rx, 2xs Ñ R satisfying the following properties:
+1. ρpnq is a minorant for the indicator function of the primes, that is
+                                #
+                                  1 n is prime
+                        ρpnq ď
+                                  0 otherwise.
+2. If ρpnq ‰ 0 then all prime factors of n exceed xξ , for some fixed
+   ξ ą 0.
+3. The function ρpnq has exponent of distribution θ to smooth moduli
+   (see Definition 1 below).
+4. We have          ÿ                             x
+                         ρpnq “ p1 ´ c1 ` op1qq       .
+                  xďnď2x
+                                                log x
+We then have
+                             Hm ! exppc0 mq
+for any
+                                 2m
+                              c0 ą       .
+                              θp1 ´ c1 q
+The implied constant may depend on c0 .
+   We note that this Lemma implies (1.1) by taking ρpnq to be the
+                                                                   7
+indicator function of the primes, for which we can take θ “ 12 ` 300
+by Polymath [8, Theorem 2.4(i)]. Our improvement, Theorem 1.1, will
+follow by taking the minorant constructed in the following result.
+                                  22
+Lemma 2. Fix an η in p0, 3295         q. Let Epηq be the polyhedron in R4
+given by
+                  2                                   1
+                    ` η ą α1 ą α2 ą α3 ą α4 ą ´ 2η
+                  5                                   5
+                            α1 ` α2 ` α3 ` 2α4 ă 1
+(1.2)                                     2
+                            α1 ` α2 ă ` η
+                                          5
+                                                 3
+                            α2 ` α3 ` α4 ą ´ η
+                                                 5
+                               1
+and let f pαq “ α1 α2 α3 α4 p1´α1 ´α2 ´α3 ´α4 q . Then, for all large x there
+exists a function ρ satisfying the hypotheses of the previous lemma with
+                                  1      7       17η
+                             θ“ `           `
+                                  2 300 120
+and                                 ż
+(1.3)                      c1 “ 6           f pαq dα,
+                                     Epηq
+               BOUNDED INTERVALS CONTAINING MANY PRIMES                  3
+
+where dα “ dα1 . . . dα4 .
+   We note that, for small η, the value given by (1.3) is Opη 4q and
+therefore the quantity
+                                      2
+                              p1 ´ c1 pηqqθpηq
+is decreasing for sufficiently small η. This shows that an improvement
+to (1.1) is possible by an appropriate choice of η.
+   We now give the definition of “exponent of distribution to smooth
+moduli” which is needed for Lemma 1 and which will be used repeatedly
+throughout this work. It is a generalisation to arbitrary functions of [8,
+Claim 2.3].
+Definition 1. An arithmetic function f with support contained in
+rx, 2xs has exponent of distribution θ to smooth moduli if for every
+ǫ ą 0 there exists a δ ą 0 for which the following holds.
+   For any P which is a product of distinct primes smaller than xδ , any
+integer a with pa, P q “ 1 and any A ą 0 we have
+               ˇ                                       ˇ
+               ˇ                                       ˇ
+          ÿ ˇ       ÿ                1     ÿ
+                                                 f pnqˇˇ ! xplog xq´A .
+                                                       ˇ
+               ˇ            f pnq ´
+               ˇ                    φpqq pn,qq“1
+        qďxθ´ǫ ˇn”a pmod qq                            ˇ
+         q|P
+
+The implied constant may depend on ǫ and A.
+  The restriction q|P implies that q runs over squarefree, xδ -smooth
+moduli. We observe that if a bounded number of functions fi have
+exponent θ then so does their sum. This also holds for the sum of at
+most logOp1q x functions provided we take care that for each ǫ ą 0 the
+resulting δ are bounded away from 0.
+  For the remainder of the paper we define
+                               1    7    17η
+(1.4)                    θ0 pηq “`     `     .
+                               2 300 120
+Lemma 2 will be proven by using a Buchstab decomposition to write
+the indicator function of the primes as a sum of various functions.
+We will then show that each summand either has exponent θ0 pηq or it
+is positive. The minorant will be constructed by removing the latter
+summands.
+
+                     2. Arithmetic Information
+  The Harman sieve will be used to decompose various functions as a
+sum of convolutions. It will be shown that the latter have exponent
+4           BOUNDED INTERVALS CONTAINING MANY PRIMES
+
+θ0 pηq by using the results of Polymath [8, Theorem 2.8] as well as a
+new result, Lemma 3, with which we begin.
+   In the following lemma the symbols Î and Ï have the same meaning
+as in [8], that is X Î Y means that
+                                    X ď xop1q Y.
+Lemma 3. Fix ̟, δ, σ ą 0. Let βpnq be a smooth coefficient sequence
+at scale N (see [8, Definition 2.5]) with
+(2.1)                            x1{2´σ Î N Î x1{2
+and let αpmq be a coefficient sequence at scale M with MN — x. Let
+P be a product of distinct primes less than xδ and a an integer with
+pa, P q “ 1. We then have
+                    ÿ
+                          |∆pα ‹ β; apdqq| ! x log´A ,
+                     dďx1{2`2̟
+                        d|P
+
+for any A ą 0, provided that
+(2.2)                         4σ ` 28̟ ` 8δ ă 1.
+The discrepancy ∆ is defined in [8, (1.1)].
+Proof. We can follow the reduction to exponential sums in [8, Section
+5.3] until we reach (5.28), with Φℓ defined by (5.29). The only detail
+to check prior to that point is the constraint (5.15), which is used by
+Polymath to control various diagonal contributions. Using (5.12) and
+(5.13) we obtain
+                  RQ2 “ R´1 pRQq2 Î N ´1 x1`4̟`δ`3ε
+so that, by (2.1),
+                           RQ2 Î x1{2`σ`4̟`δ`3ε .
+Equation (5.15) is therefore satisfied provided we take ε sufficiently
+small and
+                         2σ ` 8̟ ` 2δ ă 1.
+This constraint is weaker than our assumption (2.2).
+  Just as in the proof of [8, Theorem 5.8] it now suffices to prove (5.31).
+We treat the variable r trivially. Thus, as in [8, (5.32)], we shall show
+that
+(2.3)                Υℓ,r pb1 , b2 ; q0 q Î x´ε Q2 Npq0 , ℓqq0´2
+for r P rR, 2Rs, with R satisfying the constraint [8, (5.12)].
+                BOUNDED INTERVALS CONTAINING MANY PRIMES                                                5
+
+  We get (2.3) by applying the first bound in [8, Corollary 4.16]. By
+simple considerations we can write
+                ˆ           ˙        ˆ      ˙           ˆ     ˙
+                    ah                 b1 h               zh
+             er               eq0 q1          “ erq0 q1
+                  nq0 q1 q2            nrq2               nq2
+with pz, rq0 q1 q “ 1, z “ zpa, q0 , q1 , b1 , r, q2 q.
+  We have
+(2.4)
+ ÿ
+     Cpnqβpnqβpn ` ℓrqΦℓ ph, n, r, q0 , q1 , q2 q
+  n
+            ˇ                                          ˆ         ˙         ˆ                     ˙ ˇˇ
+            ˇ       ÿ                                      zh                       b2 h
+  ! pq0 , ℓqˇ                   βpnqβpn ` ℓrqerq0 q1                 eq2
+            ˇ                                                                                       ˇ
+                                                           nq2                 pn ` ℓrqrq0 q1
+                                                                                                    ˇ
+            ˇ                                                                                       ˇ
+                n”t pmod q0 q
+
+for some t pmod q0 q (see the remark about Cpnq preceding [8, (5.34)]).
+We may therefore apply Corollary 4.16 with the following parameters:
+1. ψN pnq “ βpnqβpn ` ℓrq (the required smoothness assumption is
+    easy to verify in view of the smoothness of βpnq).
+2. d “ q0 , d1 “ rq0 q1 and d2 “ q2 . These satisfypd1 , d2 q “ 1 since
+    pq1 , q2 q “ 1 by assumption and rq0 q2 is restricted to squarefree
+    numbers in the definition of Υ. We therefore have rd1 , d2 s “ rq0 q1 q2 .
+    In addition rd1 , d2s is xδ -smooth.
+3. δi “ di
+4. δ11 “ pq0d,d1 1 q “ rq1 , δ21 “ pq0d,d2 2 q “ q2 .
+5. c1 “ zh  q2
+               , pc1 , δ1 q “ ph, q1 q, c2 “ rqb20hq1 and pc2 , δ21 q “ ph, q2 q.
+Thus the left-hand side of (2.4) is
+                   ´
+                     ´1{2                                 ph, q1 q2 q ¯
+         Î pq0 , ℓq q0 N 1{2 prq0 q1 q2 q1{6 xδ{6 ` q0´1             N
+                                                            rq1 q2
+                   ´
+                     ´2{3 1{2      2 1{6 δ{6      q0 ph, q1 q2 qN ¯
+         Î pq0 , ℓq q0 N pRQ q x `
+                                                       RQ2
+
+                                                                                         ε   2
+for r — R, qi — Q{q0 . Summing over h, q1 , q2 , 1 ď |h| ď H ! xq0QMR ,
+                             xε pq0 , ℓqQ4 R ´ ´2{3 1{2     2 1{6 δ{6 q0 N ¯
+  Υℓ,r pb1 , b2 ; q0 q Î                      q0 N pRQ q x `
+                                   q03 M                              RQ2
+                         xε pq0 , ℓqQ2 ´5{3 1{2
+                                        ´
+                                                       2 7{6 δ{6
+                                                                          ¯
+                       Î                 q0 N pRQ q x {M ` N{M .
+                              q02
+6          BOUNDED INTERVALS CONTAINING MANY PRIMES
+
+We now need
+                  N 1{2 pRQ2 q7{6 xδ{6   N
+                                       `    Î x´2ε N.
+                          M              M
+                               N
+We have M Ï x1{2 so clearly M      Î Nx´2ε . Considering the first term,
+we must establish
+                         N 3 pRQ2 q7 Î x6´δ´12ε .
+We have
+                 RQ2 ! R´1 x1`4̟ Î x1`4̟`3ε`δ N ´1
+so that
+                   N 3 pRQ2 q7 Î N ´4 x7`28̟`21ε`7δ .
+We therefore require
+                        N ´4 Î x´1´28̟´8δ´31ε ,
+that is
+                        N Ï x1{4`7̟`2δ`31ε{4 .
+This follows from our assumptions (2.1) and (2.2) provided we choose
+a sufficiently small ε.                                           
+  We now derive the following result for “Type II” sums. The reader
+should note that we use the definitions of Type I and Type II from
+Harman [5] rather than those of Polymath [8].
+                                2
+Lemma 4. Suppose 0 ď η ă 95       . Let f be given by a convolution
+f “ α ˚ β where α and β are coefficient sequences at scales M and N.
+Assume that MN — x,
+                         2                   3
+                        x 5 `η ď N ď M ď x 5 ´η
+and that αpmq, βpnq satisfy the Siegel-Walfisz theorem. We conclude
+that f has exponent of distribution θ0 pηq to smooth moduli.
+                     1
+Proof. Taking σ “ 10    ´ η in part (iii) of [8, Theorem 2.8] we see that
+the condition
+                         160              34
+                             ̟ ` 16δ ` σ ă 1
+                           3              9
+is satisfied provided that
+                                7      3δ 17η
+                          ̟ă        ´      `
+                               600 10 240
+and
+                           64̟ ` 18δ ` 2σ ă 1
+is satisfied if
+                                 1     9δ     η
+                           ̟ă      ´       ` .
+                                80 32 32
+           BOUNDED INTERVALS CONTAINING MANY PRIMES                    7
+
+By taking a sufficiently small δ, the second of these is weaker than the
+                         2
+first provided that η ă 95 . The condition
+                            68̟ ` 14δ ă 1
+from part (iv) is satisfied provided that
+                                    1    7δ
+                              ̟ă      ´ .
+                                   68 34
+For δ sufficiently small this is weaker than the above provided that
+     62
+η ă 1445 .
+   We conclude that any convolution satisfying the hypotheses of the
+Lemma may be handled satisfactorily using either part (iii) or (iv).
+The result follows, recalling that θ “ 12 ` 2̟.                   
+  Combining this with Lemma 3 we obtain a result for “Type I” sums.
+                                2
+Lemma 5. Suppose 0 ď η ă 95       . Let f be given by a convolution
+f “ α ˚ ψ where α and ψ are coefficient sequences at scales M and N.
+Assume that MN — x, α satisfies the Siegel-Walfisz theorem,
+                         N ě x199{600`119η{240
+and that ψpnq is smooth. We conclude that f has exponent of distribu-
+tion θ0 pηq to smooth moduli.
+Proof. We consider 3 cases, depending on the size of N.
+                                                       3
+1. We can give a very trivial treatment for N ě x 5 ´η , see the dis-
+   cussion of Type 0 sums near the end of [8, Section 3]. Specifically,
+   if
+                         1     7     17η    3
+                           `      `      ă ´ η,
+                         2 300 120          5
+                   46
+   that is if η ă 685 , then
+                                 N ě xǫ q
+   for all q ď x1{2`7{300`17η{120´ǫ so the sum over N may be evaluated
+   asymptotically.
+2. If x2{5`η ď N ď x3{5´η then the result follows by Lemma 4.
+3. Finally, if N ď x2{5`η we appeal to Lemma 3. This requires that
+                           N ě x1{4`7̟`2δ ,
+   which will be satisfied provided we choose a sufficiently small δ and
+                         N ě x199{600`119η{240 .
+                                                                      
+  Finally, using part (v) of [8, Theorem 2.8] we obtain the following
+estimate for a “Type III” sum.
+8           BOUNDED INTERVALS CONTAINING MANY PRIMES
+
+                                  22
+Lemma 6. Suppose 0 ď η ă 3295        . Let f “ α ˚ψ1 ˚ψ2 ˚ψ3 for coefficient
+sequences α, ψ1 , ψ2 , ψ3 at scales M, N1 , N2 , N3 . Suppose that the ψi are
+smooth and that the scales satisfy
+                             MN1 N2 N3 — x,
+
+                       N1 N2 , N1 N3 , N2 N3 ě x3{5´η
+and
+                      x1{5´2η ď N1 , N2 , N3 ď x2{5`η .
+We conclude that f has exponent of distribution θ0 pηq to smooth moduli.
+                                                       1
+Proof. We apply part (v) of [8, Theorem 2.8] with σ “ 10 ´ η.
+                                     1   28     2δ
+  In order for the lower bound σ ą 18 ` 9 ̟ ` 9 to hold we require
+a sufficiently small δ and
+                                     ˆ           ˙
+                     1        1   28   7     17η
+                        ´η ą    `          `
+                    10       18   9 600 240
+             22                       1
+that is η ă 3295 . The condition ̟ ă 12 is clearly satisfied so the result
+follows.                                                                
+
+   When applying the results of this section to sums arising from the
+sieve it will be necessary to apply a suitable smooth partition of unity
+to decompose the summands into appropriate coefficient sequences.
+The details of this procedure are given by Polymath in [8, Section 3]
+so we do not repeat them here. It is also necessary to verify that the
+coefficient sequences satisfy the Siegel-Walfisz theorem but this can be
+established in each case by a suitable appeal to the theory of Dirichlet
+L-functions.
+
+                 3. The Sieve: Proof of Lemma 2
+    For any natural number n and any y ą 0 we define
+                                #
+                                  1 p|n Ñ p ě y
+                      ψpn, yq “
+                                  0 otherwise.
+
+The indicator function of the primes in rx, 2xs is then given by
+ψpn, p2xq1{2 q.
+  If y1 ă y2 then the Buchstab identity is
+                                        ÿ
+                ψpn, y2 q “ ψpn, y1 q ´      ψpn2 , p1 q.
+                                          n“p1 n2
+                                         y1 ďpăy2
+           BOUNDED INTERVALS CONTAINING MANY PRIMES                       9
+
+Letting λ “ p2xq1{5´2η and writing pj “ p2xqαj this gives
+                                         ÿ
+           ψpn, p2xq1{2 q “ ψpn, λq ´            ψpn2 , p1 q.
+                                              n“p1 n2
+                                          1{5´2ηďα1 ă1{2
+                                                          22
+We assume for the remainder of this work that η ă 3295       . The full
+strength of this hypothesis will only be required in Lemma 10 but there
+are numerous weaker requirements on η. We will show, in Lemma 7,
+that the function ψpn, λq has exponent of distribution θ0 pηq to smooth
+moduli. By Lemma 4 this also holds for the function
+                               ÿ
+                        ´              ψpn2 , p1 q.
+                                n“p1 n2
+                             2{5`ηďα1 ă1{2
+
+We write ρ0 pnq for an arbitrary function with exponent of distribution
+θ0 pηq to smooth moduli and we allow the meaning of ρ0 pnq to differ at
+each occurrence. With this convention we have
+                                          ÿ
+            ψpn, p2xq1{2 q “ ρ0 pnq ´             ψpn2 , p1 q.
+                                             n“p1 n2
+                                        1{5´2ηďα1 ă2{5`η
+
+Applying Buchstab’s identity again we obtain
+                                         ÿ
+         ψpn, p2xq1{2 q “ ρ0 pnq ´                            ψpn2 , λq
+                                               n“p1 n2
+                                          1{5´2ηďα1 ă2{5`η
+                                             ÿ
+                                `                          ψpn3 , p2 q.
+                                          n“p1 p2 n3
+                                    1{5´2ηďα2 ăα1 ă2{5`η
+
+
+The first unhandled term in this will be dealt with in Lemma 7. We
+can get a satisfactory treatment of that part of the second term with
+α1 ` α2 P r2{5 ` η, 3{5 ´ ηs by means of Lemma 4. In Lemma 10 we
+will show that the part of the final term with α1 ` α2 ě 53 ´ η and
+α2 ě 51 ` 4η
+           3
+                                           22
+             has exponent θ0 pηq, for η ă 3295 . We therefore have
+                ψpn, p2xq1{2 q “ ρ0 pnq ` ρ1 pnq ` ρ2 pnq,
+where                                 ÿ
+                  ρ1 pnq “                          ψpn3 , p2 q
+                                   n“p1 p2 n3
+                             1{5´2ηďα2 ăα1 ă2{5`η
+                                 α1 `α2 ă2{5`η
+and                                   ÿ
+               ρ2 pnq “                                ψpn3 , p2 q.
+                                   n“p1 p2 n3
+                             1{5´2ηďα2 ăα1 ă2{5`η
+                          α1 `α2 ą3{5´η,α2 ă1{5`4η{3
+10         BOUNDED INTERVALS CONTAINING MANY PRIMES
+
+We apply Buchstab’s identity twice to ρ1 to obtain
+                             ÿ
+          ρ1 pnq “                     ψpn3 , λq
+                             n“p1 p2 n3
+                       1{5´2ηďα2 ăα1 ă2{5`η
+                           α1 `α2 ă2{5`η
+                                     ÿ
+                       ´                              ψpn4 , λq
+                                  n“p1 p2 p3 n4
+                           1{5´2ηďα3 ăα2 ăα1 ă2{5`η
+                                 α1 `α2 ă2{5`η
+                                       ÿ
+                       `                                  ψpn5 , p4 q.
+                                  n“p1 p2 p3 p4 n5
+                           1{5´2ηďα4 ăα3 ăα2 ăα1 ă2{5`η
+                                  α1 `α2 ă2{5`η
+
+By Lemma 7 the first term in this has exponent θ0 pηq. This also applies
+to the second term provided that α3 ă ζ (ζ will be defined in Lemma
+7). We know that
+                             α1 ` α2     1 η
+                       α3 ď           ă `
+                                 2       5 2
+and therefore α3 ă ζ provided that
+                           1 η  161 359η
+                            ` ă     ´     ,
+                           5 2  600   240
+              82
+that is η ă 2395 . We conclude that
+                             ÿ
+  ρ1 pnq “ ρ0 pnq `                              ψpn5 , p4 q “ ρ0 pnq ` ρ3 pnq,
+                         n“p1 p2 p3 p4 n5
+                  1{5´2ηďα4 ăα3 ăα2 ăα1 ă2{5`η
+                         α1 `α2 ă2{5`η
+
+say. We will deal with ρ3 pnq in Lemma 11.
+  We can only apply Buchstab’s identity once to the function ρ2 pnq.
+We obtain
+                                  ÿ
+             ρ2 pnq “                      ψpn3 , λq
+                                 n“p1 p2 n3
+                           1{5´2ηďα2 ăα1 ă2{5`η
+                        α1 `α2 ą3{5´η,α2 ă1{5`4η{3
+                                       ÿ
+                        ´                                ψpn4 , p3 q.
+                                    n“p1 p2 p3 n4
+                            1{5´2ηďα3 ăα2 ăα1 ă2{5`η
+                            α1 `α2 ą3{5´η,α2 ă1{5`4η{3
+
+We may apply Lemma 7 to the first term of this provided that α2 ă ζ,
+which is satisfied if
+                  1 4η    161 359η              82
+                    `   ă     ´      ÐÑ η ă         .
+                  5   3   600   240            3395
+             BOUNDED INTERVALS CONTAINING MANY PRIMES                                   11
+
+We therefore have
+                                    ÿ
+     ρ2 pnq “ ρ0 pnq ´                                 ψpn4 , p3 q “ ρ0 pnq ` ρ4 pnq,
+                                 n“p1 p2 p3 n4
+                         1{5´2ηďα3 ăα2 ăα1 ă2{5`η
+                         α1 `α2 ą3{5´η,α2 ă1{5`4η{3
+
+say. The function ρ4 pnq will be treated in Lemma 13.
+  We now record the various results coming from the Harman sieve
+which are needed in the above.
+                      1
+Lemma 7. For 0 ď η ă 100 let
+                                 161 359η
+                                 ζ“  ´      .
+                                 600    240
+We conclude that all of the following functions have exponent of distri-
+bution θ0 pηq to smooth moduli:
+1. ψpn, λq
+2.                            ÿ
+                                        ψpn2 , λq
+                                   n“p1 n2
+                              1{5´2ηďα1 ă2{5`η
+
+3.                                   ÿ
+                                                   ψpn3 , λq
+                                  n“p1 p2 n3
+                            1{5´2ηďα2 ăα1 ă2{5`η
+                                α1 `α2 ă2{5`η
+
+4.                                   ÿ
+                                                   ψpn3 , λq
+                                  n“p1 p2 n3
+                            1{5´2ηďα2 ăα1 ă2{5`η
+                             α1 `α2 ą3{5´η,α2 ăζ
+
+5.                                   ÿ
+                                                       ψpn4 , λq.
+                                 n“p1 p2 p3 n4
+                         1{5´2ηăα3 ăα2 ăα1 ă2{5`η
+                             α1 `α2 ă 25 `η,α3 ăζ
+
+6.                                   ÿ
+                                                       ψpn1 , λq
+                                  n“n1 p2 p3 p4
+                            1{5´2ηďα3 ăα2 ă2{5`η
+                          α3 `α4 ă2{5`η,α2 ăζ,α4 ąα3
+
+Proof. We use the Harman sieve in the form given by Baker and Wein-
+gartner [1, Lemma 14]. In the notation of that lemma we let α “ 25 ` η
+and β “ 15 ´ 2η, so that α ` β “ 53 ´ η. We take
+                               M “ x401{600´119η{240 .
+12          BOUNDED INTERVALS CONTAINING MANY PRIMES
+
+We must therefore take
+             R ă x2{5`η and S ă MX ´α “ x161{600´359η{240 .
+We write S “ xζ so that
+                               161 359η
+                             ζ“    ´      ,
+                               600   240
+as in the statement of the lemma.
+  We apply the lemma to functions of the form
+                                         1
+                 wpnq “ 1n”a pmod qq ´      1pn,qq“1 .
+                                       φpqq
+Lemma 5 shows that the condition [1, (4.1)] is satisfied for almost all
+relevant q. Specifically we can take y “ xq log´A x, for any A ą 0, and
+the cardinality of the exceptional set of q is OA,B px log´B xq, for any
+B ą 0. By using Lemma 4 we see that an identical conclusion holds
+for the condition [1, (4.2)].
+   Observe that λ “ xβ and therefore, in order to complete the proof, it
+only remains to show that suitable choices of R, S, ur , vs can be found
+in each instance.
+1. We take R “ S “ 1 and u1 “ v1 “ 1.
+2. We take R “ x2{5`η , S “ 1, v1 “ 1 and ur the indicator function
+    of the primes in rx1{5´2η , x2{5`η s.
+3. Since α1 ` α2 ă 52 ` η and α2 ă α1 we have α2 ă 51 ` η2 . This is
+                                           82
+    smaller than ζ provided that η ă 2395     . The result therefore follows
+                       2{5`η          1{5`η{2
+    if we take R “ x         ,S “ x            and ur , vs suitable indicator
+    functions of primes. A finer than dyadic decomposition can be
+    used to remove the constraint on α1 ` α2 .
+4. This can be handled in an analogous way to the previous part since
+    the constraint α2 ă ζ is assumed to hold.
+5. We now take R “ x2{5`η , S “ xζ , ur is the indicator function
+    of certain products of two primes and vs the indicator of certain
+    primes.
+6. This is very similar to the previous part except for a different la-
+    belling of the variables. We take R “ x2{5`η , S “ xζ , ur the
+    indicator of the products p3 p4 and vs the indicator of the primes
+    p2 .
+                                                                          82
+   The result therefore follows if η satisfies the above constraint η ă 2395
+                                                                           1
+as well as the requirements of Lemmas 5 and 4. Certainly any η ă 100
+will be satisfactory.                                                      
+  In order to prove Lemma 10, below, we need some purely combina-
+torial results.
+            BOUNDED INTERVALS CONTAINING MANY PRIMES                      13
+
+                           82
+Lemma 8. Let 0 ă η ă 5395     . Let γ1 ě ¨ ¨ ¨ ě γt ą 0, γ1 ` ¨ ¨ ¨ ` γt “ 1
+and
+         199
+(a) γ1 ă 600 ` 119η ;
+             ř 240
+               γj is in 25 ` η, 53 ´ η .
+                       “              ‰
+(b) no sum
+             jPS
+(c) either γ3 ă 51 ´ 2η or γ2 ` γ3 ă 52 ` η.
+Then γ5 ě 15 ´ 2η and
+                                                   2
+                     γ1 ` γ2 ` γ6 ` ¨ ¨ ¨ ` γt ă     ` η.
+                                                   5
+Proof. We first show that
+                                       2
+(3.1)                        γ1 ` γ2 ă   ` η.
+                                       5
+Suppose the contrary, then by (b) we must have γ1 ` γ2 ą 53 ´ η. It is
+clear that γ3 ě 51 ´ 2η, since otherwise
+                    γ1 ` γ3 ` ¨ ¨ ¨ ` γm p3 ď m ď tq
+                                      “     ‰
+are successively found to be in 0, 52 ` η giving γ2 ě 53 ´ η which
+contradicts (a). We may therefore deduce from (c) that γ2 ` γ3 ă 52 ` η.
+  Now
+                                          3        2       1
+     γ1 ´ γ3 “ pγ1 ` γ2 q ´ pγ2 ` γ3 q ą p ´ ηq ´ p ` ηq “ ´ 2η
+                                          5        5       5
+so that
+                 1                  1       1        2
+            γ1 ą ´ 2η ` γ3 ě ´ 2η ` ´ 2η “ ´ 4η.
+                 5                  5       5        5
+            82
+Since η ă 5395 this contradicts the assumption (a) that
+                                  199 119η
+                            γ1 ă      `
+                                  600    240
+and therefore proves (3.1) by contradiction.
+   We now evaluate the largest m for which γm ě 51 ´ 2η. If m ď 4,
+then γ1 ` γ2 ` γm`1 ` ¨ ¨ ¨ ` γt ă 25 ` η (arguing as above). Since
+γ3 ` γ4 ď γ1 ` γ2 ă 52 ` η, we get γ1 ` ¨ ¨ ¨ ` γt ă 1 if m ď 4; so m ě 5.
+                             1
+   If m ě 6, then, since η ă 60 ,
+                                       6
+                      γ1 ` . . . ` γ6 ě  ´ 12η ą 1.
+                                       5
+This contradiction shows that m must be 5. We now conclude as above
+that
+                                               2
+                   γ1 ` γ2 ` γ6 ` ¨ ¨ ¨ ` γt ă ` η.              
+                                               5
+14          BOUNDED INTERVALS CONTAINING MANY PRIMES
+
+Lemma 9. Let 15 ´ 2η ď α2 ă α1 ă 52 ` η and α2 ď 31 . Suppose that
+         82
+0 ă η ă 5395 . Suppose that
+                  α1 “ β1 ` ¨ ¨ ¨ ` βr , β1 ě ¨ ¨ ¨ ě βr ą 0
+                  α2 “ βr`1 ` ¨ ¨ ¨ ` βs , βr`1 ě ¨ ¨ ¨ ě βs ą 0,
+         1 ´ α1 ´ α2 “ βs`1 ` ¨ ¨ ¨ ` βt , βs`1 ě ¨ ¨ ¨ ě βt ą 0.
+Let γ1 ě ¨ ¨ ¨ ě γt be the reordering of β1 , . . . , βt in decreasing order.
+Suppose that
+         199
+(a) γ1 ă 600  ` 119η ;
+              ř 240
+                γj is in 25 ` η, 53 ´ η ,
+                        “              ‰
+(b) no sum
+             jPS
+(c) either γ3 ă 51 ´ 2η or γ2 ` γ3 ă 25 ` η.
+Then either
+                                          2
+                             α1 ` α2 ă ` η
+                                          5
+or
+                               3                 1 4η
+                    α1 ` α2 ą ´ η, , α2 ă ` .
+                               5                 5    3
+Proof. We may suppose that α1 ` α2 ě 5 ` η, hence α1 ` α2 ą 35 ´ η
+                                              2
+
+by (b). By Lemma 8, we have γ5 ě 51 ´ 2η and
+                                                  2
+(3.2)                γ1 ` γ2 ` γ6 ` ¨ ¨ ¨ ` γt ă ` η.
+                                                  5
+We deduce from this that
+                                            3
+(3.3)                     γ3 ` γ4 ` γ5 ą ´ η.
+                                            5
+            1                 1    η
+Since α2 ď 3 and γ3 ď γ2 ă 5 ` 2 from (3.2) we obtain
+                                            ˆ       ˙
+                                 3            1 η       2 3η  1
+γ4 ` γ5 “ γ3 ` γ4 ` γ5 ´ γ3 ą ´ η ´             `     “ ´    ą ě α2 .
+                                 5            5 2       5  2  3
+Therefore at most one of γ1 , . . . , γ5 can be found in tβr`1 , . . . , βs u.
+Hence, by (3.2),
+                                               2
+                 α2 ď γ 1 ` γ 6 ` . . . ` γ t ă ` η ´ γ 2 .
+                                               5
+Using (3.3) we have
+                          1                      1 η
+                    γ2 ě pγ3 ` γ4 ` γ5 q ą ´
+                          3                      5 3
+        1   4η
+so α2 ă 5 ` 3 .                                                            
+  The following lemma is very significant in our argument as it makes
+crucial use of the Type III information given in Lemma 6. Without
+this result we would need a much wider Type II interval.
+           BOUNDED INTERVALS CONTAINING MANY PRIMES                    15
+
+                       22
+Lemma 10. Suppose η ă 3295 . The function
+                         ÿ
+                                      ψpn3 , p2 q
+                              n“p1 p2 n3
+                        1{5´2ηďα2 ăα1 ă2{5`η
+                     α1 `α2 ą3{5´η,α2 ě1{5`4η{3
+
+has exponent of distribution θ0 pηq to smooth moduli.
+Proof. We begin by observing that ψpn3 , p2 q “ 0 if p2 ą n3 . We may
+therefore impose the further constraint α1 ` 2α2 ď 1. This implies that
+α2 ď 31 . Next we show that the only summands which contribute to
+the function have n3 prime. This follows if α1 ` 3α2 ą 1 which may be
+verified since
+                                    3          1 4η           5η
+       α1 ` 3α2 “ α1 ` α2 ` 2α2 ą ´ η ` 2p ` q “ 1 ` .
+                                    5          5    3          3
+It follows that the function under consideration is
+                                 ÿ
+                                                 1.
+                                  n“p1 p2 p3
+                        1{5´2ηďα2 ăα1 ă2{5`η,α2 ďα3
+                       α1 `α2 ą3{5´η,1{5`4η{3ďα2 ď1{3
+
+   We now apply the Heath-Brown identity [6] to each prime pi . After a
+relatively simple treatment of the proper prime powers and a finer than
+dyadic subdivision to remove the weights log pi we may decompose our
+function as a sum of logOp1q x summands (see Polymath [8, Section 3]
+for some similar arguments). We may then use the previous lemma to
+show that all of these summands may be handled by one of Lemmas 4,
+5 or 6.                                                               
+   We now turn our attention to the remaining functions ρ3 pnq and
+ρ4 pnq.
+Lemma 11. We have
+                           ρ3 pnq “ ρ0 pnq ` ρ5 pnq
+for a positive function ρ5 pnq which satisfies
+                                    ˆż                    ˙
+                ÿ               x
+                     ρ5 pnq “               f pαqdα ` op1q ,
+              xďnď2x
+                              log x    Epηq
+
+where the integrand and region of integration are as defined in Lemma
+2.
+Proof. Recall that
+                                     ÿ
+              ρ3 pnq “                                  ψpn5 , p4 q.
+                                n“p1 p2 p3 p4 n5
+                         1{5´2ηďα4 ăα3 ăα2 ăα1 ă2{5`η
+                                α1 `α2 ă2{5`η
+16           BOUNDED INTERVALS CONTAINING MANY PRIMES
+
+If p4 ą n5 then ψpn5 , p4 q “ 0 so we may impose the additional con-
+straint α1 ` α2 ` α3 ` 2α4 ď 1.
+   Any part of ρ3 for which a sum of some of the αi lies in the Type II
+range r 52 ` η, 53 ´ ηs may be handled by Lemma 4. Since α1 ` α2 ă 52 ` η
+we know that no sum of 1 or 2 variables can lie in that range. It can
+be seen that a sum of 3 variables lies in the Type II range if and only
+if α2 ` α3 ` α4 ď 53 ´ η. We therefore obtain
+                               ρ3 pnq “ ρ0 pnq ` ρ5 pnq
+with
+                                          ÿ
+        ρ5 pnq “                                                        ψpn5 , p4 q.
+                                     n“p1 p2 p3 p4 n5
+                             1{5´2ηďα4 ăα3 ăα2 ăα1 ă2{5`η
+                   α1 `α2 ă2{5`η,α1 `α2 `α3 `2α4 ď1,α2 `α3 `α4 ą3{5´η
+
+We now claim that the only nonzero summands in ρ5 come from prime
+values of n5 . This will follow if α1 ` α2 ` α3 ` 3α4 ą 1 which holds
+           1
+since η ă 60  and
+                                                         6
+                     α1 ` α2 ` α3 ` 3α4 ą 6α4 ě            ´ 12η.
+                                                         5
+We may now estimate
+                                       ÿ
+                                              ρ5 pnq
+                                     xďnď2x
+
+using standard techniques and the result follows.                                      
+
+     Before dealing with ρ4 we need a further combinatorial fact.
+Lemma 12. Suppose α1 ą . . . ą α5 are real numbers.
+1. There are precisely 4 permutations β1 , . . . , β5 of the αi for which
+                         β1 ą β2 ą β3 ą β4 and β4 ă β5 .
+2. There are precisely 20 permutations β1 , . . . , β5 with
+                         β1 ą β2 , β2 ă β3 , and β4 ă β5 .
+Proof. 1. We must choose β5 from tα1 , . . . , α4 u and for each such
+   choice there is precisely 1 permissible permutation of the remaining
+   variables.
+2. There are precisely 10 choices for β4 , β5 , namely any pair αi , αj
+   with i ą j. There are then exactly two orderings of the remaining
+   α to give β1 , β2 , β3 .
+                                                                     
+           BOUNDED INTERVALS CONTAINING MANY PRIMES                     17
+
+Lemma 13. We have
+                         ρ4 pnq “ ρ0 pnq ` ρ6 pnq
+where ρ6 pnq is positive and
+                                   ˆ ż                   ˙
+               ÿ               x
+                    ρ6 pnq “        5      f pαqdα ` op1q .
+            xďnď2x
+                             log x    Epηq
+
+Proof. Recall that
+                                       ÿ
+               ρ4 pnq “ ´                                ψpn4 , p3 q.
+                                    n“p1 p2 p3 n4
+                            1{5´2ηďα3 ăα2 ăα1 ă2{5`η
+                            α1 `α2 ą3{5´η,α2 ă1{5`4η{3
+
+We observe that
+                                    3                6
+                α1 ` α2 ` 3α3 ą       ´ η ` 3α3 ą ´ 7η
+                                    5               5
+                                1
+which is greater than 1 if η ă 35 . It follows that the only nonzero terms
+in ρ4 have n4 prime and α4 ą α3 :
+                                          ÿ
+                ρ4 pnq “ ´                               1.
+                                        n“p1 p2 p3 p4
+                                 1{5´2ηďα3 ăα2 ăα1 ă2{5`η
+                             α1 `α2 ą3{5´η,α2 ă1{5`4η{3,α4 ąα3
+
+The condition α1 ą α2 may be dropped since we have
+                                     3     1 4η 2 7η
+         α1 “ pα1 ` α2 q ´ α2 ą        ´η´p ` q“ ´ .
+                                     5     5  3 5  3
+In addition we have
+                                 1         2
+                      α1 ď 1 ´ 3p ´ 2ηq “ ` 6η.
+                                 5         5
+Therefore, if we use Lemma 4 on the range α1 P r 52 ` η, 52 ` 6ηs we may
+drop the constraint α1 ď 25 ` η to obtain
+                                          ÿ
+              ρ4 pnq “ ρ0 pnq ´                            1
+                                            n“p1 p2 p3 p4
+                                       1{5´2ηďα3 ăα2 ă2{5`η
+                                 α3 `α4 ă2{5`η,α2 ă1{5`4η{3,α4 ąα3
+
+(in which the condition α1 ` α2 ą 53 ´ η has been replaced with the
+equivalent α3 ` α4 ă 52 ` η).
+   We now perform a reversal of roles, replacing the prime p1 by an
+integer n1 whose primality is detected with the sieve. Writing n1 “
+p2xqα1 this yields
+                         ρ4 pnq “ ρ0 pnq ` ρ14 pnq
+18            BOUNDED INTERVALS CONTAINING MANY PRIMES
+
+with                                       ÿ                           1{2
+             ρ14 pnq “ ´                                        ψpn1 , n1 q.
+                                       n“n1 p2 p3 p4
+                                  1{5´2ηďα3 ăα2 ă2{5`η
+                            α3 `α4 ă2{5`η,α2 ă1{5`4η{3,α4 ąα3
+
+This will be compared with
+                                            ÿ
+               ρ24 pnq “ ´                                       ψpn1 , λq.
+                                        n“n1 p2 p3 p4
+                                   1{5´2ηďα3 ăα2 ă2{5`η
+                             α3 `α4 ă2{5`η,α2 ă1{5`4η{3,α4 ąα3
+
+By the final part of Lemma 7 the function ρ24 pnq has exponent of dis-
+tribution θ0 pηq to smooth moduli. We observe that
+                            1           1           6
+         α2 ` α3 ` α4 ` 3p ´ 2ηq ě 6p ´ 2ηq “ ´ 12η ą 1,
+                            5           5           5
+since η ă 60 . This means that for any nonzero term in ρ24 pnq we have
+            1
+
+n1 ă λ3 . Therefore, if a term occurs in ρ24 pnq but not in ρ14 pnq it must
+have n1 “ p5 p6 with λ ď p5 ď p6 . We therefore conclude that
+                               ρ4 pnq “ ρ0 pnq ` ρ16 pnq
+with                                           ÿ
+             ρ16 pnq “                                                       1.
+                                           n“p2 p3 p4 p5 p6
+                                      1{5´2ηďα3 ăα2 ă2{5`η
+                         α3 `α4 ă2{5`η,α2 ă1{5`4η{3,α4 ąα3 ,1{5´2ηďα5 ďα6
+
+We let ρ6 pnq be the same function as ρ16 pnq but with the added con-
+straint that no sum of the variables α2 , . . . , α6 is in r 52 ` η, 53 ´ ηs. By
+Lemma 4 we have
+                        ρ16 pnq “ ρ0 pnq ` ρ6 pnq.
+Next we show that in ρ6 pnq the condition α2 ă 51 ` 4η   3
+                                                           is redundant.
+                                    1
+We begin by observing that, in ρ6 pnq, any sum of 3 of the variables
+exceeds 35 ´ 6η and therefore, in ρ6 pnq, any sum of 2 variables must be
+smaller than 52 ` η. We therefore obtain
+                                                            6
+                                                              ` 3η.
+     3α2 ` α3 ` α4 ` α5 “ pα2 ` α3 q ` pα2 ` α4 q ` pα2 ` α5 q ă
+                                                            5
+In addition, any sum of 3 variables in ρ6 pnq must exceed 53 ´ η and
+therefore
+                6         3         3               1 4η
+          3α2 ă ` 3η ´ p ´ ηq “ ` 4η ÝÑ α2 ă ` .
+                5         5         5               5    3
+We conclude that
+                       ρ4 pnq “ ρ0 pnq ` ρ6 pnq
+            BOUNDED INTERVALS CONTAINING MANY PRIMES                                  19
+
+with                                       ÿ
+             ρ6 pnq “                                                 1.
+                                       n“p2 p3 p4 p5 p6
+                            1{5´2ηďα3 ăα2 ,1{5´2ηďα5 ďα6 ,α4 ąα3
+                        αi `αj ă2{5`η @iăj,αi `αj `αk ą3{5´η @iăjăk
+
+To complete the proof we will show that
+                 ÿ                        ÿ
+                      ρ6 pnq “ p5 ` op1qq   ρ5 pnq
+                  xďnď2x                         xďnď2x
+
+with ρ5 pnq as in Lemma 11:
+                                           ÿ
+             ρ5 pnq “                                                 1.
+                                       n“p1 p2 p3 p4 p5
+                                1{5´2ηďα4 ăα3 ăα2 ăα1 ,α5 ěα4
+                        αi `αj ă2{5`η @iăj,αi `αj `αk ą3{5´η @iăjăk
+
+We observe that
+                                                                      ÿ          x
+    #tn P rx, 2xs : p2 |n for some p P rλ, x2{5`η su ď
+                                                                           2{5`η
+                                                                                 n2
+                                                                λďnďx
+                                                                x
+                                                           !      “ x4{5`2η .
+                                                                λ
+
+It follows, since ρ5 pnq, ρ6 pnq ! 1, that the contribution of n which are
+not squarefree to both sums is Opx4{5`2η q and hence negligible.
+   When restricted to squarefree numbers, the functions ρ5 pnq and ρ6 pnq
+have the same support:
+                                     1                         2
+            tn : n “ p1 p2 p3 p4 p5 , ´ 2η ď α1 ă . . . ă α5 ă ` η,
+                                     5                         5
+                  2                               3
+       αi ` αj ă ` η @i ă j, αi ` αj ` αk ą ´ η @i ă j ă ku.
+                  5                               5
+For n in this set, Lemma 12 shows that ρ5 pnq “ 4 and ρ6 pnq “ 20. The
+result follows.                                                         
+  We may now complete the proof of Lemma 2. We have shown that
+                  ρpn, p2xq1{2 q “ ρ0 pnq ` ρ5 pnq ` ρ6 pnq,
+ρ5 pnq ` ρ6 pnq ě 0 and
+                                           ˆ ż                   ˙
+          ÿ                            x
+               pρ5 pnq ` ρ6 pnqq “          6      f pαqdα ` op1q .
+       xďnď2x
+                                     log x    Epηq
+
+The lemma follows on taking
+                  ρpnq “ ρpn, p2xq1{2 q ´ ρ5 pnq ´ ρ6 pnq,
+which is supported on integers all of whose prime factors exceed λ.
+20         BOUNDED INTERVALS CONTAINING MANY PRIMES
+
+                         4. Proof of Lemma 1
+   We will describe the necessary changes to the arguments of Polymath
+[9]. A similar argument is also given in the work of Baker and Zhao [2].
+Define DHLrk, ms as in [9, Claim 3.1]. In order to show that
+                             Hm ! m exppc0 mq,
+for a given constant c0 , it suffices to show that DHLrk, m ` 1s holds
+whenever m ě 1 and k ě C exppc0 mq (for some sufficiently large abso-
+lute constant C).
+   The claim DHLrk, m ` 1s will be established using [9, Lemma 3.4].
+The difference in our approach is our method for obtaining a lower
+bound for the sum in [9, (14)]. Specifically, if ρpnq is a minorant for
+the indicator function of the primes we have
+          ÿ                                  ÿ
+                  νpnqθpn ` hi q ě log x            νpnqρpn ` hi q,
+       xďnď2x                                       xďnď2x
+     n”b pmod W q                                 n”b pmod W q
+
+for any nonnegative function νpnq. We will give an asymptotic formula
+for the sum on the right hand side.
+   Our sieve function νpnq will be of an identical form to those used
+in [9], namely the square of a linear combination of the divisor sums [9,
+(16)]. We therefore require asymptotics for sums of the form
+               ÿ                      k
+                                      ź
+                         ρpn ` hi q           λFi1 pn ` hi1 qλGi1 pn ` hi1 q.
+            xďnď2x                    i1 “1
+          n”b pmod W q
+
+We suppose, as in the statement of Lemma 1, that ρpnq is supported
+on numbers all of whose prime factors exceed xξ . Then, if the functions
+Fi , Gi are supported on r0, ξs, it is enough to evaluate sums of the form
+              ÿ                     ź
+                     ρpn ` hi q           λFi1 pn ` hi1 qλGi1 pn ` hi1 q
+          xďnď2x                1ďi1 ďk,i1 ‰i
+        n”b pmod W q
+
+(compare with [9, (21)]). In our case, this sum will be handled by a
+modification of [9, Theorem 3.5]. For a function F we write, as in [9],
+                         SpF q “ suptx : f pxq ‰ 0u.
+Lemma 14. Let k ě 2 be fixed, let ph1 , . . . , hk q be a fixed admissible
+k-tuple, and let b pmod W q be such that b`hi is coprime to W for each
+i “ 1, . . . , k. Let 1 ď i0 ď k be fixed, and for each 1 ď i ď k distinct
+from i0 , let Fi , Gi : r0, `8q Ñ R be fixed smooth compactly supported
+functions.
+              BOUNDED INTERVALS CONTAINING MANY PRIMES                         21
+
+  Let ρpnq : rx, 2xs Ñ R be a function which is equidistributed in arith-
+metic progressions to squarefree, xδ -smooth moduli q ď xθ . Suppose
+that ρpnq is supported on integers having no prime factors smaller than
+xδ and that          ÿ             x
+                          ρpnq “       p1 ´ c1 ` op1qq,
+                   nďxď2x
+                                 log x
+for a constant c1 .
+  Finally, suppose that if i ‰ i0 we have
+                               SpFi q, SpGi q ă δ
+and that                   ÿ
+                                  pSpFi q ` SpGi qq ă θ.
+                          1ďiďk
+                           i‰i0
+We may then conclude that
+           ÿ                            ź
+                  ρpn ` hi0 q                     λFi pn ` hi qλGi pn ` hi q
+             xďnď2x                  1ďiďk,i‰i0
+           n”b pmod W q
+                                                                  x
+                             “ pcp1 ´ c1 q ` op1qqB 1´k                   ,
+                                                              φpW q log x
+with B as in [9, (12)] and c as in [9, Theorem 3.5].
+Proof. This is almost identical to the work in [9, Sections 4.3 and 4.4].
+The only difference is that rather than an appeal to the Prime Number
+Theorem we use our assumptions on ρ to obtain
+             ÿ              ÿ              x
+                  ρpnq “         ρpnq “        p1 ´ c1 ` op1qq,
+          xďnď2x          xďnď2x
+                                         log x
+             pn,qq“1
+
+for any xδ -smooth q.                                                          
+  Using this result and the arguments of [9, Section 5.2] we may obtain
+the following modification of [9, 3.10].
+Lemma 15. Let k ě 2 and m ě 1 be fixed integers. Suppose there ex-
+ists a function ρpnq satisfying all the hypotheses of the previous lemma.
+If
+                              r 2δ s     2m
+                            Mk θ ą               ,
+                                      θp1 ´ c1 q
+       rαs
+with Mk      as in [9, Theorem 3.10], then DHLrk, m ` 1s holds.
+  It is shown in [9, Section 6] that for any α ą 0 we have
+                               rαs
+                           Mk ě log k ´ Oα p1q.
+22           BOUNDED INTERVALS CONTAINING MANY PRIMES
+
+Therefore, given a ρpnq as in the previous two lemmas, we may establish
+DHLrk, m ` 1s provided that
+                                   2m
+                      log k ą              ` Oθ,δ p1q,
+                                θp1 ´ c1 q
+that is
+                             k ě C exppc0 mq
+with
+                                        2
+                              c0 “
+                                    θp1 ´ c1 q
+and a constant C which may depend on θ and δ.
+  Finally we suppose that ρpnq satisfies the hypotheses of Lemma 1,
+so that it has exponent of distribution θ to smooth moduli. Then, for
+any ǫ ą 0 there exists a δ ą 0 such that ρpnq is equidistributed in
+arithmetic progressions to xδ -smooth moduli q ď xθ´ǫ . If necessary
+we may replace δ by minpδ, ξq so that ρpnq is supported on numbers
+with no prime factor smaller than xδ . The above then shows that
+DHLrk, m ` 1s holds for
+                           k ě C exppc0 mq
+with
+                                     2
+                         c0 “
+                              pθ ´ ǫqp1 ´ c1 q
+and a C depending on ǫ. By taking a sufficiently small ǫ we conclude
+that for any
+                                     2
+                           c0 ą
+                                 θp1 ´ c1 q
+we have
+                        Hm ! m exppc0 mq.
+Lemma 1 follows since the factor m may be removed by working with
+a slightly smaller c0 .
+
+                     5. Proof of Theorem 1.1
+     We compute an upper bound for
+                                  ż
+                       c1 pηq “ 6        f pαqdα
+                                  Epηq
+         22                                                        22
+for η “ 3295 . A computer calculation shows that the volume of Ep 3295
+is at most 3 ˆ 10´10 . In addition, the maximum of the integrand in
+that region is
+                         ˆ        ˙´5
+                           1
+                             ´ 2η     ď 4415.
+                           5
+            BOUNDED INTERVALS CONTAINING MANY PRIMES                      23
+
+It follows that
+                      22
+              c1 p        q ă 6 ˆ 3 ˆ 10´10 ˆ 4415 ă 8 ˆ 10´6
+                     3295
+and thus
+                      ˆ                  ˙
+                          1   7   17   22 `
+                                            1 ´ 8 ˆ 10´6 ą 0.52427.
+                                                        ˘
+θpηqp1 ´ c1 pηqq ą          `   `    ˆ
+                          2 300 120 3295
+                                                                  22
+Theorem 1.1 now follows if we choose a η sufficiently close to 3295  , since
+   2
+0.52427
+        ă 3.815.
+   We note that the above integral could be computed much more ac-
+curately. However, since our existing bound is already very small this
+would only give a very slight improvement in Theorem 1.1. The main
+                                      22
+limitation is the restriction to η ă 3295 rather than the losses in the mi-
+norant. This restriction on η was imposed in Lemma 10 and it appears
+that for larger values we cannot avoid an inconveniently large discard
+at that point of the argument. In other words, there is a discontinuity
+                          22
+in our method at η “ 3295    .
+24           BOUNDED INTERVALS CONTAINING MANY PRIMES
+
+                                References
+ [1] R. Baker and A. Weingartner. A ternary Diophantine inequality over primes.
+     Acta Arith., 162(2):159–196, 2014.
+ [2] R.C. Baker and L. Zhao. Gaps between primes in Beatty sequences.
+     arXiv:1411.2989.
+ [3] G. Harman. On the distribution of αp modulo one. J. London Math. Soc. (2),
+     27(1):9–18, 1983.
+ [4] G. Harman. On the distribution of αp modulo one. II. Proc. London Math.
+     Soc. (3), 72(2):241–260, 1996.
+ [5] G. Harman. Prime-detecting sieves, volume 33 of London Mathematical Society
+     Monographs Series. Princeton University Press, Princeton, NJ, 2007.
+ [6] D. R. Heath-Brown. Prime numbers in short intervals and a generalized
+     Vaughan identity. Canad. J. Math., 34(6):1365–1377, 1982.
+ [7] J. Maynard. Small gaps between primes. Ann. of Math. (2), 181(1):383–413,
+     2015.
+ [8] D. H. J. Polymath. New equidistribution estimates of Zhang type. Algebra
+     Number Theory, 8(9):2067–2199, 2014.
+ [9] D. H. J. Polymath. Variants of the Selberg sieve, and bounded intervals con-
+     taining many primes. Res. Math. Sci., 1(12), 2014.
+[10] Y. Zhang. Bounded gaps between primes. Ann. of Math. (2), 179(3):1121–1174,
+     2014.
+
+
+     Roger C. Baker,
+     Department of Mathematics,
+     Brigham Young University,
+     Provo, UT 84602, U. S. A.
+     baker@math.byu.edu
+     Alastair J. Irving
+     Centre de recherches mathématiques,
+     Université de Montréal,
+     Pavillon André-Aisenstadt,
+     2920 Chemin de la tour, Room 5357,
+     Montréal, (Québec), H3T 1J4, Canada
+     alastair.j.irving@gmail.com
+

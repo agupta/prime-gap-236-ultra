@@ -1,0 +1,25 @@
+{
+  "status": "grouped-fixed-vector-I-stage",
+  "i_complete": true,
+  "rigorous": false,
+  "decimal_dps": 100,
+  "input_json": "agents/small-delta-frontier/results/sparse_coordinate_tranche_h7_h5/c10_D12_sparse_c12_H5_direction.json",
+  "input_sha256": "f6aec9b2fae2a3edce726c95582019a6b1481dfe0146b39f1cbc83e69d3674d1",
+  "script_sha256": "47167e92a0f346e969706dc282ccb2dfd4ac31a0a75b654938ffbe8423cf4a4a",
+  "integrator_sha256": "941ee82bc72fd8488a95eb5e536fe47f8c95d39a1b618dae7d6ef7eb27122e52",
+  "parameters": {
+    "alpha": "79247/300000",
+    "delta": "1/100",
+    "eta": "76247/300000",
+    "beta1": "3/20",
+    "beta2": "3/20",
+    "beta3plus": "97/625"
+  },
+  "i_orbit_groups": 38,
+  "i_faces": 312,
+  "i_seconds": 4.766643862938508,
+  "denominator_positive": true,
+  "denominator": "2.289807406055679162585759973921738373494955300214908596499236733363633392312268598911006965923121811E-95",
+  "peak_rss_kib": 23868,
+  "child_peak_rss_kib": 19812
+}

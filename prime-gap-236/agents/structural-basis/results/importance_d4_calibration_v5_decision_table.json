@@ -1,0 +1,36 @@
+{
+  "status": "frozen-before-v5-production-completion",
+  "rigorous": false,
+  "scope": "D4-stratified-importance-calibration-discovery-only",
+  "ordered_rules": [
+    {
+      "decision": "CALIBRATION_PASS",
+      "condition": "independent_reconstruction_succeeds_and_all_frozen_gates_pass",
+      "exit_code": 0,
+      "next_action": "D12_importance_discovery_may_be_separately_authorized"
+    },
+    {
+      "decision": "EXTENSION_ELIGIBLE",
+      "condition": "independent_reconstruction_succeeds_and_extension_authorized_is_true",
+      "exit_code": 2,
+      "next_action": "requires_new_root_authorization_bound_to_parent_result_and_fresh_extension_directory"
+    },
+    {
+      "decision": "CALIBRATION_RETIRED",
+      "condition": "independent_reconstruction_succeeds_but_neither_pass_nor_extension_rule_holds",
+      "exit_code": 3,
+      "next_action": "retire_this_importance_calibration_schedule"
+    },
+    {
+      "decision": "IMPLEMENTATION_REJECTED",
+      "condition": "schema_provenance_checkpoint_or_independent_analysis_reconstruction_fails",
+      "exit_code": 1,
+      "next_action": "no_extension_no_D12_launch"
+    }
+  ],
+  "never_implies": [
+    "rigorous_error_bound",
+    "exact_sieve_quotient",
+    "H1_at_most_236"
+  ]
+}

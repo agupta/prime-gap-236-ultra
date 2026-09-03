@@ -1,0 +1,12 @@
+{
+  "authorized": true,
+  "driver_sha256": "69698f7766d9077bd5026dee8fc1e065b762a1f3d344ea2b7af0282763ce21f9",
+  "gate_sha256": "fa1019605ef6b5efd486b234451806efcf1912f7b3f181c9511839d873b63bf6",
+  "mode": "production",
+  "record_directory_binding": {
+    "device": 65028,
+    "inode": 798275,
+    "path": "/home/anish/code/prime-gap-236-ultra/prime-gap-236/agents/structural-basis/results/importance_d4_calibration_v66_records"
+  },
+  "status": "root-authorized-d4-calibration"
+}

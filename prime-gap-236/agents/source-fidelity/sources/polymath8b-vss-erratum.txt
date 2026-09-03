@@ -1,0 +1,63 @@
+Polymath. ﻿Mathematical Sciences (2015) 2:15
+DOI 10.1186/s40687-015-0033-x
+
+
+
+
+ ERRATUM                                                                                                      Open Access
+
+Erratum to: Variants of the Selberg sieve,
+and bounded intervals containing many primes
+DHJ Polymath*
+
+
+*Correspondence:                    Erratum to: Research in the Mathematical Sciences (2014) 1:12
+tao@math.ucla.edu
+Department of Mathematics,                       DOI: 10.1186/s40687‑014‑0012‑7
+University of California, Los       The arXiv identifiers for some of the references should be added for completeness. These
+Angeles, Los Angeles, CA,
+USA                                 references are:
+
+                                      9. Banks, W.D., Freiberg, T., Maynard, J.: On limit points of the sequence of normal-
+                                    ized prime gaps. http://arxiv.org/abs/1404.5094.
+                                      10. Banks, W.D., Freiberg, T., Turnage-Butterbaugh, C.L.: Consecutive primes in
+                                    tuples. http://arxiv.org/abs/1311.7003.
+                                      11. Benatar, J.: The existence of small prime gaps in subsets of the integers. http://arxiv.
+                                    org/abs/1305.0348.
+                                      12. Castillo, A., Hall, C., Lemke Oliver, R.J., Pollack, P., Thompson, L.: Bounded gaps
+                                    between primes in number fields and function fields. http://arxiv.org/abs/1403.5808.
+                                      13. Chua, L., Park, S., Smith, G.D.: Bounded gaps between primes in special sequences.
+                                    http://arxiv.org/abs/1407.1747.
+                                      14. Freiberg, T.: A note on the theorem of Maynard and Tao. http://arxiv.org/
+                                    abs/1311.5319.
+                                      15. Li, H., Pan, H.: Bounded gaps between primes of the special form. http://arxiv.org/
+                                    abs/1403.4527.
+                                      16. Maynard, J.: Dense clusters of primes in subsets. http://arxiv.org/abs/1405.2593.
+                                      17. Pintz, J.: On the ratio of consecutive gaps between primes. http://arxiv.org/
+                                    abs/1406.2658.
+                                      18. Pintz, J.: On the distribution of gaps between consecutive primes. http://arxiv.org/
+                                    abs/1407.2213.
+                                      19. Pollack, P.: Bounded gaps between primes with a given primitive root. http://arxiv.
+                                    org/abs/1404.4007.
+                                      20. Pollack, P., Thompson, L.: Arithmetic functions at consecutive shifted primes.
+                                    http://arxiv.org/abs/1405.4444.
+
+
+
+
+                                    © 2015 Polymath.
+Polymath. ﻿Mathematical Sciences (2015) 2:15                                                                      Page 2 of 2
+
+
+
+
+                    21. Thorner, J.: Bounded gaps between primes in Chebotarev sets. http://arxiv.org/
+                  abs/1401.6677.
+                    35. Pintz, J.: Polignac numbers, conjectures of erdos on gaps between primes, arith-
+                  metic progressions in primes and the bounded gap conjecture. http://arxiv.org/
+                  abs/1305.6289.
+
+                    Note: 21 has now appeared in Research in the Mathematical Sciences 2014, 1:4.
+
+                   The online version of the original article can be found under doi:10.1186/s40687-014-0012-7.
+

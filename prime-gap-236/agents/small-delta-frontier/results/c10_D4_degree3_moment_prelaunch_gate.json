@@ -1,0 +1,65 @@
+{
+  "status": "frozen-c10-d4-degree3-moment-prelaunch",
+  "rigorous": false,
+  "production_launch_authorized": false,
+  "degree": 3,
+  "parameters": {
+    "alpha": "79247/300000",
+    "delta": "1/100",
+    "eta": "76247/300000",
+    "beta1": "3/20",
+    "beta2": "3/20",
+    "beta3plus": "97/625"
+  },
+  "source_hashes": {
+    "agents/small-delta-frontier/check_stratum_moment_d4_degree3.py": "e48d46f447893d21addef38d979670107086550495fd390a1adeebf1ad6ba7ef",
+    "agents/small-delta-frontier/test_check_stratum_moment_d4_degree3.py": "a2f80e49a302d1c77c5edbff74f989a4b4934270a39fd8c1d8defc552f1f3b46",
+    "agents/small-delta-frontier/stratum_moment_table_fused.py": "8f8eabfa1f56db41da69bd425f7c506710b292f9e86ad1255d733dac018c8190",
+    "agents/small-delta-frontier/stratum_moment_table.py": "fcc471d8a0c8dce01147b6984f981ae5f40ef08a943d2f05ecbe1ec3b0eadccd",
+    "agents/small-delta-frontier/test_stratum_moment_table_fused.py": "c0ede840c75b3ac73d15b160fb87b524182940f7b4180e002108eae93a0053ab",
+    "agents/exact-integrator/src/exact_integrator.py": "941ee82bc72fd8488a95eb5e536fe47f8c95d39a1b618dae7d6ef7eb27122e52",
+    "agents/exact-integrator/grouped_fixed_vector.py": "47167e92a0f346e969706dc282ccb2dfd4ac31a0a75b654938ffbe8423cf4a4a",
+    "agents/exact-integrator/stratum_quadratic.py": "62dad8c96005bdb06945552a36b6dc35cecea6633daa5f3cf06e514a6aa77234",
+    "agents/exact-integrator/stratum_linear.py": "7400369a2e0e321ed032374f1e45f35785b0f0c53a085af18bf5ec2cb3c80162",
+    "agents/exact-integrator/stratum_amplitude.py": "d23d42315d7b518ae5d3f200a6192f47f3500d6eebd3a73fb6aa4ce7a23c7887",
+    "agents/exact-integrator/robust_generalized_solve.py": "2086244acb674e5bd92e4880fb38d32d6dd981cd0272db595de2578554da257e",
+    "agents/exact-integrator/run_scheduled_basis.py": "06f79a13dbf172f40716d603ae8d824b5f65d2d69ed08dee59bd5c091821c4d0",
+    "agents/exact-integrator/verify_scheduled_fixed_vector.py": "97f36696712f9cbe0cc0fff1fab6c4dc5ec4850220c12ebcc63f9c794aff1a1a"
+  },
+  "data_hashes": {
+    "agents/exact-integrator/results/c10_capped_D4_decimal55_vector_input.json": "2b11a18c697e9a2be61204b5493bf7a235ce4add39d853bbb4d76ef31fb4666b",
+    "agents/exact-integrator/results/c10_stratum_quadratic_cappedopt_D4_exact.json": "fbc8c38d2cf4241fdba03beb4251e2692e96af01ad4918c9a3a1075af2ed6e86",
+    "agents/small-delta-frontier/results/c10_D4_stratum_moment_table_fused_oracle.json": "72ece5aa4a15536153d7634ee630ebf5e1090dc2ce0a7104cf00190bf310f6eb"
+  },
+  "tag_schema_sha256": "320272a9dfb08ab6d12396127de3ff35ffe35c47b4715e4035bc985e67981aad",
+  "expected_counts": {
+    "matrix_dimension": 160,
+    "i_faces": 312,
+    "j_branch_domains": 1200,
+    "j_fused_traversals": 1200,
+    "i_scalar_moment_integrals": 8736,
+    "j_logical_moment_products": 14712,
+    "j_scalar_moment_integrals": 167380
+  },
+  "resource_gate": {
+    "predicted_fused_seconds": "1301.89457765889068165016958538",
+    "maximum_fused_seconds": 1800,
+    "maximum_total_validation_seconds": 3600,
+    "maximum_peak_rss_kib": 262144
+  },
+  "validation_targets": [
+    "fused_equals_unfused_all_moments_and_all_160x160_entries",
+    "degree2_principal_submatrix_equals_fbc8_oracle_all_entries",
+    "embedded_fbc8_vector_contraction_equals_exact_denominator_numerator",
+    "inputs_sources_and_gate_unchanged_at_publication"
+  ],
+  "baseline_measurement": {
+    "degree": 2,
+    "artifact_sha256": "72ece5aa4a15536153d7634ee630ebf5e1090dc2ce0a7104cf00190bf310f6eb",
+    "forms_seconds": "449.47953073098324",
+    "peak_rss_kib": 50108,
+    "j_scalar_moment_integrals": 57788,
+    "degree3_scalar_count_ratio": "167380/57788",
+    "projection_method": "degree2_wall_seconds_times_exact_J_scalar_count_ratio"
+  }
+}

@@ -1,0 +1,1204 @@
+{
+  "conventions": {
+    "active_dimensions": {
+      "degree_0": 16,
+      "degree_1": 47,
+      "degree_2": 93
+    },
+    "basis_dimension": 96,
+    "channel_powers": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "channels_per_stratum": 6,
+    "feature_normalization": "(L/alpha)^a*(Z/alpha)^b",
+    "j_common_branch_presence": [
+      {
+        "large": true,
+        "large_upper": "3/20",
+        "small": true,
+        "small_upper": "1/100",
+        "stratum": 0,
+        "witness_large_sum": "0"
+      },
+      {
+        "large": true,
+        "large_upper": "21/200",
+        "small": true,
+        "small_upper": "1/100",
+        "stratum": 1,
+        "witness_large_sum": "9/200"
+      },
+      {
+        "large": true,
+        "large_upper": "1027/10000",
+        "small": true,
+        "small_upper": "1/100",
+        "stratum": 2,
+        "witness_large_sum": "21/400"
+      },
+      {
+        "large": true,
+        "large_upper": "939/10000",
+        "small": true,
+        "small_upper": "1/100",
+        "stratum": 3,
+        "witness_large_sum": "613/10000"
+      },
+      {
+        "large": true,
+        "large_upper": "54/625",
+        "small": true,
+        "small_upper": "1/100",
+        "stratum": 4,
+        "witness_large_sum": "43/625"
+      },
+      {
+        "large": true,
+        "large_upper": "789/10000",
+        "small": true,
+        "small_upper": "1/100",
+        "stratum": 5,
+        "witness_large_sum": "763/10000"
+      },
+      {
+        "large": true,
+        "large_upper": "357/5000",
+        "small": true,
+        "small_upper": "1/100",
+        "stratum": 6,
+        "witness_large_sum": "419/5000"
+      },
+      {
+        "large": true,
+        "large_upper": "639/10000",
+        "small": true,
+        "small_upper": "1/100",
+        "stratum": 7,
+        "witness_large_sum": "913/10000"
+      },
+      {
+        "large": true,
+        "large_upper": "141/2500",
+        "small": true,
+        "small_upper": "1/100",
+        "stratum": 8,
+        "witness_large_sum": "247/2500"
+      },
+      {
+        "large": true,
+        "large_upper": "489/10000",
+        "small": true,
+        "small_upper": "1/100",
+        "stratum": 9,
+        "witness_large_sum": "1063/10000"
+      },
+      {
+        "large": true,
+        "large_upper": "207/5000",
+        "small": true,
+        "small_upper": "1/100",
+        "stratum": 10,
+        "witness_large_sum": "569/5000"
+      },
+      {
+        "large": true,
+        "large_upper": "339/10000",
+        "small": true,
+        "small_upper": "1/100",
+        "stratum": 11,
+        "witness_large_sum": "1213/10000"
+      },
+      {
+        "large": true,
+        "large_upper": "33/1250",
+        "small": true,
+        "small_upper": "1/100",
+        "stratum": 12,
+        "witness_large_sum": "161/1250"
+      },
+      {
+        "large": true,
+        "large_upper": "189/10000",
+        "small": true,
+        "small_upper": "1/100",
+        "stratum": 13,
+        "witness_large_sum": "1363/10000"
+      },
+      {
+        "large": true,
+        "large_upper": "57/5000",
+        "small": true,
+        "small_upper": "1/100",
+        "stratum": 14,
+        "witness_large_sum": "719/5000"
+      },
+      {
+        "large": false,
+        "large_upper": "39/10000",
+        "small": true,
+        "small_upper": "1/100",
+        "stratum": 15,
+        "witness_large_sum": "1513/10000"
+      }
+    ],
+    "j_envelope": "g=sum_i(m_i^2); y_ij=m_i*m_j/g; z=m0^2/g",
+    "j_stratum_artifact_scale_to_48J_numerator": 1,
+    "k": 48,
+    "strata": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "structural_upper_counts": {
+      "I": 336,
+      "J": 876
+    },
+    "support_parameters": {
+      "alpha": "79247/300000",
+      "beta1": "3/20",
+      "beta2": "3/20",
+      "beta3plus": "97/625",
+      "delta": "1/100",
+      "eta": "76247/300000"
+    }
+  },
+  "data_hashes": {
+    "agents/exact-integrator/results/c10_capped_D4_decimal55_vector_input.json": "2b11a18c697e9a2be61204b5493bf7a235ce4add39d853bbb4d76ef31fb4666b",
+    "agents/exact-integrator/results/c10_stratum_linear_D4_decimal160_cut10.json": "96e0655e0ace238cc561aa654d1facb8ac1e93257835f3ad174efef42d09d42e",
+    "agents/exact-integrator/results/c10_stratum_quadratic_cappedopt_D4_exact.json": "fbc8c38d2cf4241fdba03beb4251e2692e96af01ad4918c9a3a1075af2ed6e86"
+  },
+  "extension_rule": {
+    "allowed_failure_classes": [
+      "split_rhat",
+      "batch_means_ess",
+      "z_precision",
+      "simultaneous_coverage"
+    ],
+    "continues_serialized_prng_states": true,
+    "forbidden_after_any_algebraic_failure": true,
+    "post_extension_batches_per_chain": 80,
+    "post_extension_samples_per_chain": 16000,
+    "requires_max_standardized_discrepancy_at_most": "12"
+  },
+  "float_encoding": "python-float-hex",
+  "production_launch_authorized": false,
+  "rigorous": false,
+  "schedule": {
+    "batches_per_chain": 20,
+    "chains": [
+      {
+        "initial_seed": 2364800000,
+        "replicate": 0,
+        "stratum": 0,
+        "target": "I",
+        "transition_seed": 2364800001
+      },
+      {
+        "initial_seed": 2364800002,
+        "replicate": 1,
+        "stratum": 0,
+        "target": "I",
+        "transition_seed": 2364800003
+      },
+      {
+        "initial_seed": 2364800004,
+        "replicate": 2,
+        "stratum": 0,
+        "target": "I",
+        "transition_seed": 2364800005
+      },
+      {
+        "initial_seed": 2364800006,
+        "replicate": 3,
+        "stratum": 0,
+        "target": "I",
+        "transition_seed": 2364800007
+      },
+      {
+        "initial_seed": 2364801000,
+        "replicate": 0,
+        "stratum": 1,
+        "target": "I",
+        "transition_seed": 2364801001
+      },
+      {
+        "initial_seed": 2364801002,
+        "replicate": 1,
+        "stratum": 1,
+        "target": "I",
+        "transition_seed": 2364801003
+      },
+      {
+        "initial_seed": 2364801004,
+        "replicate": 2,
+        "stratum": 1,
+        "target": "I",
+        "transition_seed": 2364801005
+      },
+      {
+        "initial_seed": 2364801006,
+        "replicate": 3,
+        "stratum": 1,
+        "target": "I",
+        "transition_seed": 2364801007
+      },
+      {
+        "initial_seed": 2364802000,
+        "replicate": 0,
+        "stratum": 2,
+        "target": "I",
+        "transition_seed": 2364802001
+      },
+      {
+        "initial_seed": 2364802002,
+        "replicate": 1,
+        "stratum": 2,
+        "target": "I",
+        "transition_seed": 2364802003
+      },
+      {
+        "initial_seed": 2364802004,
+        "replicate": 2,
+        "stratum": 2,
+        "target": "I",
+        "transition_seed": 2364802005
+      },
+      {
+        "initial_seed": 2364802006,
+        "replicate": 3,
+        "stratum": 2,
+        "target": "I",
+        "transition_seed": 2364802007
+      },
+      {
+        "initial_seed": 2364803000,
+        "replicate": 0,
+        "stratum": 3,
+        "target": "I",
+        "transition_seed": 2364803001
+      },
+      {
+        "initial_seed": 2364803002,
+        "replicate": 1,
+        "stratum": 3,
+        "target": "I",
+        "transition_seed": 2364803003
+      },
+      {
+        "initial_seed": 2364803004,
+        "replicate": 2,
+        "stratum": 3,
+        "target": "I",
+        "transition_seed": 2364803005
+      },
+      {
+        "initial_seed": 2364803006,
+        "replicate": 3,
+        "stratum": 3,
+        "target": "I",
+        "transition_seed": 2364803007
+      },
+      {
+        "initial_seed": 2364804000,
+        "replicate": 0,
+        "stratum": 4,
+        "target": "I",
+        "transition_seed": 2364804001
+      },
+      {
+        "initial_seed": 2364804002,
+        "replicate": 1,
+        "stratum": 4,
+        "target": "I",
+        "transition_seed": 2364804003
+      },
+      {
+        "initial_seed": 2364804004,
+        "replicate": 2,
+        "stratum": 4,
+        "target": "I",
+        "transition_seed": 2364804005
+      },
+      {
+        "initial_seed": 2364804006,
+        "replicate": 3,
+        "stratum": 4,
+        "target": "I",
+        "transition_seed": 2364804007
+      },
+      {
+        "initial_seed": 2364805000,
+        "replicate": 0,
+        "stratum": 5,
+        "target": "I",
+        "transition_seed": 2364805001
+      },
+      {
+        "initial_seed": 2364805002,
+        "replicate": 1,
+        "stratum": 5,
+        "target": "I",
+        "transition_seed": 2364805003
+      },
+      {
+        "initial_seed": 2364805004,
+        "replicate": 2,
+        "stratum": 5,
+        "target": "I",
+        "transition_seed": 2364805005
+      },
+      {
+        "initial_seed": 2364805006,
+        "replicate": 3,
+        "stratum": 5,
+        "target": "I",
+        "transition_seed": 2364805007
+      },
+      {
+        "initial_seed": 2364806000,
+        "replicate": 0,
+        "stratum": 6,
+        "target": "I",
+        "transition_seed": 2364806001
+      },
+      {
+        "initial_seed": 2364806002,
+        "replicate": 1,
+        "stratum": 6,
+        "target": "I",
+        "transition_seed": 2364806003
+      },
+      {
+        "initial_seed": 2364806004,
+        "replicate": 2,
+        "stratum": 6,
+        "target": "I",
+        "transition_seed": 2364806005
+      },
+      {
+        "initial_seed": 2364806006,
+        "replicate": 3,
+        "stratum": 6,
+        "target": "I",
+        "transition_seed": 2364806007
+      },
+      {
+        "initial_seed": 2364807000,
+        "replicate": 0,
+        "stratum": 7,
+        "target": "I",
+        "transition_seed": 2364807001
+      },
+      {
+        "initial_seed": 2364807002,
+        "replicate": 1,
+        "stratum": 7,
+        "target": "I",
+        "transition_seed": 2364807003
+      },
+      {
+        "initial_seed": 2364807004,
+        "replicate": 2,
+        "stratum": 7,
+        "target": "I",
+        "transition_seed": 2364807005
+      },
+      {
+        "initial_seed": 2364807006,
+        "replicate": 3,
+        "stratum": 7,
+        "target": "I",
+        "transition_seed": 2364807007
+      },
+      {
+        "initial_seed": 2364808000,
+        "replicate": 0,
+        "stratum": 8,
+        "target": "I",
+        "transition_seed": 2364808001
+      },
+      {
+        "initial_seed": 2364808002,
+        "replicate": 1,
+        "stratum": 8,
+        "target": "I",
+        "transition_seed": 2364808003
+      },
+      {
+        "initial_seed": 2364808004,
+        "replicate": 2,
+        "stratum": 8,
+        "target": "I",
+        "transition_seed": 2364808005
+      },
+      {
+        "initial_seed": 2364808006,
+        "replicate": 3,
+        "stratum": 8,
+        "target": "I",
+        "transition_seed": 2364808007
+      },
+      {
+        "initial_seed": 2364809000,
+        "replicate": 0,
+        "stratum": 9,
+        "target": "I",
+        "transition_seed": 2364809001
+      },
+      {
+        "initial_seed": 2364809002,
+        "replicate": 1,
+        "stratum": 9,
+        "target": "I",
+        "transition_seed": 2364809003
+      },
+      {
+        "initial_seed": 2364809004,
+        "replicate": 2,
+        "stratum": 9,
+        "target": "I",
+        "transition_seed": 2364809005
+      },
+      {
+        "initial_seed": 2364809006,
+        "replicate": 3,
+        "stratum": 9,
+        "target": "I",
+        "transition_seed": 2364809007
+      },
+      {
+        "initial_seed": 2364810000,
+        "replicate": 0,
+        "stratum": 10,
+        "target": "I",
+        "transition_seed": 2364810001
+      },
+      {
+        "initial_seed": 2364810002,
+        "replicate": 1,
+        "stratum": 10,
+        "target": "I",
+        "transition_seed": 2364810003
+      },
+      {
+        "initial_seed": 2364810004,
+        "replicate": 2,
+        "stratum": 10,
+        "target": "I",
+        "transition_seed": 2364810005
+      },
+      {
+        "initial_seed": 2364810006,
+        "replicate": 3,
+        "stratum": 10,
+        "target": "I",
+        "transition_seed": 2364810007
+      },
+      {
+        "initial_seed": 2364811000,
+        "replicate": 0,
+        "stratum": 11,
+        "target": "I",
+        "transition_seed": 2364811001
+      },
+      {
+        "initial_seed": 2364811002,
+        "replicate": 1,
+        "stratum": 11,
+        "target": "I",
+        "transition_seed": 2364811003
+      },
+      {
+        "initial_seed": 2364811004,
+        "replicate": 2,
+        "stratum": 11,
+        "target": "I",
+        "transition_seed": 2364811005
+      },
+      {
+        "initial_seed": 2364811006,
+        "replicate": 3,
+        "stratum": 11,
+        "target": "I",
+        "transition_seed": 2364811007
+      },
+      {
+        "initial_seed": 2364812000,
+        "replicate": 0,
+        "stratum": 12,
+        "target": "I",
+        "transition_seed": 2364812001
+      },
+      {
+        "initial_seed": 2364812002,
+        "replicate": 1,
+        "stratum": 12,
+        "target": "I",
+        "transition_seed": 2364812003
+      },
+      {
+        "initial_seed": 2364812004,
+        "replicate": 2,
+        "stratum": 12,
+        "target": "I",
+        "transition_seed": 2364812005
+      },
+      {
+        "initial_seed": 2364812006,
+        "replicate": 3,
+        "stratum": 12,
+        "target": "I",
+        "transition_seed": 2364812007
+      },
+      {
+        "initial_seed": 2364813000,
+        "replicate": 0,
+        "stratum": 13,
+        "target": "I",
+        "transition_seed": 2364813001
+      },
+      {
+        "initial_seed": 2364813002,
+        "replicate": 1,
+        "stratum": 13,
+        "target": "I",
+        "transition_seed": 2364813003
+      },
+      {
+        "initial_seed": 2364813004,
+        "replicate": 2,
+        "stratum": 13,
+        "target": "I",
+        "transition_seed": 2364813005
+      },
+      {
+        "initial_seed": 2364813006,
+        "replicate": 3,
+        "stratum": 13,
+        "target": "I",
+        "transition_seed": 2364813007
+      },
+      {
+        "initial_seed": 2364814000,
+        "replicate": 0,
+        "stratum": 14,
+        "target": "I",
+        "transition_seed": 2364814001
+      },
+      {
+        "initial_seed": 2364814002,
+        "replicate": 1,
+        "stratum": 14,
+        "target": "I",
+        "transition_seed": 2364814003
+      },
+      {
+        "initial_seed": 2364814004,
+        "replicate": 2,
+        "stratum": 14,
+        "target": "I",
+        "transition_seed": 2364814005
+      },
+      {
+        "initial_seed": 2364814006,
+        "replicate": 3,
+        "stratum": 14,
+        "target": "I",
+        "transition_seed": 2364814007
+      },
+      {
+        "initial_seed": 2364815000,
+        "replicate": 0,
+        "stratum": 15,
+        "target": "I",
+        "transition_seed": 2364815001
+      },
+      {
+        "initial_seed": 2364815002,
+        "replicate": 1,
+        "stratum": 15,
+        "target": "I",
+        "transition_seed": 2364815003
+      },
+      {
+        "initial_seed": 2364815004,
+        "replicate": 2,
+        "stratum": 15,
+        "target": "I",
+        "transition_seed": 2364815005
+      },
+      {
+        "initial_seed": 2364815006,
+        "replicate": 3,
+        "stratum": 15,
+        "target": "I",
+        "transition_seed": 2364815007
+      },
+      {
+        "initial_seed": 2365800000,
+        "replicate": 0,
+        "stratum": 0,
+        "target": "J",
+        "transition_seed": 2365800001
+      },
+      {
+        "initial_seed": 2365800002,
+        "replicate": 1,
+        "stratum": 0,
+        "target": "J",
+        "transition_seed": 2365800003
+      },
+      {
+        "initial_seed": 2365800004,
+        "replicate": 2,
+        "stratum": 0,
+        "target": "J",
+        "transition_seed": 2365800005
+      },
+      {
+        "initial_seed": 2365800006,
+        "replicate": 3,
+        "stratum": 0,
+        "target": "J",
+        "transition_seed": 2365800007
+      },
+      {
+        "initial_seed": 2365801000,
+        "replicate": 0,
+        "stratum": 1,
+        "target": "J",
+        "transition_seed": 2365801001
+      },
+      {
+        "initial_seed": 2365801002,
+        "replicate": 1,
+        "stratum": 1,
+        "target": "J",
+        "transition_seed": 2365801003
+      },
+      {
+        "initial_seed": 2365801004,
+        "replicate": 2,
+        "stratum": 1,
+        "target": "J",
+        "transition_seed": 2365801005
+      },
+      {
+        "initial_seed": 2365801006,
+        "replicate": 3,
+        "stratum": 1,
+        "target": "J",
+        "transition_seed": 2365801007
+      },
+      {
+        "initial_seed": 2365802000,
+        "replicate": 0,
+        "stratum": 2,
+        "target": "J",
+        "transition_seed": 2365802001
+      },
+      {
+        "initial_seed": 2365802002,
+        "replicate": 1,
+        "stratum": 2,
+        "target": "J",
+        "transition_seed": 2365802003
+      },
+      {
+        "initial_seed": 2365802004,
+        "replicate": 2,
+        "stratum": 2,
+        "target": "J",
+        "transition_seed": 2365802005
+      },
+      {
+        "initial_seed": 2365802006,
+        "replicate": 3,
+        "stratum": 2,
+        "target": "J",
+        "transition_seed": 2365802007
+      },
+      {
+        "initial_seed": 2365803000,
+        "replicate": 0,
+        "stratum": 3,
+        "target": "J",
+        "transition_seed": 2365803001
+      },
+      {
+        "initial_seed": 2365803002,
+        "replicate": 1,
+        "stratum": 3,
+        "target": "J",
+        "transition_seed": 2365803003
+      },
+      {
+        "initial_seed": 2365803004,
+        "replicate": 2,
+        "stratum": 3,
+        "target": "J",
+        "transition_seed": 2365803005
+      },
+      {
+        "initial_seed": 2365803006,
+        "replicate": 3,
+        "stratum": 3,
+        "target": "J",
+        "transition_seed": 2365803007
+      },
+      {
+        "initial_seed": 2365804000,
+        "replicate": 0,
+        "stratum": 4,
+        "target": "J",
+        "transition_seed": 2365804001
+      },
+      {
+        "initial_seed": 2365804002,
+        "replicate": 1,
+        "stratum": 4,
+        "target": "J",
+        "transition_seed": 2365804003
+      },
+      {
+        "initial_seed": 2365804004,
+        "replicate": 2,
+        "stratum": 4,
+        "target": "J",
+        "transition_seed": 2365804005
+      },
+      {
+        "initial_seed": 2365804006,
+        "replicate": 3,
+        "stratum": 4,
+        "target": "J",
+        "transition_seed": 2365804007
+      },
+      {
+        "initial_seed": 2365805000,
+        "replicate": 0,
+        "stratum": 5,
+        "target": "J",
+        "transition_seed": 2365805001
+      },
+      {
+        "initial_seed": 2365805002,
+        "replicate": 1,
+        "stratum": 5,
+        "target": "J",
+        "transition_seed": 2365805003
+      },
+      {
+        "initial_seed": 2365805004,
+        "replicate": 2,
+        "stratum": 5,
+        "target": "J",
+        "transition_seed": 2365805005
+      },
+      {
+        "initial_seed": 2365805006,
+        "replicate": 3,
+        "stratum": 5,
+        "target": "J",
+        "transition_seed": 2365805007
+      },
+      {
+        "initial_seed": 2365806000,
+        "replicate": 0,
+        "stratum": 6,
+        "target": "J",
+        "transition_seed": 2365806001
+      },
+      {
+        "initial_seed": 2365806002,
+        "replicate": 1,
+        "stratum": 6,
+        "target": "J",
+        "transition_seed": 2365806003
+      },
+      {
+        "initial_seed": 2365806004,
+        "replicate": 2,
+        "stratum": 6,
+        "target": "J",
+        "transition_seed": 2365806005
+      },
+      {
+        "initial_seed": 2365806006,
+        "replicate": 3,
+        "stratum": 6,
+        "target": "J",
+        "transition_seed": 2365806007
+      },
+      {
+        "initial_seed": 2365807000,
+        "replicate": 0,
+        "stratum": 7,
+        "target": "J",
+        "transition_seed": 2365807001
+      },
+      {
+        "initial_seed": 2365807002,
+        "replicate": 1,
+        "stratum": 7,
+        "target": "J",
+        "transition_seed": 2365807003
+      },
+      {
+        "initial_seed": 2365807004,
+        "replicate": 2,
+        "stratum": 7,
+        "target": "J",
+        "transition_seed": 2365807005
+      },
+      {
+        "initial_seed": 2365807006,
+        "replicate": 3,
+        "stratum": 7,
+        "target": "J",
+        "transition_seed": 2365807007
+      },
+      {
+        "initial_seed": 2365808000,
+        "replicate": 0,
+        "stratum": 8,
+        "target": "J",
+        "transition_seed": 2365808001
+      },
+      {
+        "initial_seed": 2365808002,
+        "replicate": 1,
+        "stratum": 8,
+        "target": "J",
+        "transition_seed": 2365808003
+      },
+      {
+        "initial_seed": 2365808004,
+        "replicate": 2,
+        "stratum": 8,
+        "target": "J",
+        "transition_seed": 2365808005
+      },
+      {
+        "initial_seed": 2365808006,
+        "replicate": 3,
+        "stratum": 8,
+        "target": "J",
+        "transition_seed": 2365808007
+      },
+      {
+        "initial_seed": 2365809000,
+        "replicate": 0,
+        "stratum": 9,
+        "target": "J",
+        "transition_seed": 2365809001
+      },
+      {
+        "initial_seed": 2365809002,
+        "replicate": 1,
+        "stratum": 9,
+        "target": "J",
+        "transition_seed": 2365809003
+      },
+      {
+        "initial_seed": 2365809004,
+        "replicate": 2,
+        "stratum": 9,
+        "target": "J",
+        "transition_seed": 2365809005
+      },
+      {
+        "initial_seed": 2365809006,
+        "replicate": 3,
+        "stratum": 9,
+        "target": "J",
+        "transition_seed": 2365809007
+      },
+      {
+        "initial_seed": 2365810000,
+        "replicate": 0,
+        "stratum": 10,
+        "target": "J",
+        "transition_seed": 2365810001
+      },
+      {
+        "initial_seed": 2365810002,
+        "replicate": 1,
+        "stratum": 10,
+        "target": "J",
+        "transition_seed": 2365810003
+      },
+      {
+        "initial_seed": 2365810004,
+        "replicate": 2,
+        "stratum": 10,
+        "target": "J",
+        "transition_seed": 2365810005
+      },
+      {
+        "initial_seed": 2365810006,
+        "replicate": 3,
+        "stratum": 10,
+        "target": "J",
+        "transition_seed": 2365810007
+      },
+      {
+        "initial_seed": 2365811000,
+        "replicate": 0,
+        "stratum": 11,
+        "target": "J",
+        "transition_seed": 2365811001
+      },
+      {
+        "initial_seed": 2365811002,
+        "replicate": 1,
+        "stratum": 11,
+        "target": "J",
+        "transition_seed": 2365811003
+      },
+      {
+        "initial_seed": 2365811004,
+        "replicate": 2,
+        "stratum": 11,
+        "target": "J",
+        "transition_seed": 2365811005
+      },
+      {
+        "initial_seed": 2365811006,
+        "replicate": 3,
+        "stratum": 11,
+        "target": "J",
+        "transition_seed": 2365811007
+      },
+      {
+        "initial_seed": 2365812000,
+        "replicate": 0,
+        "stratum": 12,
+        "target": "J",
+        "transition_seed": 2365812001
+      },
+      {
+        "initial_seed": 2365812002,
+        "replicate": 1,
+        "stratum": 12,
+        "target": "J",
+        "transition_seed": 2365812003
+      },
+      {
+        "initial_seed": 2365812004,
+        "replicate": 2,
+        "stratum": 12,
+        "target": "J",
+        "transition_seed": 2365812005
+      },
+      {
+        "initial_seed": 2365812006,
+        "replicate": 3,
+        "stratum": 12,
+        "target": "J",
+        "transition_seed": 2365812007
+      },
+      {
+        "initial_seed": 2365813000,
+        "replicate": 0,
+        "stratum": 13,
+        "target": "J",
+        "transition_seed": 2365813001
+      },
+      {
+        "initial_seed": 2365813002,
+        "replicate": 1,
+        "stratum": 13,
+        "target": "J",
+        "transition_seed": 2365813003
+      },
+      {
+        "initial_seed": 2365813004,
+        "replicate": 2,
+        "stratum": 13,
+        "target": "J",
+        "transition_seed": 2365813005
+      },
+      {
+        "initial_seed": 2365813006,
+        "replicate": 3,
+        "stratum": 13,
+        "target": "J",
+        "transition_seed": 2365813007
+      },
+      {
+        "initial_seed": 2365814000,
+        "replicate": 0,
+        "stratum": 14,
+        "target": "J",
+        "transition_seed": 2365814001
+      },
+      {
+        "initial_seed": 2365814002,
+        "replicate": 1,
+        "stratum": 14,
+        "target": "J",
+        "transition_seed": 2365814003
+      },
+      {
+        "initial_seed": 2365814004,
+        "replicate": 2,
+        "stratum": 14,
+        "target": "J",
+        "transition_seed": 2365814005
+      },
+      {
+        "initial_seed": 2365814006,
+        "replicate": 3,
+        "stratum": 14,
+        "target": "J",
+        "transition_seed": 2365814007
+      },
+      {
+        "initial_seed": 2365815000,
+        "replicate": 0,
+        "stratum": 15,
+        "target": "J",
+        "transition_seed": 2365815001
+      },
+      {
+        "initial_seed": 2365815002,
+        "replicate": 1,
+        "stratum": 15,
+        "target": "J",
+        "transition_seed": 2365815003
+      },
+      {
+        "initial_seed": 2365815004,
+        "replicate": 2,
+        "stratum": 15,
+        "target": "J",
+        "transition_seed": 2365815005
+      },
+      {
+        "initial_seed": 2365815006,
+        "replicate": 3,
+        "stratum": 15,
+        "target": "J",
+        "transition_seed": 2365815007
+      }
+    ],
+    "chains_total": 128,
+    "extension_samples_per_chain": 12000,
+    "extension_total_batches_per_chain": 80,
+    "extension_total_samples_per_chain": 16000,
+    "power_one_burn_in_steps": 1000,
+    "proposal_steps_per_sample": 2,
+    "replicates_per_target_stratum": 4,
+    "retained_samples": 4000,
+    "samples_per_batch": 200,
+    "slack_move_probability": "1/2",
+    "steps_per_tempering_power": 250,
+    "strata": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "targets": [
+      "I",
+      "J"
+    ],
+    "tempering_powers": [
+      "0",
+      "1/4",
+      "1/2",
+      "3/4",
+      "1"
+    ]
+  },
+  "source_hashes": {
+    "agents/small-delta-frontier/IMPORTANCE-CONDITIONAL-STATISTICS-REAUDIT.md": "d668204bec203e2b3821a534be9d40829c60ba50f0192e16734e3083f6c1f8e6",
+    "agents/small-delta-frontier/audit_importance_conditional_statistics.py": "db4162a1f14803b18eacda24b0504b04de252c37b763ed6a543d2ce43c464b6e",
+    "agents/structural-basis/IMPORTANCE-D4-CALIBRATION-SPEC.md": "9b9a015e9631b9c6800edac62d580ea77e2d7ea1a438f6add594406b9d8ee533",
+    "agents/structural-basis/IMPORTANCE-DISCOVERY-AUDIT.md": "ba7eae582b6fcaf1fe0f1e39c7abbe01b2e845d9e4eed5c7312acd2a4a3c0b27",
+    "agents/structural-basis/IMPORTANCE-STRATIFICATION.md": "93cb320eb2c77f4382148d3f32367f96a1ebb2ac12447a9aebc1636540837595",
+    "agents/structural-basis/code/importance_conditional.py": "6e502c09354eb0fedf82c90d9d5ba12d7313609dc4392c0c947ca1166bad0258",
+    "agents/structural-basis/code/importance_d4_calibration.py": "84edd10362ac741d286581654822524f39b721f054db2a58eea7206b90245323",
+    "agents/structural-basis/code/importance_density.py": "d656c788b3cbedf6029a95e74ac5a1cc9e8b6e3794ea9ca3d624af460ced9380",
+    "agents/structural-basis/code/importance_envelope.py": "7c28633e89987c6d2d3493d4f05e699914b5fb7a023d31ccb458878587bc7110",
+    "agents/structural-basis/code/importance_oracle.py": "e58734919154fe841b42e9fcb49b05a61258bc6f892742756458ac16c85b0545",
+    "agents/structural-basis/code/importance_point_eval.py": "ea88f6d29b744f59ad146bdebf9b2003a2d57e40eea5b7a03fb48f2309cdfc01",
+    "agents/structural-basis/code/importance_sampler.py": "54c936221fff3c2f981b98fee4110abfc384cf9b3e65d759b3997ff27c9812e4",
+    "agents/structural-basis/code/importance_statistics.py": "dd7a919b23f1eedc7cbb1093612c0dabfbcce2a5f7d30407503e2cc963686d26",
+    "agents/structural-basis/code/importance_stratum_weights.py": "c2d8b4e7027f75b6701636fb31e377362afa42b3b6bc831ef97a0b7375705304",
+    "agents/structural-basis/tests/test_importance_conditional.py": "b379fe6c2f2a29173dfae0ea8986b70eab79e9206c56a37b1c62445fe10f8adb",
+    "agents/structural-basis/tests/test_importance_d4_calibration.py": "c1e9188a590418b4ba98db70ddfed8bc27f59bf6d5c0ab7bf95bfaf8a1f45e0e",
+    "agents/structural-basis/tests/test_importance_density.py": "ab222509bbe157e45951cc430a9641b45543c1aecf8b725abfe72b349581d654",
+    "agents/structural-basis/tests/test_importance_envelope.py": "90ac791e01b2221772babb7039b71b1624a6bdc828d6f3d203ef6f73d58e96eb",
+    "agents/structural-basis/tests/test_importance_hostile_crosscheck.py": "ef2626aa714202f52c389ca297d929579a663f89e146bb38c70a5877c163db11",
+    "agents/structural-basis/tests/test_importance_oracle.py": "d29af0bb8fab05264757d8b17956e59cb1bb26c0248bcc6a655840abd201250f",
+    "agents/structural-basis/tests/test_importance_point_eval.py": "d2ae3f04696626502122d850daa6cd2f6b82262353b1d7d5a84f5f042bbffc21",
+    "agents/structural-basis/tests/test_importance_sampler.py": "e332eba3314149794f089b477d7339df1a5e2c891c0a0d4f6a1a56d4bcea8e00",
+    "agents/structural-basis/tests/test_importance_statistics.py": "604c7d5b0ed89d2792732912e80db97a23530e288ed5659942ac15e7bca3ecb1",
+    "agents/structural-basis/tests/test_importance_stratum_weights.py": "0e4eae01a2f91750e6630eca3b37b0a9391a64465ba77c97056d790393941cfa"
+  },
+  "status": "frozen-d4-stratified-calibration-prelaunch-v2",
+  "supersedes_invalid_gate_sha256": "fcce4e339c9b7d23eb39bf74fe88f82592ea101fd0be1fea3c9691f760ed237c",
+  "thresholds": {
+    "extension_max_standardized_discrepancy": "12",
+    "maximum_split_rhat": "1.05",
+    "maximum_z_relative_se": "1/50",
+    "minimum_aggregate_acceptance_by_move": "1/100",
+    "minimum_batch_means_ess": "200",
+    "minimum_move_acceptance_per_chain": "positive",
+    "minimum_z_six_se_lower": "0",
+    "relative_rank_tolerance": "1/1000000000000",
+    "root_jackknife_multiplier": "6",
+    "root_relative_discrepancy": "1/200",
+    "simultaneous_multiplier": "6"
+  }
+}

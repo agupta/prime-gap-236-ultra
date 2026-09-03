@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+
+# Generated exact-integration cache exceeds GitHub's 100 MB per-file limit.
+prime-gap-236/agents/exact-integrator/cache/bv_aquarter_sourcebound_v2.sqlite3

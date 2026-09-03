@@ -1,0 +1,34 @@
+{
+  "claim_scope": "exact-grid discovery summary; independent analytic audit required",
+  "dynamic_iic_checks": 172800,
+  "dynamic_iic_least_margin": "69999/20000000000",
+  "fixed_least_margin": "4919/105000000000",
+  "format": "nonuniform-rising-tail-active26-barrier-summary-v1",
+  "grid_denominator": 1000000,
+  "parameters": {
+    "delta": "361/50000",
+    "first_nine_caps": [
+      "597/5000", "633/5000", "669/5000", "141/1000",
+      "737/5000", "773/5000", "1553/10000", "809/5000",
+      "81/500"
+    ],
+    "k": 48
+  },
+  "reproduction_command": "python3 scripts/explore_nonuniform_tail_frontier.py --denominator 1000000 --head-length 40 --last-count 32",
+  "script_sha256": "3886783d4b002b6cedf9076c0bf3619ed033ad4c6f7d85ebe9baf4ef29ab7be3",
+  "selected_B11_through_B26": [
+    "169113/1000000", "8481/50000", "34399/200000",
+    "86921/500000", "4383/25000", "176333/1000000",
+    "176529/1000000", "177537/1000000", "17839/100000",
+    "179121/1000000", "89877/500000", "45077/250000",
+    "180797/1000000", "11327/62500", "181621/1000000",
+    "187719/1000000"
+  ],
+  "status": "DISCOVERY PASS; COUNT 26 REMAINS EMPTY",
+  "total_large_count_26": {
+    "26_delta": "4693/25000",
+    "B26": "187719/1000000",
+    "empty_margin": "1/1000000"
+  },
+  "interpretation": "With counts 11 through 26 greedily maximized on the 1e-6 grid after fixing the first ten caps, every fixed and dynamic-IIc check passes, but the largest selected B26 is one grid unit below 26*delta. Thus this ordered greedy family does not activate total-large-count 26. This is not a global impossibility theorem."
+}

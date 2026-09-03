@@ -1,0 +1,46 @@
+{
+  "active_outer_counts": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+  "analytic_audit_sha256": "111a48a23dbf8bf3fdb058f30e6bc412d2eb3cd605557772d6f34056974b2bda",
+  "arithmetic_core_sha256": "1393a2dd29e5660f10e632b19b6b5eeafe9363bf79b2cd4a8254049d1f9c669a",
+  "arithmetic_test_sha256": "a9c822357bb2cb9225030b0df46f11bca225ec05158e48ee0d57ff2394f7071f",
+  "benchmark_artifacts": [
+    {"common_r": 0, "h": 17, "peak_rss_kib": 37056, "sha256": "73f351f24defafc0cb6c0a293d258bac33d504e457771ea11362ff5d67bd9107", "wall_seconds": "3.981517974054441"},
+    {"common_r": 5, "h": 15, "peak_rss_kib": 38160, "sha256": "5603845bf7514a4f6dcb4831ed3854b1915189d39424d9d1b47f2bc6f2cd1901", "wall_seconds": "4.6842535028699785"},
+    {"common_r": 10, "h": 10, "peak_rss_kib": 37668, "sha256": "37b0d249a0fd17e823f154277bfabe162c3b80c72c344c97686312c7fac7e393", "wall_seconds": "5.691880083875731"},
+    {"common_r": 15, "h": 10, "peak_rss_kib": 36408, "sha256": "5f4d88417ed0b84d26c52512ddf710b35bd9e7d55e9df4a68ad2114dc3602d29", "wall_seconds": "4.279913378879428"},
+    {"common_r": 22, "h": 6, "peak_rss_kib": 35108, "sha256": "8e023686703d353bb63faad3be541238920bc8b7640a4ba3202b924d0385ace9", "wall_seconds": "5.10845817415975"},
+    {"common_r": 25, "h": 5, "peak_rss_kib": 33180, "sha256": "9c13277024543c51b2c945743ce74c5ebfc5b1d2eb3e21d264740bcf0e35e6df", "wall_seconds": "4.227032590890303"}
+  ],
+  "cross_face_count": 585,
+  "dimension": 27,
+  "format": "frontier-active25-inner-D16-tagged-shell-authorized-gate-v3",
+  "grouped_geometric_domain_upper": 7731,
+  "independent_v2_prelaunch_audit": {
+    "checker_sha256": "dba6064473a56cb16c99c4423efb0852b3990d0a7f39d027c1b5c1bdc0f4c622",
+    "report_sha256": "0c37f563d99191f0fbb4abc1c0ea5700ed6288ed9011d5edc691c91394cdc6a9",
+    "result_sha256": "bd93b52f3556b9d35edb2568b61c74362e4e156f5b607e6755f2ac7203a3c9a2",
+    "status": "PRELAUNCH PASS"
+  },
+  "launch_authorized": true,
+  "literal_branch_product_upper": 37024,
+  "max_observed_face_wall_seconds": "5.691880083875731",
+  "max_observed_peak_rss_kib": 38160,
+  "oracle_artifact_sha256": "f97e16231e47d028406a88702631457fb110fe1cf00fcb9a2a4ba71557dbc21c",
+  "oracle_direct_exact_equal": true,
+  "projected_one_worker_seconds": "3329.749849067302635",
+  "resource_gate": {
+    "max_total_wall_seconds": 14400,
+    "minimum_seconds_between_mem_readings": 5,
+    "minimum_mem_available_kib_each_reading": 1400000,
+    "required_stable_mem_readings": 2,
+    "rss_safety_factor": 4,
+    "wall_safety_factor": 3,
+    "workers": 1
+  },
+  "rss_envelope_kib": 152640,
+  "schedule_canonical_sha256": "8203c92b064480ff024760350853478c7facbc0a213e08ee695e2571a43e3790",
+  "stage_common_r": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25],
+  "root_authorization_scope": "gate and wrapper construction only; target execution withheld pending a v3 delta audit and a later explicit root launch",
+  "status": "AUTHORIZED",
+  "wall_envelope_seconds": "9989.249547201907905"
+}

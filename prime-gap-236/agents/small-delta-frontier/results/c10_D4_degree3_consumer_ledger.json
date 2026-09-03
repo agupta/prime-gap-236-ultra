@@ -1,0 +1,51 @@
+{
+  "status": "closed-exactly-once-d4-degree3-consumer-ledger",
+  "source_result": {
+    "path": "agents/small-delta-frontier/results/c10_D4_degree3_moment_exact.json",
+    "sha256": "c9cce84c8a75f231738edabfb7c0ca17e48085b2f4e27f4305866103b8d4d0f5",
+    "producer_exit_code": 0
+  },
+  "consumer": {
+    "path": "agents/small-delta-frontier/consume_stratum_moment_d4_degree3.py",
+    "sha256": "fedf1970b197af825675fa62644aa227875487453d125ad454d213ebcdedfb7c"
+  },
+  "authorization_sha256": "8bf587b2ee0c0ff27c99d18446802b7be3007c17651cf4aa6c573b1745445c89",
+  "exact_invocation_argv": [
+    "python3",
+    "agents/small-delta-frontier/consume_stratum_moment_d4_degree3.py",
+    "--result",
+    "agents/small-delta-frontier/results/c10_D4_degree3_moment_exact.json",
+    "--expected-result-sha256",
+    "c9cce84c8a75f231738edabfb7c0ca17e48085b2f4e27f4305866103b8d4d0f5",
+    "--expected-consumer-sha256",
+    "fedf1970b197af825675fa62644aa227875487453d125ad454d213ebcdedfb7c"
+  ],
+  "execution": {
+    "consumer_invocation_count": 1,
+    "exit_code": 0,
+    "wall_seconds": null,
+    "peak_rss_kib": null,
+    "measurement_note": "The orchestration tool polled for approximately twelve minutes but exact wall time and peak RSS were not instrumented; they are intentionally recorded as unavailable rather than inferred."
+  },
+  "canonical_stdout_report": {
+    "path": "agents/small-delta-frontier/results/c10_D4_degree3_consumer_report.json",
+    "sha256": "4f92ffd427e7d8ca58e4a8e59f38ea0b383e8d57ba7e0668fc6df36074d6b797",
+    "bytes": 10218,
+    "materialization": "Reconstituted without rerunning the consumer from its captured numerical fields and exact contraction strings in the pinned producer result."
+  },
+  "verdict": {
+    "consumer_status": "c10-d4-degree3-consumer-no-exact-continuation",
+    "exact_matrix_reconstruction_from_pinned_rows": true,
+    "degree2_principal_entries_equal": true,
+    "exact_gram_rank": 154,
+    "precision120_quotient": "0.965771840087705066168062245096739512875007039788566008141615541026623339835477352669322252000242905837266219756505935644",
+    "precision120_relative_residual": "2.8218140023815041231512883418E-113",
+    "precision200_quotient": "0.96577184008770506616806224509673951287500703978856600814161554102662333983547735266932225200024290583726621975650488081514883381166322058462304862211517719967184236411206587607324371745245368698711443",
+    "precision200_relative_residual": "3.29180150950760746842745282011E-192",
+    "relative_quotient_disagreement": "1.054828851166188336779415377E-114",
+    "numerical_improvement_gate": false,
+    "rationalization_performed": false,
+    "rationalized_particular": null,
+    "exact_continuation_gate": false
+  }
+}

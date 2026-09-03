@@ -1,11 +1,16 @@
 # Prime Gap 236 — Codex Ultra research prompt
 
-This private repository contains a self-contained research prompt for asking a fresh
+This public repository contains a self-contained research prompt for asking a fresh
 Codex session to extend Julia Stadlmann's 2026 bounded-prime-gaps method from
 `H_1 <= 240` to the next natural target, `H_1 <= 236`.
 
 The prompt is in [`PROMPT.md`](PROMPT.md). It does not depend on AutoTAO or any other
 local repository.
+
+The resulting research package is in [`prime-gap-236/`](prime-gap-236/). Its current
+status is recorded in [`prime-gap-236/RESULT.md`](prime-gap-236/RESULT.md); it does not
+claim that the target has been proved. One regenerable exact-integration SQLite cache
+is omitted because it exceeds GitHub's 100 MB per-file limit.
 
 ## Start Codex in one command
 

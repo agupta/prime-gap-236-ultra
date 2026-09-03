@@ -1,0 +1,16 @@
+{
+  "schema": "one-stratum-support-v1",
+  "k": 48,
+  "epsilon": "1/200",
+  "delta": "1/100",
+  "A": ["-1/200", "77747/300000"],
+  "B_segments": [
+    {"first": 1, "last": 2, "value": "3/20"},
+    {"first": 3, "last": 100, "value": "97/625"}
+  ],
+  "first_empty_count": 16,
+  "rho": "(log(n)/log(3*x))*1_P(n) on [x,2x]",
+  "c1": "0",
+  "c2": "0",
+  "beta": "1/2"
+}

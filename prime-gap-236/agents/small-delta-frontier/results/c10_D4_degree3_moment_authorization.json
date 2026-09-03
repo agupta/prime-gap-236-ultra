@@ -1,0 +1,7 @@
+{
+  "status": "root-authorized-c10-d4-degree3-moment-run",
+  "authorized": true,
+  "mode": "exact-D4-degree3-fused-plus-unfused",
+  "gate_sha256": "964ab9cdbe952b317f4c42d7b18a47269f886448fdf5f53d581f754405e32e3b",
+  "driver_sha256": "e48d46f447893d21addef38d979670107086550495fd390a1adeebf1ad6ba7ef"
+}

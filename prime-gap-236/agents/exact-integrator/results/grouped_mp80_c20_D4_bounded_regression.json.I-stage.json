@@ -1,0 +1,23 @@
+{
+  "status": "grouped-fixed-vector-I-stage",
+  "i_complete": true,
+  "rigorous": false,
+  "decimal_dps": 80,
+  "input_json": "results/hb_a2558_eps005_cut_noones_D4.json",
+  "input_sha256": "8c3cd7a226e4bbe4c16e11917e49fde3e7e7ac14c120ec78d74d67e663ae13c5",
+  "script_sha256": "9ee84b1a1a05c884b37f70bd68680bf5ed8650bd5d1aa0afa63fe4a0db3ae298",
+  "parameters": {
+    "alpha": "163/625",
+    "delta": "1/50",
+    "eta": "627/2500",
+    "beta1": "3/20",
+    "beta2": "3/20",
+    "beta3plus": "17/100"
+  },
+  "i_orbit_groups": 20,
+  "i_faces": 90,
+  "i_seconds": 0.624131825985387,
+  "denominator_positive": true,
+  "denominator": "2.3237159147344087921798498160818707437441767159164156744490669106305410083731080E-105",
+  "peak_rss_kib": 21580
+}

@@ -1,0 +1,23 @@
+{
+  "status": "grouped-fixed-vector-I-stage",
+  "i_complete": true,
+  "rigorous": false,
+  "decimal_dps": 100,
+  "input_json": "results/hb_c10_fullsimplex_noones_D12.json",
+  "input_sha256": "719c656e6e45388273b4c27f51f7a18b33e9ed1abb5f883e6fcc5de5d6d64a87",
+  "script_sha256": "9ee84b1a1a05c884b37f70bd68680bf5ed8650bd5d1aa0afa63fe4a0db3ae298",
+  "parameters": {
+    "alpha": "79247/300000",
+    "delta": "1/100",
+    "eta": "76247/300000",
+    "beta1": "3/20",
+    "beta2": "3/20",
+    "beta3plus": "97/625"
+  },
+  "i_orbit_groups": 1575,
+  "i_faces": 312,
+  "i_seconds": 3144.4083374708425,
+  "denominator_positive": true,
+  "denominator": "2.787528827630692682159223062413582835678541733826585732118297248191047814521016638808619046446112162E-134",
+  "peak_rss_kib": 303796
+}

@@ -1,0 +1,38 @@
+{
+  "status": "predeclared-D12-degree3-fused-face-benchmark-gate",
+  "frozen_before_D12_face_timing": true,
+  "theorem_ready": false,
+  "scope": "representative exact face benchmark only; never authorizes a full D12 degree-three run",
+  "worker_sha256": "54d0ade581d4d63636b77daade93f5b2799e87f5c8ba0f98fe251b26107469f1",
+  "worker_test_sha256": "2d846ee34719082633fa120d0515575a40a631fa526bf8818a58a183afa1014d",
+  "fused_engine_sha256": "8f8eabfa1f56db41da69bd425f7c506710b292f9e86ad1255d733dac018c8190",
+  "unfused_engine_sha256": "fcc471d8a0c8dce01147b6984f981ae5f40ef08a943d2f05ecbe1ec3b0eadccd",
+  "d4_fused_artifact_sha256": "72ece5aa4a15536153d7634ee630ebf5e1090dc2ce0a7104cf00190bf310f6eb",
+  "d4_unfused_artifact_sha256": "25a054b526a43e9c1e0c042383722bd49257c57fc5b932c3d3f5393f5e54f598",
+  "d12_original_input_sha256": "719c656e6e45388273b4c27f51f7a18b33e9ed1abb5f883e6fcc5de5d6d64a87",
+  "d12_scaled_input_sha256": "8650e44cace6b6d3e4eee8e1632cfd8a59cde6a48f76a8763dcfb400e49f4a93",
+  "degree_three_tag_schema_sha256": "320272a9dfb08ab6d12396127de3ff35ffe35c47b4715e4035bc985e67981aad",
+  "selected_i_faces": [[0, 0], [7, 9], [15, 0]],
+  "selected_j_faces": [[0, 0], [7, 9], [15, 0]],
+  "central_j_face": [7, 9],
+  "full_i_face_count": 312,
+  "full_j_face_count": 296,
+  "full_moment_and_sparse_block_value_slot_upper_bound": 16668,
+  "wall_projection_formula": "fused_i_setup + fused_j_setup + 312*max(sample_fused_i_face_seconds) + 296*max(sample_fused_j_face_seconds)",
+  "memory_projection_formula_kib": "sample_peak_rss_kib + ceil(16668*(1024+2*max_sample_fraction_token_characters)/1024)",
+  "launch_recommendation_gate": {
+    "all_D4_matrix_entries_and_particular_contraction_exactly_equal": true,
+    "all_sample_I_and_J_tables_exactly_equal_fused_vs_unfused": true,
+    "all_sample_logical_and_scalar_counts_equal": true,
+    "central_J_face_unfused_over_fused_speedup_at_least": 1.25,
+    "projected_wall_seconds_at_most": 10800,
+    "sample_and_projected_peak_rss_kib_each_below": 819200
+  },
+  "prelaunch_shared_memory_gate": {
+    "benchmark_workers": 1,
+    "required_available_memory_mib_at_least": 1844,
+    "enforced_inside_each_fresh_worker_before_dependency_snapshot": true,
+    "reason": "0.8 GiB benchmark cap plus at least 1.0 GiB shared-host headroom"
+  },
+  "gate_semantics": "Every condition is conjunctive. GO means only that a later full run could be considered by root; this benchmark itself must stop after the representative faces."
+}
